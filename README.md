@@ -1,4 +1,7 @@
-## $\bold{Deep}$ $\bold{Reinforcement}$ $\bold{Learning}$ $\bold{sur}$ $\bold{Flappy}$ $\bold{Bird}$
-$\bold{Devilliers}$ $\bold{Arthur}$ $\bold{|}$ $\bold{Buannic}$ $\bold{Paul}$
+<h2 align="center">
+  Deep Reinforcement Learning sur Flappy Bird
+</h2>
 
----
+<p align="center">
+  <strong>Devilliers Arthur</strong> · <strong>Buannic Paul</strong>
+</p>
