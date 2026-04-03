@@ -48,7 +48,7 @@ class Game:
         #maintenant, on veut placer, à partir de start, self.tunnels tuyaux : pour cela on va
         #les placer (pour commencer, on verra plus tard pour complexifier) uniformément le long de [start:width]
         
-        tunnel_width = 100 #arbitraire
+        tunnel_width = 150 #arbitraire
 
         #le schéma est le suivant ; l'écart entre les tuyaux, 
         #en n'ayant pas d'écart au début et un écart à la fin, est ~(self.width-start-self.tunnels*tunnel_width)//self.tunnels
@@ -61,11 +61,15 @@ class Game:
         #la zone suivante + que d'un tier de la hauteur du jeu self.world_height.
         
 
-        hole_size = self.world_height // 4 #taille du trou
+        hole_size = self.world_height // 3 #taille du trou
         max_shift = self.world_height // 3 #le 1/3 dont on parlait pour la chaîne de Markov
 
         world = torch.zeros(size=(self.batch_size, self.world_height, self.world_width))
-        
+        world[:, :, 0] = 1 #bordures
+        world[:, 0, :] = 1 
+        world[:, :, self.world_width-1] = 1 
+        world[:, self.world_height-1, :] = 1 
+
         #ci-dessous, position du premier trou (batchée)
         hole_center = torch.randint(
             low=hole_size // 2,
