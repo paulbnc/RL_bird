@@ -5,14 +5,14 @@ import os
 
 s = time.time()
 batch_size=100
-game = Game(batch_size=batch_size)
+game = Game(batch_size=batch_size, difficulty=3)
 print(f"\nSTAT PERF : monde de {batch_size} batchs généré en {abs(s-time.time())} sec.\n")
 
 i=1
 for w in game.world:
     if i>5:
         break
-    save_image(w.float(), os.path.join("game", "plots", f"test_world_{i}.png"))
+    save_image(w.float(), os.path.join("game", "plots", "test_world", f"test_world_{i}.png"))
     i+=1
 
 
