@@ -24,19 +24,31 @@ class Bird:
 
 class Game:
     def __init__(self, 
-                 batch_size=1, 
-                 duration=1,
+                 batch_size=1,
                  difficulty=1,
                  height=500,
                  width=10000):
         self.batch_size = batch_size
-        self.duration = duration
         self.world_height = height
         self.world_width = width
         self.speed = get_difficulty_params(difficulty)['speed']
         self.tunnels = get_difficulty_params(difficulty)['tunnels']
-        self.bird = Bird(height, width)
-        self.world = self.generate_world()
+
+
+        #idée : faire défiler l'écran selon le temps qui avance (nombre de ticks à définir selon self.speed)
+        #encore une fois gérer le traitement par batchs
+        #dans actions, bien définir si flappy saute et à quelle intensité (voir class Bird)
+        #partons sur un tick = 2*self.speed pixels
+        self.tick = 2*self.speed
+        self.duration = self.world_width//self.tick
+
+        #le monde est un tenseur de taille (batch_size, hauteur, largeur)
+        self.world = torch.Tensor(size=(self.batch_size,
+                                        self.world_height, 
+                                        self.world_width))
+
+    def reset_world(self):
+        self.world[:,] = self.generate_world() #état initial
 
     def generate_world(self):
         #idée : générer aléatoirement tout le terrain (sans flappy) avec le nombre de self.tunnels définis
@@ -48,7 +60,7 @@ class Game:
         #maintenant, on veut placer, à partir de start, self.tunnels tuyaux : pour cela on va
         #les placer (pour commencer, on verra plus tard pour complexifier) uniformément le long de [start:width]
         
-        tunnel_width = 150 #arbitraire
+        tunnel_width = (self.world_width//self.tunnels)//3
 
         #le schéma est le suivant ; l'écart entre les tuyaux, 
         #en n'ayant pas d'écart au début et un écart à la fin, est ~(self.width-start-self.tunnels*tunnel_width)//self.tunnels
@@ -99,9 +111,14 @@ class Game:
         return world
 
 
+    def step(self, t):
+        try:
+            var = self.world[:, :, self.tick:]
 
-    def step(self, actions):
-        #idée : faire défiler l'écran selon le temps qui avance (nombre de ticks à définir selon self.speed)
-        #encore une fois gérer le traitement par batchs
-        #dans actions, bien définir si flappy saute et à quelle intensité (voir class Bird)
-        raise NotImplementedError
+            self.world[:,] = 0
+            self.world[:, :, :-self.tick or None] = var
+            return t+1
+
+        except:
+            print("ERROR : maximal step")
+            raise IndexError

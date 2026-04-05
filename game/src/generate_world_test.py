@@ -1,32 +1,38 @@
 from game_controller import Game
 import time
-from torchvision.utils import save_image
-import os
+import GIF
+import random
 import torch
 
-s = time.time()
-batch_size=10
-game = Game(batch_size=batch_size, difficulty=3)
-print(f"\nSTAT PERF : monde de {batch_size} batchs généré en {abs(s-time.time())} sec.\n")
 
-i=1
-for w in game.world:
-    if i > 10:
-        break
+epochs = 10
+batch_size = 10
 
-    # couleurs définies comme vecteurs RGB
-    grass = torch.tensor([0./255., 153./255., 0./255.]).view(3, 1, 1)  # vert herbe
-    sky   = torch.tensor([102./255., 178./255., 255./255.]).view(3, 1, 1)  # bleu ciel
+VIEW_WIDTH = 200
 
-    # interpolation
-    var = w * grass + (1 - w) * sky
+game = Game(
+                batch_size=batch_size, 
+                difficulty=3,
+                height=100,
+                width=1000
+            )
 
-    save_image(var.float(), os.path.join("game", "plots", "test_world", f"test_world_{i}.png"))
-    i += 1
+for e in range(epochs):
 
+    s = time.time()
+    game.reset_world()
+    print(f"\nSTAT PERF epoch {e} : monde de {batch_size} batchs généré en {abs(s-time.time())} sec.\n")
 
+    i = random.randint(0, game.batch_size - 1)
 
+    # Nombre de frames : on déplace la fenêtre de `tick` px à chaque frame
+    # jusqu'à ce qu'elle atteigne la fin du monde
+    n_frames = (game.world_width - VIEW_WIDTH) // game.tick
 
+    w = torch.zeros(1, n_frames, game.world_height, VIEW_WIDTH)
 
+    for t in range(n_frames):
+        x = t * game.tick  # position gauche de la fenêtre
+        w[0, t] = game.world[i, :, x : x + VIEW_WIDTH]
 
-
+    GIF.gif(w, idx=[0], name=f"game_sample_{e}")
