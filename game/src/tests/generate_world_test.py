@@ -1,6 +1,6 @@
-from game_controller import Game
+from game.src.services.game import Game
 import time
-import GIF
+import game.src.services.GIF as GIF
 import random
 import torch
 
