@@ -3,17 +3,15 @@ import torch
 from PIL import Image
 import numpy as np
 
+idx_gifs = 0
 
-def gif(world, idx: list, folder="gifs", name="game", fps=12):
+def gif(world, folder="gifs", name="game", fps=12):
+    global idx_gifs
     path = os.path.join("game", "plots", folder)
     os.makedirs(path, exist_ok=True)
 
-    cpt = 0
-    for i in idx:
-        save_gif(color(world[i]), path, filename=name + f"_{i}", fps=fps)
-        cpt += 1
-        if cpt > 100:
-            raise ValueError("nombre de gifs maximum atteint")
+    save_gif(color(world), path, filename=name + f"_{idx_gifs}", fps=fps)
+    idx_gifs+=1
 
 
 def save_gif(colored_world: torch.Tensor,
@@ -42,6 +40,12 @@ def color(world: torch.Tensor):
     # size(world) = (duration, height, view_width)
     tunnels = torch.tensor([0. / 255., 153. / 255., 0. / 255.]).view(3, 1, 1)
     sky     = torch.tensor([102. / 255., 178. / 255., 255. / 255.]).view(3, 1, 1)
+    bird    = torch.tensor([173. / 255., 0. / 255., 0. / 255.]).view(3, 1, 1)
 
     w = world.unsqueeze(1)  # (duration, 1, H, W)
-    return w * tunnels + (1 - w) * sky  # (duration, 3, H, W)
+
+    tunnel_mask = (w == 1).float()
+    bird_mask   = (w == 0.5).float()
+    sky_mask    = (1 - tunnel_mask - bird_mask)
+
+    return tunnel_mask * tunnels + bird_mask * bird + sky_mask * sky
