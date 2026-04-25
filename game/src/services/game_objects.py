@@ -14,6 +14,8 @@ def get_difficulty_params(difficulty):
 
 
 
+
+
 class Bird:
     def __init__(
                     self, 
@@ -68,6 +70,23 @@ class Bird:
         hit_wall = (col_slice * bird_rows.unsqueeze(-1)).sum(dim=(1, 2)) > 0
 
         self.alive = (~out_of_bounds & ~hit_wall).float()
+
+        row_idx = torch.arange(self.game.world_height).unsqueeze(0)
+        col_idx = torch.arange(self.game.VIEW_WIDTH).unsqueeze(0)
+
+
+        alive_mask = self.alive.bool()
+        tops = self.y.long().clamp(0, self.game.world_height - self.height - 1)
+        bird_rows = (row_idx >= tops.unsqueeze(1)) & (row_idx < (tops + self.height).unsqueeze(1))
+        bird_cols = (col_idx >= self.x_col) & (col_idx < self.x_col + self.width)
+        bird_mask = bird_rows.unsqueeze(2) & bird_cols.unsqueeze(0)
+        bird_mask = bird_mask & alive_mask[:, None, None]
+
+        done_mask = ~alive_mask
+
+        return bird_mask, done_mask
+
+
 
 
 

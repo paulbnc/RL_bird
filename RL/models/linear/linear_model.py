@@ -1,0 +1,28 @@
+import torch
+import torch.nn as nn
+
+
+
+
+
+class LinearNN_small(nn.Module):
+
+    def __init__(
+                    self,
+                    view_width:int,
+                    view_height:int     
+                ):
+        
+        super().__init__()
+
+        self.fc1 = nn.Linear(view_height*view_width, view_height*view_width // 2)
+        self.fc2 = nn.Linear(view_height*view_width // 2, view_height*view_width // 4)
+        self.fc3 = nn.Linear(view_height*view_width // 4, 1)
+        self.relu = nn.ReLU()
+        self.sigmoid = nn.Sigmoid()
+
+    def forward(self, w):
+        w = self.relu(self.fc1(w))
+        w = self.relu(self.fc2(w))
+        w = self.sigmoid(self.fc3(w))
+        return w
