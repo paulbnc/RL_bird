@@ -5,13 +5,16 @@ import numpy as np
 
 idx_gifs = 0
 
-def gif(world, folder="gifs", name="game", fps=12):
+def gif(world, folder=os.path.join("game", "plots", "gifs"), name="game", fps=12, e=None):
     global idx_gifs
-    path = os.path.join("game", "plots", folder)
-    os.makedirs(path, exist_ok=True)
 
-    save_gif(color(world), path, filename=name + f"_{idx_gifs}", fps=fps)
-    idx_gifs+=1
+    os.makedirs(folder, exist_ok=True)
+
+    if e is None:
+        save_gif(color(world), folder, filename=name + f"_{idx_gifs}", fps=fps)
+        idx_gifs+=1
+    else:
+        save_gif(color(world), folder, filename=name + f"_{e}", fps=fps)
 
 
 def save_gif(colored_world: torch.Tensor,
