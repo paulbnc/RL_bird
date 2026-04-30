@@ -127,7 +127,7 @@ class Bird:
 
 
 class Game:
-    def __init__(self, 
+    def __init__(self,
                  batch_size,
                  difficulty=1,
                  height=100,
@@ -226,8 +226,11 @@ class Game:
         return world
     
 
-    def step(self):
-        x = self.t * self.tick                                    #(batch,) positions gauches
+    def step(self, t=None):
+        if t is None:
+            x = self.t * self.tick                                    #(batch,) positions gauches
+        else:
+            x = t * self.tick                                    #(batch,) positions gauches
 
         col_idx = x.unsqueeze(1).unsqueeze(2) + \
                 torch.arange(self.VIEW_WIDTH).unsqueeze(0).unsqueeze(0)  #(batch, 1, VIEW_WIDTH)

@@ -29,6 +29,7 @@ def _eval(
 
     model.eval()
 
+
     n_frames = (game.world_width - game.VIEW_WIDTH) // game.tick
     w = torch.zeros(game.batch_size, n_frames, game.world_height, game.VIEW_WIDTH)
 
