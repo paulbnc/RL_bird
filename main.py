@@ -58,7 +58,7 @@ if __name__ == '__main__':
     parser.add_argument("-V", "--verbose", type=int, default=1,
                         help="1 for verbose, 0 for not. default 1")
 
-    parser.add_argument("-g", "--gamme", type=float, default=0.95,
+    parser.add_argument("-g", "--gamma", type=float, default=0.95,
                         help="facteur d'actualisation / gamma : default 0.95 (futur=>proche de 1)")
 
 
