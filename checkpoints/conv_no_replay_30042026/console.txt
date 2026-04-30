@@ -1,0 +1,271 @@
+
+
+
+initializing training with parameters :
+            model : ConvNN_small(
+  (conv1): Conv2d(1, 8, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))
+  (conv2): Conv2d(8, 16, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))
+  (conv3): Conv2d(16, 32, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))
+  (relu): ReLU()
+  (fc1): Linear(in_features=9600, out_features=128, bias=True)
+  (fc2): Linear(in_features=128, out_features=2, bias=True)
+  (flat): Flatten(start_dim=1, end_dim=-1)
+),
+            epochs : 20,
+            criterion : loss_no_replay,
+            optimizer : Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    decoupled_weight_decay: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: None
+    lr: 0.0005
+    maximize: False
+    weight_decay: 0
+),
+            batch_size : 16,
+            learning rate : 0.0005,
+            threshold : 0.5,
+            difficulty : 3,
+            height : 100,
+            width : 1000,
+            view_width : 200,
+            freq : 2,
+            model_path : checkpoints\conv_no_replay_30042026,
+            plots_path : game\plots\gifs_last,
+            verbose : True,
+            gamma : 0.95
+            
+
+
+
+
+EPOCH 1/20 ///
+
+
+
+initializing training with parameters :
+            model : ConvNN_small(
+  (conv1): Conv2d(1, 8, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))
+  (conv2): Conv2d(8, 16, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))
+  (conv3): Conv2d(16, 32, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))
+  (relu): ReLU()
+  (fc1): Linear(in_features=9600, out_features=128, bias=True)
+  (fc2): Linear(in_features=128, out_features=2, bias=True)
+  (flat): Flatten(start_dim=1, end_dim=-1)
+),
+            epochs : 20,
+            criterion : loss_no_replay,
+            optimizer : Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    decoupled_weight_decay: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: None
+    lr: 0.0005
+    maximize: False
+    weight_decay: 0
+),
+            batch_size : 16,
+            learning rate : 0.0005,
+            threshold : 0.5,
+            difficulty : 3,
+            height : 100,
+            width : 1000,
+            view_width : 200,
+            freq : 2,
+            model_path : checkpoints\conv_no_replay_30042026,
+            plots_path : game\plots\gifs_last,
+            verbose : True,
+            gamma : 0.95
+            
+
+
+
+
+EPOCH 1/20 ///
+
+
+
+initializing training with parameters :
+            model : ConvNN_small(
+  (conv1): Conv2d(1, 8, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))
+  (conv2): Conv2d(8, 16, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))
+  (conv3): Conv2d(16, 32, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))
+  (relu): ReLU()
+  (fc1): Linear(in_features=9600, out_features=128, bias=True)
+  (fc2): Linear(in_features=128, out_features=2, bias=True)
+  (flat): Flatten(start_dim=1, end_dim=-1)
+),
+            epochs : 20,
+            criterion : loss_no_replay,
+            optimizer : Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    decoupled_weight_decay: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: None
+    lr: 0.0005
+    maximize: False
+    weight_decay: 0
+),
+            batch_size : 16,
+            learning rate : 0.0005,
+            threshold : 0.5,
+            difficulty : 3,
+            height : 100,
+            width : 1000,
+            view_width : 200,
+            freq : 2,
+            model_path : checkpoints\conv_no_replay_30042026,
+            plots_path : game\plots\gifs_last,
+            verbose : True,
+            gamma : 0.95
+            
+
+
+
+
+EPOCH 1/20 ///
+
+
+
+initializing training with parameters :
+            model : ConvNN_small(
+  (conv1): Conv2d(1, 8, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))
+  (conv2): Conv2d(8, 16, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))
+  (conv3): Conv2d(16, 32, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))
+  (relu): ReLU()
+  (flat): Flatten(start_dim=1, end_dim=-1)
+  (fc1): Linear(in_features=10400, out_features=128, bias=True)
+  (fc2): Linear(in_features=128, out_features=2, bias=True)
+),
+            epochs : 20,
+            criterion : loss_no_replay,
+            optimizer : Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    decoupled_weight_decay: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: None
+    lr: 0.0005
+    maximize: False
+    weight_decay: 0
+),
+            batch_size : 16,
+            learning rate : 0.0005,
+            threshold : 0.5,
+            difficulty : 3,
+            height : 100,
+            width : 1000,
+            view_width : 200,
+            freq : 2,
+            model_path : checkpoints\conv_no_replay_30042026,
+            plots_path : game\plots\gifs_last,
+            verbose : True,
+            gamma : 0.95
+            
+
+
+
+
+EPOCH 1/20 ///
+complétée en 0min3.0sec. Estimation de temps restant : 1.0 minutes.
+
+
+EPOCH 2/20 ///
+complétée en 0min2.0sec. Estimation de temps restant : 1.0 minutes.
+
+
+EPOCH 3/20 ///
+complétée en 0min2.0sec. Estimation de temps restant : 1.0 minutes.
+
+
+EPOCH 4/20 ///
+complétée en 0min2.0sec. Estimation de temps restant : 1.0 minutes.
+
+
+EPOCH 5/20 ///
+complétée en 0min2.0sec. Estimation de temps restant : 1.0 minutes.
+
+
+EPOCH 6/20 ///
+complétée en 0min3.0sec. Estimation de temps restant : 1.0 minutes.
+
+
+EPOCH 7/20 ///
+complétée en 0min4.0sec. Estimation de temps restant : 1.0 minutes.
+
+
+EPOCH 8/20 ///
+complétée en 0min4.0sec. Estimation de temps restant : 1.0 minutes.
+
+
+EPOCH 9/20 ///
+complétée en 0min4.0sec. Estimation de temps restant : 1.0 minutes.
+
+
+EPOCH 10/20 ///
+complétée en 0min4.0sec. Estimation de temps restant : 1.0 minutes.
+
+
+EPOCH 11/20 ///
+complétée en 0min5.0sec. Estimation de temps restant : 0.0 minutes.
+
+
+EPOCH 12/20 ///
+complétée en 0min4.0sec. Estimation de temps restant : 0.0 minutes.
+
+
+EPOCH 13/20 ///
+complétée en 0min5.0sec. Estimation de temps restant : 0.0 minutes.
+
+
+EPOCH 14/20 ///
+complétée en 0min5.0sec. Estimation de temps restant : 0.0 minutes.
+
+
+EPOCH 15/20 ///
+complétée en 0min5.0sec. Estimation de temps restant : 0.0 minutes.
+
+
+EPOCH 16/20 ///
+complétée en 0min4.0sec. Estimation de temps restant : 0.0 minutes.
+
+
+EPOCH 17/20 ///
+complétée en 0min5.0sec. Estimation de temps restant : 0.0 minutes.
+
+
+EPOCH 18/20 ///
+complétée en 0min4.0sec. Estimation de temps restant : 0.0 minutes.
+
+
+EPOCH 19/20 ///
+complétée en 0min5.0sec. Estimation de temps restant : 0.0 minutes.
+
+
+EPOCH 20/20 ///
+complétée en 0min5.0sec. Estimation de temps restant : 0.0 minutes.
+
+
+
+entraînement complet
+
+

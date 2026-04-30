@@ -51,7 +51,7 @@ if __name__ == '__main__':
                         help="number of gifs to save during eval. Max batch size, min 0. Default 1")
 
     parser.add_argument("-M", "--model", type=str, default='naive',
-                        help="which model to train. Choose between : ['naive','small_linear']. Default naive.")
+                        help="which model to train. Choose between : ['naive', 'small_linear', 'conv_small']. Default naive.")
     
     parser.add_argument("-PP", "--plots_path", type=str, default=os.path.join("game","plots","gifs_last"),
                         help="path for plots")
@@ -80,6 +80,12 @@ if __name__ == '__main__':
     elif args.model=='small_linear':
         from RL.models.linear.linear_model import LinearNN_small
         model = LinearNN_small(
+            view_height=args.height,
+            view_width=args.view_width
+        )
+    elif args.model=='conv_small':
+        from RL.models.conv.conv_model import ConvNN_small
+        model = ConvNN_small(
             view_height=args.height,
             view_width=args.view_width
         )

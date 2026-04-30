@@ -1,0 +1,129 @@
+
+
+
+initializing training with parameters :
+            model : LinearNN_small(
+  (fc1): Linear(in_features=20000, out_features=10000, bias=True)
+  (fc2): Linear(in_features=10000, out_features=5000, bias=True)
+  (fc3): Linear(in_features=5000, out_features=2, bias=True)
+  (relu): ReLU()
+  (sigmoid): Sigmoid()
+  (flat): Flatten(start_dim=1, end_dim=-1)
+),
+            epochs : 20,
+            criterion : loss_no_replay,
+            optimizer : Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    decoupled_weight_decay: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: None
+    lr: 0.01
+    maximize: False
+    weight_decay: 0
+),
+            batch_size : 16,
+            learning rate : 0.01,
+            threshold : 0.5,
+            difficulty : 2,
+            height : 100,
+            width : 1000,
+            view_width : 200,
+            freq : 2,
+            model_path : checkpoints\linear_no_replay_30042026,
+            plots_path : game\plots\gifs_last,
+            verbose : True,
+            gamma : 0.95
+            
+
+
+
+
+EPOCH 1/20 ///
+complétée en 3min25.0sec. Estimation de temps restant : 65.0 minutes.
+
+
+EPOCH 2/20 ///
+complétée en 3min60.0sec. Estimation de temps restant : 67.0 minutes.
+
+
+EPOCH 3/20 ///
+complétée en 3min11.0sec. Estimation de temps restant : 60.0 minutes.
+
+
+EPOCH 4/20 ///
+complétée en 4min29.0sec. Estimation de temps restant : 60.0 minutes.
+
+
+EPOCH 5/20 ///
+complétée en 5min11.0sec. Estimation de temps restant : 61.0 minutes.
+
+
+EPOCH 6/20 ///
+complétée en 4min29.0sec. Estimation de temps restant : 58.0 minutes.
+
+
+EPOCH 7/20 ///
+complétée en 4min29.0sec. Estimation de temps restant : 54.0 minutes.
+
+
+EPOCH 8/20 ///
+complétée en 4min56.0sec. Estimation de temps restant : 51.0 minutes.
+
+
+EPOCH 9/20 ///
+complétée en 4min39.0sec. Estimation de temps restant : 47.0 minutes.
+
+
+EPOCH 10/20 ///
+complétée en 5min3.0sec. Estimation de temps restant : 44.0 minutes.
+
+
+EPOCH 11/20 ///
+complétée en 4min53.0sec. Estimation de temps restant : 40.0 minutes.
+
+
+EPOCH 12/20 ///
+complétée en 7min4.0sec. Estimation de temps restant : 37.0 minutes.
+
+
+EPOCH 13/20 ///
+complétée en 5min23.0sec. Estimation de temps restant : 33.0 minutes.
+
+
+EPOCH 14/20 ///
+complétée en 4min52.0sec. Estimation de temps restant : 28.0 minutes.
+
+
+EPOCH 15/20 ///
+complétée en 4min51.0sec. Estimation de temps restant : 24.0 minutes.
+
+
+EPOCH 16/20 ///
+complétée en 4min57.0sec. Estimation de temps restant : 19.0 minutes.
+
+
+EPOCH 17/20 ///
+complétée en 4min48.0sec. Estimation de temps restant : 14.0 minutes.
+
+
+EPOCH 18/20 ///
+complétée en 5min3.0sec. Estimation de temps restant : 10.0 minutes.
+
+
+EPOCH 19/20 ///
+complétée en 7min10.0sec. Estimation de temps restant : 5.0 minutes.
+
+
+EPOCH 20/20 ///
+complétée en 5min52.0sec. Estimation de temps restant : 0.0 minutes.
+
+
+
+entraînement complet
+
+
