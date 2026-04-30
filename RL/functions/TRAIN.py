@@ -113,7 +113,7 @@ def _train_dqn_no_replay(
                 reward
             )
 
-            LOSSES.append(loss)
+            LOSSES.append(loss.item())
 
             loss.backward()
             optimizer.step()
@@ -134,10 +134,10 @@ def _train_dqn_no_replay(
 
         if verbose:
             temps.append(abs(s-time.time()))
-            print(f"complétée en {temps[e]:.2f} sec. Estimation de temps restant : {round((_mean(temps)*(epochs-e-1))/60, 0)} minutes.\n")
+            print(f"complétée en {int(temps[e]/60)}min{round(60*(temps[e]/60 - int(temps[e]/60)),0)}sec. Estimation de temps restant : {round((_mean(temps)*(epochs-e-1))/60, 0)} minutes.\n")
 
 
     torch.save(best_model, os.path.join(model_path, "best.pth"))
     print("\n\nentraînement complet\n\n")
 
-    return temps, LOSSES, best_loss
+    return temps, LOSSES, best_loss.item()
