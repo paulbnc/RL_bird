@@ -85,8 +85,44 @@ class Bird:
         done_mask = ~alive_mask
 
         return bird_mask, done_mask
+    
 
+    def reward(self): # return tensor(taille batchsize)
+        
+        # Création tensor rewards de taille batchsize
+        B, H, W = self.game.batch_size, self.game.world_width, self.game.world_height
+        rewards = torch.zeros(B)
 
+        # Si l'oiseau est mort
+        dead = ~self.alive.bool()
+        rewards[dead] = -30.0
+
+        # Si l'oiseau est toujours en vie
+        alive = self.alive.bool()
+        rewards[alive] = 1.0
+
+        # Bonus si l'oiseau franchit un tuyau +15 points
+        # Un tuyau est franchit s'il passe la dernière colonne d'un tuyau
+        # On cherche une transition mur -> vide
+
+        world = self.game.world
+        x_curr  = (self.game.t * self.game.tick + self.x_col).clamp(1, W -1).long()
+        x_prev = (x_curr - 1).clamp(0, W-1)
+
+        def col_sum(col_idx):
+            idx = col_idx[:, None, None].expand(-1, H, 1)
+            return world.gather(2, idx).squeeze(2).sum(dim=1)
+        # Colonne précédente est elle un mur ?
+        col_was_pipe = col_sum(x_prev) != 0.0
+        col_is_now_empty = col_sum(x_curr)==0.0
+
+        # was a pipe and now is empty
+        interior = (x_prev > 0) & (x_prev < W - 1) 
+        pipe_passed = col_was_pipe & col_is_now_empty & alive & interior
+
+        rewards[pipe_passed] += 15.0
+    
+        return rewards
 
 
 
