@@ -110,16 +110,19 @@ class Bird:
         x_prev = (x_curr - 1).clamp(0, W-1)
 
         def col_sum(col_idx):
-            idx = col_idx[:, None, None].expand(-1, H, 1)
-            return world.gather(2, idx).squeeze(2).sum(dim=1)
+            idx = col_idx.view(-1, 1, 1).expand(-1, W, 1)
+            return torch.gather(world, 2, index=idx).sum(dim=1)
+       
         # Colonne précédente est elle un mur ?
+        
         col_was_pipe = col_sum(x_prev) != 0.0
-        col_is_now_empty = col_sum(x_curr)==0.0
-
+        col_was_pipe = col_was_pipe.squeeze(1)
+        
+        col_is_now_empty = col_sum(x_curr)== 0.0
+        col_is_now_empty = col_is_now_empty.squeeze(1)
         # was a pipe and now is empty
-        interior = (x_prev > 0) & (x_prev < W - 1) 
-        pipe_passed = col_was_pipe & col_is_now_empty & alive & interior
-
+        print(col_was_pipe.size(), col_is_now_empty.size(), alive.size())
+        pipe_passed = col_was_pipe & col_is_now_empty & alive
         rewards[pipe_passed] += 15.0
     
         return rewards
