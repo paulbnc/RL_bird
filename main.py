@@ -1,6 +1,6 @@
 import argparse
 from RL.functions.EVAL import _eval
-from RL.functions.TRAIN import _train_classic, _train_dqn_no_replay
+from RL.functions.TRAIN import _train_dqn_no_replay
 import torch
 import os
 
