@@ -5,7 +5,7 @@ import torch
 from numpy import mean as _mean
 import torch
 import os
-from loss_functions.DQN import no_replay_loss
+from RL.functions.loss_functions.DQN import no_replay_loss
 
 def _train_classic(
                     model,

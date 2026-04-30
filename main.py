@@ -52,7 +52,7 @@ if __name__ == '__main__':
     parser.add_argument("-M", "--model", type=str, default='naive',
                         help="which model to train. Choose between : ['naive','small_linear']. Default naive.")
     
-    parser.add_argument("-PP", "--plots_path", type=str, default=os.path.join("game","plots"),
+    parser.add_argument("-PP", "--plots_path", type=str, default=os.path.join("game","plots","gifs_last"),
                         help="path for plots")
     
     parser.add_argument("-V", "--verbose", type=int, default=1,
