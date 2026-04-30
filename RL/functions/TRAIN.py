@@ -7,7 +7,7 @@ import torch
 import os
 from RL.functions.loss_functions.DQN import no_replay_loss
 from tqdm import tqdm
-from utils.log import _log
+from RL.functions.utils.log import _log
 
 
 
