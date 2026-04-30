@@ -121,7 +121,7 @@ class Bird:
         col_is_now_empty = col_sum(x_curr)== 0.0
         col_is_now_empty = col_is_now_empty.squeeze(1)
         # was a pipe and now is empty
-        print(col_was_pipe.size(), col_is_now_empty.size(), alive.size())
+        
         pipe_passed = col_was_pipe & col_is_now_empty & alive
         rewards[pipe_passed] += 15.0
     

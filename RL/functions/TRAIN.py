@@ -6,7 +6,7 @@ from numpy import mean as _mean
 import torch
 import os
 from RL.functions.loss_functions.DQN import no_replay_loss
-
+from tqdm import tqdm
 
 
 
@@ -88,7 +88,7 @@ def _train_dqn_no_replay(
         w = torch.zeros(game.batch_size, n_frames, game.world_height, game.VIEW_WIDTH)
 
 
-        for t in range(n_frames):
+        for t in tqdm(range(n_frames)):
             optimizer.zero_grad()
 
 
@@ -108,7 +108,7 @@ def _train_dqn_no_replay(
                 gamma,
                 model,
                 w[:,t],
-                game.step(t),
+                game.step(game.t-1),
                 Q_actions.argmax(dim=1),
                 reward
             )
@@ -134,7 +134,7 @@ def _train_dqn_no_replay(
 
         if verbose:
             temps.append(abs(s-time.time()))
-            print(f"complétée en {temps[e]:.4f} sec. Estimation de temps restant : {(_mean(temps)*(epochs-e-1))/60} minutes.\n")
+            print(f"complétée en {temps[e]:.2f} sec. Estimation de temps restant : {round((_mean(temps)*(epochs-e-1))/60, 0)} minutes.\n")
 
 
     torch.save(best_model, os.path.join(model_path, "best.pth"))
