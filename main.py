@@ -3,6 +3,7 @@ from RL.functions.EVAL import _eval
 from RL.functions.TRAIN import _train_dqn_no_replay
 import torch
 import os
+import matplotlib.pyplot as plt
 
 if __name__ == '__main__':
 
@@ -111,7 +112,7 @@ if __name__ == '__main__':
             raise NameError
 
 
-        _train_dqn_no_replay(
+        temps, LOSSES, best_loss = _train_dqn_no_replay(
                                 model=model,
                                 epochs=args.epochs,
                                 lr=args.lr,
@@ -128,3 +129,21 @@ if __name__ == '__main__':
                                 verbose=bool(args.verbose),
                                 batch_size=args.batch_size
                             )
+        print(f"entrainement complet : best loss {best_loss}. Plots de loss et times dans {args.path}")
+
+
+        plt.figure()
+        plt.plot(LOSSES)
+        plt.xlabel("itérations")
+        plt.ylabel("loss")
+        plt.title("Training Loss")
+        plt.savefig(os.path.join(args.path, "loss.png"))
+        plt.close()
+
+        plt.figure()
+        plt.plot(temps)
+        plt.xlabel("itérations")
+        plt.ylabel("time")
+        plt.title("Training time")
+        plt.savefig(os.path.join(args.path, "time.png"))
+        plt.close()
