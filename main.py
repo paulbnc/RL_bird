@@ -125,5 +125,6 @@ if __name__ == '__main__':
                                 gamma=args.gamma,
                                 model_path=args.path,
                                 plots_path=args.plots_path,
-                                verbose=bool(args.verbose)
+                                verbose=bool(args.verbose),
+                                batch_size=args.batch_size
                             )
