@@ -95,8 +95,6 @@ def _train_dqn_no_replay(
             w[:, t] = game.step()
             game.t += 1
 
-            print(w[:,t].shape)
-
             Q_actions = model(w[:, t]) #(batch, 2) => [:,1] le Q du saut, [:,0] le Q du non-saut
 
             game.flappy.step(Q_actions.argmax(dim=1)==1)
