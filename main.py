@@ -1,6 +1,8 @@
 import argparse
 from RL.functions.EVAL import _eval
-from RL.functions.TRAIN import _train_classic
+from RL.functions.TRAIN import _train_classic, _train_dqn_no_replay
+import torch
+import os
 
 if __name__ == '__main__':
 
@@ -9,7 +11,7 @@ if __name__ == '__main__':
 
 
     parser.add_argument("-ty", "--type", type=str, default="eval",
-                        help="Choose between \"eval\" and \"train\". Default eval")
+                        help="Choose between \"eval\" and \"train_no_replay\". Default eval")
 
     parser.add_argument("-e", "--epochs", type=int, default=100,
                         help="Number of epochs for training. Default 100")
@@ -49,7 +51,12 @@ if __name__ == '__main__':
 
     parser.add_argument("-M", "--model", type=str, default='naive',
                         help="which model to train. Choose between : ['naive','small_linear']. Default naive.")
-
+    
+    parser.add_argument("-PP", "--plots_path", type=str, default=os.path.join("game","plots"),
+                        help="path for plots")
+    
+    parser.add_argument("-V", "--verbose", type=int, default=1,
+                        help="1 for verbose, 0 for not. default 1")
 
     args = parser.parse_args()
 
@@ -69,8 +76,7 @@ if __name__ == '__main__':
         from RL.models.linear.linear_model import LinearNN_small
         model = LinearNN_small(
             view_height=args.height,
-            view_width=args.view_width,
-            threshold=args.threshold
+            view_width=args.view_width
         )
 
     else:
@@ -90,7 +96,30 @@ if __name__ == '__main__':
                 save=args.save,
                 idx_save=1
             )
-    elif args.type=="train":
-        if args.model=="small_linear":
-            #_train_classic()
-            raise NotImplementedError
+    elif args.type=="train_no_replay":
+
+        if args.optimizer=="Adam":
+            optimizer = torch.optim.Adam(params=model.parameters(), lr=args.lr)
+        elif args.optimizer=="SGD":
+            optimizer = torch.optim.SGD(params=model.parameters(), lr=args.lr)
+        else:
+            print(f"optimizer inconnu : {args.optimizer}")
+            raise NameError
+
+
+        _train_dqn_no_replay(
+                                model=model,
+                                epochs=args.epochs,
+                                lr=args.lr,
+                                optimizer=optimizer,
+                                threshold=args.threshold,
+                                difficulty=args.difficulty,
+                                height=args.height,
+                                width=args.width,
+                                VIEW_WIDTH=args.view_width,
+                                freq=args.freq,
+                                gamma=args.gamma,
+                                model_path=args.path,
+                                plots_path=args.plots_path,
+                                verbose=bool(args.verbose)
+                            )

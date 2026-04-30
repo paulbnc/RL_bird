@@ -100,10 +100,9 @@ def _train_classic(
 def _train_dqn_no_replay(
                     model,
                     epochs:int,
-                    lr:float,
-                    criterion,
                     optimizer,
                     batch_size:int,
+                    lr:float,
                     threshold:float,
                     difficulty:int,
                     height:int,
@@ -137,7 +136,7 @@ def _train_dqn_no_replay(
         print(f'''initializing training with parameters :
                 model : {model},
                 epochs : {epochs},
-                criterion : {criterion},
+                criterion : loss_no_replay,
                 optimizer : {optimizer},
                 batch_size : {batch_size},
                 learning rate : {lr},
@@ -182,9 +181,10 @@ def _train_dqn_no_replay(
             w[:, t] = game.step()
             game.t += 1
 
-            Q_actions = model(w[:, t]) #(batch, 2) => [:,0] le Q du saut, [:,1] le Q du non-saut
+            Q_actions = model(w[:, t]) #(batch, 2) => [:,1] le Q du saut, [:,0] le Q du non-saut
 
-            game.flappy.step(Q_actions.)
+            game.flappy.step(Q_actions.argmax(dim=1)==1)
+
             bird_mask, done_mask = game.flappy.update_collisions()
 
 
@@ -195,10 +195,10 @@ def _train_dqn_no_replay(
                 model,
                 w[:,t],
                 game.step(t),
-                Q_actions,
+                Q_actions.argmax(dim=1),
                 reward
             )
-            
+
             LOSSES.append(loss)
 
             loss.backward()
