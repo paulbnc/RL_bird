@@ -13,6 +13,7 @@ from RL.functions.utils.log import _log
 
 def _train_dqn_no_replay(
                     model,
+                    rewards:dict,
                     epochs:int,
                     optimizer,
                     batch_size:int,
@@ -39,7 +40,8 @@ def _train_dqn_no_replay(
                     difficulty=difficulty,
                     height=height,
                     width=width,
-                    VIEW_WIDTH=VIEW_WIDTH
+                    VIEW_WIDTH=VIEW_WIDTH,
+                    rewards=rewards
                 )
 
     model.train()
@@ -93,7 +95,7 @@ def _train_dqn_no_replay(
 
             bird_mask, done_mask = game.flappy.update_collisions()
 
-            reward = game.flappy.reward()
+            reward = game.flappy.reward(done_mask)
 
             loss = no_replay_loss(
                 gamma,

@@ -20,6 +20,7 @@ class Bird:
     def __init__(
                     self, 
                     game,
+                    rewards,
                     gravity = 4,
                     strength = -8.,
                     max_fall_speed = 10.
@@ -41,6 +42,8 @@ class Bird:
 
         self.alive = torch.ones(size=(self.game.batch_size,))
 
+
+        self.rewards = rewards
 
 
     def step(self, actions:torch.BoolTensor):
@@ -85,53 +88,47 @@ class Bird:
         done_mask = ~alive_mask
 
         return bird_mask, done_mask
-    
-
-    def reward(self): # return tensor(taille batchsize)
         
-        # Création tensor rewards de taille batchsize
-        B, H, W = self.game.batch_size, self.game.world_width, self.game.world_height
-        rewards = torch.zeros(B)
+    def reward(self, dead: torch.BoolTensor) -> torch.Tensor:
+        #renvoie un tensor(batchsize), les valeurs des pénalisations/récompenses sont définies dans 
+        #self.rewards.
 
-        # Si l'oiseau est mort
-        dead = ~self.alive.bool()
-        rewards[dead] = -30.0
+        W = self.game.world_width
+        alive = ~dead
 
-        # Si l'oiseau est toujours en vie
-        alive = self.alive.bool()
-        rewards[alive] = 1.0
+        rewards = torch.zeros(self.game.batch_size)
+        rewards[dead]  += self.rewards["dead"]
+        rewards[alive] += self.rewards["alive"]
 
-        # Bonus si l'oiseau franchit un tuyau +15 points
-        # Un tuyau est franchit s'il passe la dernière colonne d'un tuyau
-        # On cherche une transition mur -> vide
+        x_curr = (self.game.t * self.game.tick + self.x_col).clamp(1, W - 1).long()
+        x_prev = (x_curr - 1).clamp(0, W - 1)
+        x_next = (x_curr + 1).clamp(0, W - 1)
 
-        world = self.game.world
-        x_curr  = (self.game.t * self.game.tick + self.x_col).clamp(1, W -1).long()
-        x_prev = (x_curr - 1).clamp(0, W-1)
+        col_prev_is_empty = self._col_sum(x_prev) == 0.0
+        col_curr_is_pipe  = self._col_sum(x_curr) != 0.0
+        col_next_is_empty = self._col_sum(x_next) == 0.0
 
-        def col_sum(col_idx):
-            idx = col_idx.view(-1, 1, 1).expand(-1, W, 1)
-            return torch.gather(world, 2, index=idx).sum(dim=1)
-       
-        # Colonne précédente est elle un mur ?
-        
-        col_was_pipe = col_sum(x_prev) != 0.0
-        col_was_pipe = col_was_pipe.squeeze(1)
-        
-        col_is_now_empty = col_sum(x_curr)== 0.0
-        col_is_now_empty = col_is_now_empty.squeeze(1)
-        # was a pipe and now is empty
-        
-        pipe_passed = col_was_pipe & col_is_now_empty & alive
-        rewards[pipe_passed] += 15.0
-    
+        pipe_entered = col_prev_is_empty & col_curr_is_pipe & alive
+        pipe_exited  = col_curr_is_pipe  & col_next_is_empty & alive
+
+        rewards[pipe_entered] += self.rewards["tunnel_start"]
+        rewards[pipe_exited]  += self.rewards["tunnel_end"]
+
         return rewards
+
+    
+    def _col_sum(self, col_idx: torch.LongTensor) -> torch.Tensor:
+        #on définit une fonction qui nous sera nécessaire pour le calcul des récompenses
+        idx = col_idx.view(-1, 1, 1).expand(-1, self.game.world_height, 1)
+        return self.game.world.gather(2, idx).sum(dim=1).squeeze(1)
+
 
 
 
 class Game:
     def __init__(self,
                  batch_size,
+                 rewards,
                  difficulty=1,
                  height=100,
                  width=1000,
@@ -156,7 +153,7 @@ class Game:
                                         self.world_width)) #vide avant de reset dès le début
         
 
-        self.flappy = Bird(game=self)
+        self.flappy = Bird(game=self, rewards=rewards)
 
         self.t = torch.zeros(self.batch_size, dtype=torch.long)
         

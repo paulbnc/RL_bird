@@ -59,12 +59,29 @@ if __name__ == '__main__':
     parser.add_argument("-V", "--verbose", type=int, default=1,
                         help="1 for verbose, 0 for not. default 1")
 
-    parser.add_argument("-g", "--gamma", type=float, default=0.95,
-                        help="facteur d'actualisation / gamma : default 0.95 (futur=>proche de 1)")
+    parser.add_argument("-g", "--gamma", type=float, default=0.98,
+                        help="facteur d'actualisation / gamma : default 0.98 (futur=>proche de 1)")
+    
+    parser.add_argument("-DR", "--dead_reward", type=float, default=-100.,
+                        help="pénalisation de la mort d'un individu : default -100.")
+
+    parser.add_argument("-AR", "--alive_reward", type=float, default=2.,
+                        help="récompense pour un individu d'être resté en vie : default 2.")
+
+    parser.add_argument("-TSR", "--tunnel_start_reward", type=float, default=15.,
+                        help="récompense pour un individu d'être entré dans un tuyau : default 15.")
+    
+    parser.add_argument("-TER", "--tunnel_end_reward", type=float, default=15.,
+                        help="récompense pour un individu d'être sorti d'un tuyau : default 15.")
 
 
     args = parser.parse_args()
 
+
+    rewards = {"dead":args.dead_reward,
+               "alive":args.alive_reward,
+               "tunnel_start":args.tunnel_start_reward,
+               "tunnel_end":args.tunnel_end_reward}
 
     #########
 
@@ -133,14 +150,13 @@ if __name__ == '__main__':
                                 model_path=args.path,
                                 plots_path=args.plots_path,
                                 verbose=bool(args.verbose),
-                                batch_size=args.batch_size
+                                batch_size=args.batch_size,
+                                rewards=rewards
                             )
-        print(f"entrainement complet : best loss {best_loss}. Plots de loss et times dans {args.path}")
-
-
+        
         plt.figure()
         plt.plot(LOSSES)
-        plt.xlabel("itérations")
+        plt.xlabel("parties jouées")
         plt.ylabel("loss")
         plt.title("Training Loss")
         plt.savefig(os.path.join(args.path, "loss.png"))
@@ -153,3 +169,5 @@ if __name__ == '__main__':
         plt.title("Training time")
         plt.savefig(os.path.join(args.path, "time.png"))
         plt.close()
+
+        print(f"entrainement complet : best loss {best_loss}. PLOTS DE LOSSES ET TIMES dans {args.path}")
