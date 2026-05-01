@@ -75,6 +75,9 @@ if __name__ == '__main__':
     parser.add_argument("-TER", "--tunnel_end_reward", type=float, default=50.,
                         help="récompense pour un individu d'être sorti d'un tuyau : default 50.")
 
+    parser.add_argument("-LOAD", "--load_model", type=str, default=None,
+                        help="model to load (path) for training/eval. Default None.")
+
 
     args = parser.parse_args()
 
@@ -89,9 +92,6 @@ if __name__ == '__main__':
 
     #########
 
-    if args.model=='naive' and args.type=='train':
-        print("\n\nimpossible d'entraîner le réseau aléatoire.\n")
-        raise Exception
 
 
     if args.model=="naive":
@@ -113,6 +113,16 @@ if __name__ == '__main__':
 
     else:
         print(f"\n\nmodele {args.model} introuvable\n")
+        raise Exception
+
+    if args.load_model is not None:
+        print(f"\n\nchargement de {args.load_model}\n\n")
+        state_dict = torch.load(args.load_model)
+        model.load_state_dict(state_dict)
+
+
+    if args.model=='naive' and args.type=='train':
+        print("\n\nimpossible d'entraîner le réseau aléatoire.\n")
         raise Exception
 
 
@@ -174,4 +184,4 @@ if __name__ == '__main__':
         plt.savefig(os.path.join(args.path, "time.png"))
         plt.close()
 
-        print(f"entrainement complet : best loss {best_loss}. PLOTS DE LOSSES ET TIMES dans {args.path}")
+        print(f"best loss {best_loss}. \n\n****PLOTS DE LOSSES ET TIMES dans {args.path}\n\n")
