@@ -1,0 +1,8050 @@
+
+
+
+initializing training with parameters :
+            model : ConvNN_small(
+  (conv1): Conv2d(1, 8, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))
+  (conv2): Conv2d(8, 16, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))
+  (conv3): Conv2d(16, 32, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))
+  (relu): ReLU()
+  (flat): Flatten(start_dim=1, end_dim=-1)
+  (fc1): Linear(in_features=10400, out_features=128, bias=True)
+  (fc2): Linear(in_features=128, out_features=2, bias=True)
+),
+            epochs : 2000,
+            criterion : loss_no_replay,
+            optimizer : Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    decoupled_weight_decay: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: None
+    lr: 0.0005
+    maximize: False
+    weight_decay: 0
+),
+            batch_size : 16,
+            learning rate : 0.0005,
+            threshold : 0.5,
+            difficulty : 3,
+            height : 100,
+            width : 1000,
+            view_width : 200,
+            freq : 50,
+            model_path : checkpoints\2000epochs_conv_no_replay_30042026,
+            plots_path : game\plots\gif_conv_2000,
+            verbose : True,
+            gamma : 0.95
+            
+
+
+
+
+EPOCH 1/2000 ///
+complétée en 0min2.0sec. Estimation de temps restant : 81.0 minutes.
+
+
+EPOCH 2/2000 ///
+complétée en 0min2.0sec. Estimation de temps restant : 77.0 minutes.
+
+
+EPOCH 3/2000 ///
+complétée en 0min2.0sec. Estimation de temps restant : 73.0 minutes.
+
+
+EPOCH 4/2000 ///
+complétée en 0min2.0sec. Estimation de temps restant : 74.0 minutes.
+
+
+EPOCH 5/2000 ///
+complétée en 0min2.0sec. Estimation de temps restant : 73.0 minutes.
+
+
+EPOCH 6/2000 ///
+complétée en 0min3.0sec. Estimation de temps restant : 77.0 minutes.
+
+
+EPOCH 7/2000 ///
+complétée en 0min3.0sec. Estimation de temps restant : 82.0 minutes.
+
+
+EPOCH 8/2000 ///
+complétée en 0min3.0sec. Estimation de temps restant : 86.0 minutes.
+
+
+EPOCH 9/2000 ///
+complétée en 0min4.0sec. Estimation de temps restant : 89.0 minutes.
+
+
+EPOCH 10/2000 ///
+complétée en 0min3.0sec. Estimation de temps restant : 92.0 minutes.
+
+
+EPOCH 11/2000 ///
+complétée en 0min4.0sec. Estimation de temps restant : 96.0 minutes.
+
+
+EPOCH 12/2000 ///
+complétée en 0min4.0sec. Estimation de temps restant : 98.0 minutes.
+
+
+EPOCH 13/2000 ///
+complétée en 0min4.0sec. Estimation de temps restant : 100.0 minutes.
+
+
+EPOCH 14/2000 ///
+complétée en 0min4.0sec. Estimation de temps restant : 102.0 minutes.
+
+
+EPOCH 15/2000 ///
+complétée en 0min4.0sec. Estimation de temps restant : 104.0 minutes.
+
+
+EPOCH 16/2000 ///
+complétée en 0min4.0sec. Estimation de temps restant : 105.0 minutes.
+
+
+EPOCH 17/2000 ///
+complétée en 0min4.0sec. Estimation de temps restant : 106.0 minutes.
+
+
+EPOCH 18/2000 ///
+complétée en 0min4.0sec. Estimation de temps restant : 107.0 minutes.
+
+
+EPOCH 19/2000 ///
+complétée en 0min4.0sec. Estimation de temps restant : 108.0 minutes.
+
+
+EPOCH 20/2000 ///
+complétée en 0min4.0sec. Estimation de temps restant : 109.0 minutes.
+
+
+EPOCH 21/2000 ///
+complétée en 0min4.0sec. Estimation de temps restant : 111.0 minutes.
+
+
+EPOCH 22/2000 ///
+complétée en 0min4.0sec. Estimation de temps restant : 112.0 minutes.
+
+
+EPOCH 23/2000 ///
+complétée en 0min4.0sec. Estimation de temps restant : 114.0 minutes.
+
+
+EPOCH 24/2000 ///
+complétée en 0min4.0sec. Estimation de temps restant : 115.0 minutes.
+
+
+EPOCH 25/2000 ///
+complétée en 0min4.0sec. Estimation de temps restant : 116.0 minutes.
+
+
+EPOCH 26/2000 ///
+complétée en 0min4.0sec. Estimation de temps restant : 117.0 minutes.
+
+
+EPOCH 27/2000 ///
+complétée en 0min4.0sec. Estimation de temps restant : 117.0 minutes.
+
+
+EPOCH 28/2000 ///
+complétée en 0min4.0sec. Estimation de temps restant : 118.0 minutes.
+
+
+EPOCH 29/2000 ///
+complétée en 0min4.0sec. Estimation de temps restant : 119.0 minutes.
+
+
+EPOCH 30/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 120.0 minutes.
+
+
+EPOCH 31/2000 ///
+complétée en 0min4.0sec. Estimation de temps restant : 120.0 minutes.
+
+
+EPOCH 32/2000 ///
+complétée en 0min4.0sec. Estimation de temps restant : 121.0 minutes.
+
+
+EPOCH 33/2000 ///
+complétée en 0min4.0sec. Estimation de temps restant : 121.0 minutes.
+
+
+EPOCH 34/2000 ///
+complétée en 0min4.0sec. Estimation de temps restant : 122.0 minutes.
+
+
+EPOCH 35/2000 ///
+complétée en 0min4.0sec. Estimation de temps restant : 123.0 minutes.
+
+
+EPOCH 36/2000 ///
+complétée en 0min4.0sec. Estimation de temps restant : 123.0 minutes.
+
+
+EPOCH 37/2000 ///
+complétée en 0min4.0sec. Estimation de temps restant : 124.0 minutes.
+
+
+EPOCH 38/2000 ///
+complétée en 0min4.0sec. Estimation de temps restant : 124.0 minutes.
+
+
+EPOCH 39/2000 ///
+complétée en 0min4.0sec. Estimation de temps restant : 124.0 minutes.
+
+
+EPOCH 40/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 125.0 minutes.
+
+
+EPOCH 41/2000 ///
+complétée en 0min4.0sec. Estimation de temps restant : 125.0 minutes.
+
+
+EPOCH 42/2000 ///
+complétée en 0min4.0sec. Estimation de temps restant : 126.0 minutes.
+
+
+EPOCH 43/2000 ///
+complétée en 0min4.0sec. Estimation de temps restant : 126.0 minutes.
+
+
+EPOCH 44/2000 ///
+complétée en 0min4.0sec. Estimation de temps restant : 126.0 minutes.
+
+
+EPOCH 45/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 127.0 minutes.
+
+
+EPOCH 46/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 127.0 minutes.
+
+
+EPOCH 47/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 128.0 minutes.
+
+
+EPOCH 48/2000 ///
+complétée en 0min4.0sec. Estimation de temps restant : 128.0 minutes.
+
+
+EPOCH 49/2000 ///
+complétée en 0min4.0sec. Estimation de temps restant : 128.0 minutes.
+
+
+EPOCH 50/2000 ///
+complétée en 0min4.0sec. Estimation de temps restant : 128.0 minutes.
+
+
+EPOCH 51/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 129.0 minutes.
+
+
+EPOCH 52/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 129.0 minutes.
+
+
+EPOCH 53/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 130.0 minutes.
+
+
+EPOCH 54/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 130.0 minutes.
+
+
+EPOCH 55/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 130.0 minutes.
+
+
+EPOCH 56/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 130.0 minutes.
+
+
+EPOCH 57/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 131.0 minutes.
+
+
+EPOCH 58/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 131.0 minutes.
+
+
+EPOCH 59/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 131.0 minutes.
+
+
+EPOCH 60/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 132.0 minutes.
+
+
+EPOCH 61/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 132.0 minutes.
+
+
+EPOCH 62/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 132.0 minutes.
+
+
+EPOCH 63/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 132.0 minutes.
+
+
+EPOCH 64/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 133.0 minutes.
+
+
+EPOCH 65/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 133.0 minutes.
+
+
+EPOCH 66/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 133.0 minutes.
+
+
+EPOCH 67/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 134.0 minutes.
+
+
+EPOCH 68/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 134.0 minutes.
+
+
+EPOCH 69/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 134.0 minutes.
+
+
+EPOCH 70/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 135.0 minutes.
+
+
+EPOCH 71/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 135.0 minutes.
+
+
+EPOCH 72/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 135.0 minutes.
+
+
+EPOCH 73/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 135.0 minutes.
+
+
+EPOCH 74/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 135.0 minutes.
+
+
+EPOCH 75/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 135.0 minutes.
+
+
+EPOCH 76/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 136.0 minutes.
+
+
+EPOCH 77/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 136.0 minutes.
+
+
+EPOCH 78/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 137.0 minutes.
+
+
+EPOCH 79/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 137.0 minutes.
+
+
+EPOCH 80/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 137.0 minutes.
+
+
+EPOCH 81/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 137.0 minutes.
+
+
+EPOCH 82/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 137.0 minutes.
+
+
+EPOCH 83/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 137.0 minutes.
+
+
+EPOCH 84/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 138.0 minutes.
+
+
+EPOCH 85/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 138.0 minutes.
+
+
+EPOCH 86/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 138.0 minutes.
+
+
+EPOCH 87/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 138.0 minutes.
+
+
+EPOCH 88/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 138.0 minutes.
+
+
+EPOCH 89/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 138.0 minutes.
+
+
+EPOCH 90/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 139.0 minutes.
+
+
+EPOCH 91/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 139.0 minutes.
+
+
+EPOCH 92/2000 ///
+complétée en 0min4.0sec. Estimation de temps restant : 139.0 minutes.
+
+
+EPOCH 93/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 139.0 minutes.
+
+
+EPOCH 94/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 139.0 minutes.
+
+
+EPOCH 95/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 139.0 minutes.
+
+
+EPOCH 96/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 139.0 minutes.
+
+
+EPOCH 97/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 139.0 minutes.
+
+
+EPOCH 98/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 139.0 minutes.
+
+
+EPOCH 99/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 139.0 minutes.
+
+
+EPOCH 100/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 140.0 minutes.
+
+
+EPOCH 101/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 140.0 minutes.
+
+
+EPOCH 102/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 140.0 minutes.
+
+
+EPOCH 103/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 140.0 minutes.
+
+
+EPOCH 104/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 140.0 minutes.
+
+
+EPOCH 105/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 140.0 minutes.
+
+
+EPOCH 106/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 140.0 minutes.
+
+
+EPOCH 107/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 108/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 109/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 110/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 111/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 112/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 113/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 114/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 115/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 142.0 minutes.
+
+
+EPOCH 116/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 142.0 minutes.
+
+
+EPOCH 117/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 142.0 minutes.
+
+
+EPOCH 118/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 142.0 minutes.
+
+
+EPOCH 119/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 142.0 minutes.
+
+
+EPOCH 120/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 142.0 minutes.
+
+
+EPOCH 121/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 142.0 minutes.
+
+
+EPOCH 122/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 142.0 minutes.
+
+
+EPOCH 123/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 143.0 minutes.
+
+
+EPOCH 124/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 143.0 minutes.
+
+
+EPOCH 125/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 143.0 minutes.
+
+
+EPOCH 126/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 143.0 minutes.
+
+
+EPOCH 127/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 143.0 minutes.
+
+
+EPOCH 128/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 143.0 minutes.
+
+
+EPOCH 129/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 144.0 minutes.
+
+
+EPOCH 130/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 144.0 minutes.
+
+
+EPOCH 131/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 144.0 minutes.
+
+
+EPOCH 132/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 144.0 minutes.
+
+
+EPOCH 133/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 144.0 minutes.
+
+
+EPOCH 134/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 144.0 minutes.
+
+
+EPOCH 135/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 144.0 minutes.
+
+
+EPOCH 136/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 144.0 minutes.
+
+
+EPOCH 137/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 144.0 minutes.
+
+
+EPOCH 138/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 144.0 minutes.
+
+
+EPOCH 139/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 144.0 minutes.
+
+
+EPOCH 140/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 145.0 minutes.
+
+
+EPOCH 141/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 145.0 minutes.
+
+
+EPOCH 142/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 145.0 minutes.
+
+
+EPOCH 143/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 145.0 minutes.
+
+
+EPOCH 144/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 145.0 minutes.
+
+
+EPOCH 145/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 145.0 minutes.
+
+
+EPOCH 146/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 145.0 minutes.
+
+
+EPOCH 147/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 145.0 minutes.
+
+
+EPOCH 148/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 145.0 minutes.
+
+
+EPOCH 149/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 145.0 minutes.
+
+
+EPOCH 150/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 145.0 minutes.
+
+
+EPOCH 151/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 145.0 minutes.
+
+
+EPOCH 152/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 145.0 minutes.
+
+
+EPOCH 153/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 145.0 minutes.
+
+
+EPOCH 154/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 145.0 minutes.
+
+
+EPOCH 155/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 145.0 minutes.
+
+
+EPOCH 156/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 145.0 minutes.
+
+
+EPOCH 157/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 145.0 minutes.
+
+
+EPOCH 158/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 159/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 160/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 161/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 162/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 163/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 164/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 165/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 166/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 167/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 168/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 169/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 170/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 171/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 172/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 173/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 174/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 175/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 176/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 147.0 minutes.
+
+
+EPOCH 177/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 178/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 147.0 minutes.
+
+
+EPOCH 179/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 147.0 minutes.
+
+
+EPOCH 180/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 181/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 147.0 minutes.
+
+
+EPOCH 182/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 147.0 minutes.
+
+
+EPOCH 183/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 147.0 minutes.
+
+
+EPOCH 184/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 147.0 minutes.
+
+
+EPOCH 185/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 147.0 minutes.
+
+
+EPOCH 186/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 147.0 minutes.
+
+
+EPOCH 187/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 147.0 minutes.
+
+
+EPOCH 188/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 147.0 minutes.
+
+
+EPOCH 189/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 147.0 minutes.
+
+
+EPOCH 190/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 147.0 minutes.
+
+
+EPOCH 191/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 147.0 minutes.
+
+
+EPOCH 192/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 147.0 minutes.
+
+
+EPOCH 193/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 147.0 minutes.
+
+
+EPOCH 194/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 147.0 minutes.
+
+
+EPOCH 195/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 147.0 minutes.
+
+
+EPOCH 196/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 147.0 minutes.
+
+
+EPOCH 197/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 147.0 minutes.
+
+
+EPOCH 198/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 147.0 minutes.
+
+
+EPOCH 199/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 147.0 minutes.
+
+
+EPOCH 200/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 147.0 minutes.
+
+
+EPOCH 201/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 147.0 minutes.
+
+
+EPOCH 202/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 147.0 minutes.
+
+
+EPOCH 203/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 147.0 minutes.
+
+
+EPOCH 204/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 147.0 minutes.
+
+
+EPOCH 205/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 147.0 minutes.
+
+
+EPOCH 206/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 147.0 minutes.
+
+
+EPOCH 207/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 147.0 minutes.
+
+
+EPOCH 208/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 147.0 minutes.
+
+
+EPOCH 209/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 147.0 minutes.
+
+
+EPOCH 210/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 147.0 minutes.
+
+
+EPOCH 211/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 147.0 minutes.
+
+
+EPOCH 212/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 147.0 minutes.
+
+
+EPOCH 213/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 147.0 minutes.
+
+
+EPOCH 214/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 147.0 minutes.
+
+
+EPOCH 215/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 147.0 minutes.
+
+
+EPOCH 216/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 147.0 minutes.
+
+
+EPOCH 217/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 218/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 219/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 220/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 221/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 222/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 223/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 224/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 225/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 226/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 227/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 228/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 229/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 230/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 231/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 232/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 233/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 234/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 235/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 236/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 237/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 238/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 239/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 240/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 241/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 242/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 243/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 244/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 245/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 246/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 247/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 248/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 249/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 250/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 251/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 252/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 253/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 254/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 255/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 256/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 257/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 258/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 259/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 260/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 261/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 262/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 263/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 264/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 265/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 146.0 minutes.
+
+
+EPOCH 266/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 145.0 minutes.
+
+
+EPOCH 267/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 145.0 minutes.
+
+
+EPOCH 268/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 145.0 minutes.
+
+
+EPOCH 269/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 145.0 minutes.
+
+
+EPOCH 270/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 145.0 minutes.
+
+
+EPOCH 271/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 145.0 minutes.
+
+
+EPOCH 272/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 145.0 minutes.
+
+
+EPOCH 273/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 145.0 minutes.
+
+
+EPOCH 274/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 145.0 minutes.
+
+
+EPOCH 275/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 145.0 minutes.
+
+
+EPOCH 276/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 145.0 minutes.
+
+
+EPOCH 277/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 145.0 minutes.
+
+
+EPOCH 278/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 145.0 minutes.
+
+
+EPOCH 279/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 145.0 minutes.
+
+
+EPOCH 280/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 145.0 minutes.
+
+
+EPOCH 281/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 145.0 minutes.
+
+
+EPOCH 282/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 145.0 minutes.
+
+
+EPOCH 283/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 145.0 minutes.
+
+
+EPOCH 284/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 145.0 minutes.
+
+
+EPOCH 285/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 145.0 minutes.
+
+
+EPOCH 286/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 145.0 minutes.
+
+
+EPOCH 287/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 145.0 minutes.
+
+
+EPOCH 288/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 145.0 minutes.
+
+
+EPOCH 289/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 144.0 minutes.
+
+
+EPOCH 290/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 144.0 minutes.
+
+
+EPOCH 291/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 144.0 minutes.
+
+
+EPOCH 292/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 144.0 minutes.
+
+
+EPOCH 293/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 144.0 minutes.
+
+
+EPOCH 294/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 144.0 minutes.
+
+
+EPOCH 295/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 144.0 minutes.
+
+
+EPOCH 296/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 144.0 minutes.
+
+
+EPOCH 297/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 144.0 minutes.
+
+
+EPOCH 298/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 144.0 minutes.
+
+
+EPOCH 299/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 144.0 minutes.
+
+
+EPOCH 300/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 144.0 minutes.
+
+
+EPOCH 301/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 144.0 minutes.
+
+
+EPOCH 302/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 144.0 minutes.
+
+
+EPOCH 303/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 144.0 minutes.
+
+
+EPOCH 304/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 144.0 minutes.
+
+
+EPOCH 305/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 144.0 minutes.
+
+
+EPOCH 306/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 144.0 minutes.
+
+
+EPOCH 307/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 144.0 minutes.
+
+
+EPOCH 308/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 144.0 minutes.
+
+
+EPOCH 309/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 144.0 minutes.
+
+
+EPOCH 310/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 144.0 minutes.
+
+
+EPOCH 311/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 144.0 minutes.
+
+
+EPOCH 312/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 144.0 minutes.
+
+
+EPOCH 313/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 144.0 minutes.
+
+
+EPOCH 314/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 144.0 minutes.
+
+
+EPOCH 315/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 144.0 minutes.
+
+
+EPOCH 316/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 144.0 minutes.
+
+
+EPOCH 317/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 144.0 minutes.
+
+
+EPOCH 318/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 143.0 minutes.
+
+
+EPOCH 319/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 143.0 minutes.
+
+
+EPOCH 320/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 143.0 minutes.
+
+
+EPOCH 321/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 143.0 minutes.
+
+
+EPOCH 322/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 143.0 minutes.
+
+
+EPOCH 323/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 143.0 minutes.
+
+
+EPOCH 324/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 143.0 minutes.
+
+
+EPOCH 325/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 143.0 minutes.
+
+
+EPOCH 326/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 143.0 minutes.
+
+
+EPOCH 327/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 143.0 minutes.
+
+
+EPOCH 328/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 143.0 minutes.
+
+
+EPOCH 329/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 143.0 minutes.
+
+
+EPOCH 330/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 143.0 minutes.
+
+
+EPOCH 331/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 143.0 minutes.
+
+
+EPOCH 332/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 143.0 minutes.
+
+
+EPOCH 333/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 143.0 minutes.
+
+
+EPOCH 334/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 143.0 minutes.
+
+
+EPOCH 335/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 143.0 minutes.
+
+
+EPOCH 336/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 143.0 minutes.
+
+
+EPOCH 337/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 143.0 minutes.
+
+
+EPOCH 338/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 143.0 minutes.
+
+
+EPOCH 339/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 142.0 minutes.
+
+
+EPOCH 340/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 142.0 minutes.
+
+
+EPOCH 341/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 142.0 minutes.
+
+
+EPOCH 342/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 142.0 minutes.
+
+
+EPOCH 343/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 142.0 minutes.
+
+
+EPOCH 344/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 142.0 minutes.
+
+
+EPOCH 345/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 142.0 minutes.
+
+
+EPOCH 346/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 142.0 minutes.
+
+
+EPOCH 347/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 142.0 minutes.
+
+
+EPOCH 348/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 142.0 minutes.
+
+
+EPOCH 349/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 142.0 minutes.
+
+
+EPOCH 350/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 142.0 minutes.
+
+
+EPOCH 351/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 142.0 minutes.
+
+
+EPOCH 352/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 142.0 minutes.
+
+
+EPOCH 353/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 142.0 minutes.
+
+
+EPOCH 354/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 142.0 minutes.
+
+
+EPOCH 355/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 142.0 minutes.
+
+
+EPOCH 356/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 142.0 minutes.
+
+
+EPOCH 357/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 142.0 minutes.
+
+
+EPOCH 358/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 142.0 minutes.
+
+
+EPOCH 359/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 142.0 minutes.
+
+
+EPOCH 360/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 142.0 minutes.
+
+
+EPOCH 361/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 142.0 minutes.
+
+
+EPOCH 362/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 142.0 minutes.
+
+
+EPOCH 363/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 364/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 365/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 366/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 367/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 368/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 369/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 370/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 371/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 372/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 373/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 374/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 375/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 376/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 377/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 378/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 379/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 380/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 381/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 382/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 383/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 384/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 385/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 386/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 387/2000 ///
+complétée en 0min11.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 388/2000 ///
+complétée en 0min10.0sec. Estimation de temps restant : 142.0 minutes.
+
+
+EPOCH 389/2000 ///
+complétée en 0min9.0sec. Estimation de temps restant : 142.0 minutes.
+
+
+EPOCH 390/2000 ///
+complétée en 0min9.0sec. Estimation de temps restant : 142.0 minutes.
+
+
+EPOCH 391/2000 ///
+complétée en 0min9.0sec. Estimation de temps restant : 142.0 minutes.
+
+
+EPOCH 392/2000 ///
+complétée en 0min10.0sec. Estimation de temps restant : 142.0 minutes.
+
+
+EPOCH 393/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 142.0 minutes.
+
+
+EPOCH 394/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 142.0 minutes.
+
+
+EPOCH 395/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 142.0 minutes.
+
+
+EPOCH 396/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 142.0 minutes.
+
+
+EPOCH 397/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 142.0 minutes.
+
+
+EPOCH 398/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 142.0 minutes.
+
+
+EPOCH 399/2000 ///
+complétée en 0min5.0sec. Estimation de temps restant : 142.0 minutes.
+
+
+EPOCH 400/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 142.0 minutes.
+
+
+EPOCH 401/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 142.0 minutes.
+
+
+EPOCH 402/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 142.0 minutes.
+
+
+EPOCH 403/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 142.0 minutes.
+
+
+EPOCH 404/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 142.0 minutes.
+
+
+EPOCH 405/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 142.0 minutes.
+
+
+EPOCH 406/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 407/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 408/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 409/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 410/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 411/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 412/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 413/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 414/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 415/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 416/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 417/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 418/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 419/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 420/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 421/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 422/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 423/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 424/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 425/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 426/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 427/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 428/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 429/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 430/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 431/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 432/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 433/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 434/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 435/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 436/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 437/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 438/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 439/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 440/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 441/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 442/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 141.0 minutes.
+
+
+EPOCH 443/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 140.0 minutes.
+
+
+EPOCH 444/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 140.0 minutes.
+
+
+EPOCH 445/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 140.0 minutes.
+
+
+EPOCH 446/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 140.0 minutes.
+
+
+EPOCH 447/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 140.0 minutes.
+
+
+EPOCH 448/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 140.0 minutes.
+
+
+EPOCH 449/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 140.0 minutes.
+
+
+EPOCH 450/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 140.0 minutes.
+
+
+EPOCH 451/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 140.0 minutes.
+
+
+EPOCH 452/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 140.0 minutes.
+
+
+EPOCH 453/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 140.0 minutes.
+
+
+EPOCH 454/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 140.0 minutes.
+
+
+EPOCH 455/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 140.0 minutes.
+
+
+EPOCH 456/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 140.0 minutes.
+
+
+EPOCH 457/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 140.0 minutes.
+
+
+EPOCH 458/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 140.0 minutes.
+
+
+EPOCH 459/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 140.0 minutes.
+
+
+EPOCH 460/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 140.0 minutes.
+
+
+EPOCH 461/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 140.0 minutes.
+
+
+EPOCH 462/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 140.0 minutes.
+
+
+EPOCH 463/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 140.0 minutes.
+
+
+EPOCH 464/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 140.0 minutes.
+
+
+EPOCH 465/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 140.0 minutes.
+
+
+EPOCH 466/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 140.0 minutes.
+
+
+EPOCH 467/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 140.0 minutes.
+
+
+EPOCH 468/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 140.0 minutes.
+
+
+EPOCH 469/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 140.0 minutes.
+
+
+EPOCH 470/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 140.0 minutes.
+
+
+EPOCH 471/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 140.0 minutes.
+
+
+EPOCH 472/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 140.0 minutes.
+
+
+EPOCH 473/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 140.0 minutes.
+
+
+EPOCH 474/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 140.0 minutes.
+
+
+EPOCH 475/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 140.0 minutes.
+
+
+EPOCH 476/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 140.0 minutes.
+
+
+EPOCH 477/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 140.0 minutes.
+
+
+EPOCH 478/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 140.0 minutes.
+
+
+EPOCH 479/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 140.0 minutes.
+
+
+EPOCH 480/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 140.0 minutes.
+
+
+EPOCH 481/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 140.0 minutes.
+
+
+EPOCH 482/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 139.0 minutes.
+
+
+EPOCH 483/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 139.0 minutes.
+
+
+EPOCH 484/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 139.0 minutes.
+
+
+EPOCH 485/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 139.0 minutes.
+
+
+EPOCH 486/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 139.0 minutes.
+
+
+EPOCH 487/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 139.0 minutes.
+
+
+EPOCH 488/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 139.0 minutes.
+
+
+EPOCH 489/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 139.0 minutes.
+
+
+EPOCH 490/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 139.0 minutes.
+
+
+EPOCH 491/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 139.0 minutes.
+
+
+EPOCH 492/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 139.0 minutes.
+
+
+EPOCH 493/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 139.0 minutes.
+
+
+EPOCH 494/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 139.0 minutes.
+
+
+EPOCH 495/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 139.0 minutes.
+
+
+EPOCH 496/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 139.0 minutes.
+
+
+EPOCH 497/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 139.0 minutes.
+
+
+EPOCH 498/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 139.0 minutes.
+
+
+EPOCH 499/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 139.0 minutes.
+
+
+EPOCH 500/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 139.0 minutes.
+
+
+EPOCH 501/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 139.0 minutes.
+
+
+EPOCH 502/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 139.0 minutes.
+
+
+EPOCH 503/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 139.0 minutes.
+
+
+EPOCH 504/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 139.0 minutes.
+
+
+EPOCH 505/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 139.0 minutes.
+
+
+EPOCH 506/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 139.0 minutes.
+
+
+EPOCH 507/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 139.0 minutes.
+
+
+EPOCH 508/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 139.0 minutes.
+
+
+EPOCH 509/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 139.0 minutes.
+
+
+EPOCH 510/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 139.0 minutes.
+
+
+EPOCH 511/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 139.0 minutes.
+
+
+EPOCH 512/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 139.0 minutes.
+
+
+EPOCH 513/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 139.0 minutes.
+
+
+EPOCH 514/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 139.0 minutes.
+
+
+EPOCH 515/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 139.0 minutes.
+
+
+EPOCH 516/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 139.0 minutes.
+
+
+EPOCH 517/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 139.0 minutes.
+
+
+EPOCH 518/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 139.0 minutes.
+
+
+EPOCH 519/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 138.0 minutes.
+
+
+EPOCH 520/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 138.0 minutes.
+
+
+EPOCH 521/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 138.0 minutes.
+
+
+EPOCH 522/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 138.0 minutes.
+
+
+EPOCH 523/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 138.0 minutes.
+
+
+EPOCH 524/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 138.0 minutes.
+
+
+EPOCH 525/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 138.0 minutes.
+
+
+EPOCH 526/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 138.0 minutes.
+
+
+EPOCH 527/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 138.0 minutes.
+
+
+EPOCH 528/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 138.0 minutes.
+
+
+EPOCH 529/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 138.0 minutes.
+
+
+EPOCH 530/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 138.0 minutes.
+
+
+EPOCH 531/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 138.0 minutes.
+
+
+EPOCH 532/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 138.0 minutes.
+
+
+EPOCH 533/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 138.0 minutes.
+
+
+EPOCH 534/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 138.0 minutes.
+
+
+EPOCH 535/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 138.0 minutes.
+
+
+EPOCH 536/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 138.0 minutes.
+
+
+EPOCH 537/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 138.0 minutes.
+
+
+EPOCH 538/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 138.0 minutes.
+
+
+EPOCH 539/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 138.0 minutes.
+
+
+EPOCH 540/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 138.0 minutes.
+
+
+EPOCH 541/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 138.0 minutes.
+
+
+EPOCH 542/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 138.0 minutes.
+
+
+EPOCH 543/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 138.0 minutes.
+
+
+EPOCH 544/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 138.0 minutes.
+
+
+EPOCH 545/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 138.0 minutes.
+
+
+EPOCH 546/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 138.0 minutes.
+
+
+EPOCH 547/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 137.0 minutes.
+
+
+EPOCH 548/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 137.0 minutes.
+
+
+EPOCH 549/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 137.0 minutes.
+
+
+EPOCH 550/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 137.0 minutes.
+
+
+EPOCH 551/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 137.0 minutes.
+
+
+EPOCH 552/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 137.0 minutes.
+
+
+EPOCH 553/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 137.0 minutes.
+
+
+EPOCH 554/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 137.0 minutes.
+
+
+EPOCH 555/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 137.0 minutes.
+
+
+EPOCH 556/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 137.0 minutes.
+
+
+EPOCH 557/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 137.0 minutes.
+
+
+EPOCH 558/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 137.0 minutes.
+
+
+EPOCH 559/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 137.0 minutes.
+
+
+EPOCH 560/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 137.0 minutes.
+
+
+EPOCH 561/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 137.0 minutes.
+
+
+EPOCH 562/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 137.0 minutes.
+
+
+EPOCH 563/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 137.0 minutes.
+
+
+EPOCH 564/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 137.0 minutes.
+
+
+EPOCH 565/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 137.0 minutes.
+
+
+EPOCH 566/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 137.0 minutes.
+
+
+EPOCH 567/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 137.0 minutes.
+
+
+EPOCH 568/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 137.0 minutes.
+
+
+EPOCH 569/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 136.0 minutes.
+
+
+EPOCH 570/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 136.0 minutes.
+
+
+EPOCH 571/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 136.0 minutes.
+
+
+EPOCH 572/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 136.0 minutes.
+
+
+EPOCH 573/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 136.0 minutes.
+
+
+EPOCH 574/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 136.0 minutes.
+
+
+EPOCH 575/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 136.0 minutes.
+
+
+EPOCH 576/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 136.0 minutes.
+
+
+EPOCH 577/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 136.0 minutes.
+
+
+EPOCH 578/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 136.0 minutes.
+
+
+EPOCH 579/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 136.0 minutes.
+
+
+EPOCH 580/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 136.0 minutes.
+
+
+EPOCH 581/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 136.0 minutes.
+
+
+EPOCH 582/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 136.0 minutes.
+
+
+EPOCH 583/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 136.0 minutes.
+
+
+EPOCH 584/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 136.0 minutes.
+
+
+EPOCH 585/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 136.0 minutes.
+
+
+EPOCH 586/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 136.0 minutes.
+
+
+EPOCH 587/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 136.0 minutes.
+
+
+EPOCH 588/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 136.0 minutes.
+
+
+EPOCH 589/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 136.0 minutes.
+
+
+EPOCH 590/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 136.0 minutes.
+
+
+EPOCH 591/2000 ///
+complétée en 0min9.0sec. Estimation de temps restant : 136.0 minutes.
+
+
+EPOCH 592/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 136.0 minutes.
+
+
+EPOCH 593/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 136.0 minutes.
+
+
+EPOCH 594/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 136.0 minutes.
+
+
+EPOCH 595/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 136.0 minutes.
+
+
+EPOCH 596/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 136.0 minutes.
+
+
+EPOCH 597/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 136.0 minutes.
+
+
+EPOCH 598/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 135.0 minutes.
+
+
+EPOCH 599/2000 ///
+complétée en 0min15.0sec. Estimation de temps restant : 136.0 minutes.
+
+
+EPOCH 600/2000 ///
+complétée en 0min13.0sec. Estimation de temps restant : 136.0 minutes.
+
+
+EPOCH 601/2000 ///
+complétée en 0min13.0sec. Estimation de temps restant : 136.0 minutes.
+
+
+EPOCH 602/2000 ///
+complétée en 0min12.0sec. Estimation de temps restant : 136.0 minutes.
+
+
+EPOCH 603/2000 ///
+complétée en 0min12.0sec. Estimation de temps restant : 136.0 minutes.
+
+
+EPOCH 604/2000 ///
+complétée en 0min11.0sec. Estimation de temps restant : 137.0 minutes.
+
+
+EPOCH 605/2000 ///
+complétée en 0min12.0sec. Estimation de temps restant : 137.0 minutes.
+
+
+EPOCH 606/2000 ///
+complétée en 0min12.0sec. Estimation de temps restant : 137.0 minutes.
+
+
+EPOCH 607/2000 ///
+complétée en 0min12.0sec. Estimation de temps restant : 137.0 minutes.
+
+
+EPOCH 608/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 137.0 minutes.
+
+
+EPOCH 609/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 137.0 minutes.
+
+
+EPOCH 610/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 137.0 minutes.
+
+
+EPOCH 611/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 137.0 minutes.
+
+
+EPOCH 612/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 137.0 minutes.
+
+
+EPOCH 613/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 136.0 minutes.
+
+
+EPOCH 614/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 136.0 minutes.
+
+
+EPOCH 615/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 136.0 minutes.
+
+
+EPOCH 616/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 136.0 minutes.
+
+
+EPOCH 617/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 136.0 minutes.
+
+
+EPOCH 618/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 136.0 minutes.
+
+
+EPOCH 619/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 136.0 minutes.
+
+
+EPOCH 620/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 136.0 minutes.
+
+
+EPOCH 621/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 136.0 minutes.
+
+
+EPOCH 622/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 136.0 minutes.
+
+
+EPOCH 623/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 136.0 minutes.
+
+
+EPOCH 624/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 136.0 minutes.
+
+
+EPOCH 625/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 136.0 minutes.
+
+
+EPOCH 626/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 136.0 minutes.
+
+
+EPOCH 627/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 136.0 minutes.
+
+
+EPOCH 628/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 136.0 minutes.
+
+
+EPOCH 629/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 136.0 minutes.
+
+
+EPOCH 630/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 135.0 minutes.
+
+
+EPOCH 631/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 135.0 minutes.
+
+
+EPOCH 632/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 135.0 minutes.
+
+
+EPOCH 633/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 135.0 minutes.
+
+
+EPOCH 634/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 135.0 minutes.
+
+
+EPOCH 635/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 135.0 minutes.
+
+
+EPOCH 636/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 135.0 minutes.
+
+
+EPOCH 637/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 135.0 minutes.
+
+
+EPOCH 638/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 135.0 minutes.
+
+
+EPOCH 639/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 135.0 minutes.
+
+
+EPOCH 640/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 135.0 minutes.
+
+
+EPOCH 641/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 135.0 minutes.
+
+
+EPOCH 642/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 135.0 minutes.
+
+
+EPOCH 643/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 135.0 minutes.
+
+
+EPOCH 644/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 135.0 minutes.
+
+
+EPOCH 645/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 135.0 minutes.
+
+
+EPOCH 646/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 135.0 minutes.
+
+
+EPOCH 647/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 135.0 minutes.
+
+
+EPOCH 648/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 135.0 minutes.
+
+
+EPOCH 649/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 135.0 minutes.
+
+
+EPOCH 650/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 135.0 minutes.
+
+
+EPOCH 651/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 134.0 minutes.
+
+
+EPOCH 652/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 134.0 minutes.
+
+
+EPOCH 653/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 134.0 minutes.
+
+
+EPOCH 654/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 134.0 minutes.
+
+
+EPOCH 655/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 134.0 minutes.
+
+
+EPOCH 656/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 134.0 minutes.
+
+
+EPOCH 657/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 134.0 minutes.
+
+
+EPOCH 658/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 134.0 minutes.
+
+
+EPOCH 659/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 134.0 minutes.
+
+
+EPOCH 660/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 134.0 minutes.
+
+
+EPOCH 661/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 134.0 minutes.
+
+
+EPOCH 662/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 134.0 minutes.
+
+
+EPOCH 663/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 134.0 minutes.
+
+
+EPOCH 664/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 134.0 minutes.
+
+
+EPOCH 665/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 134.0 minutes.
+
+
+EPOCH 666/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 134.0 minutes.
+
+
+EPOCH 667/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 134.0 minutes.
+
+
+EPOCH 668/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 134.0 minutes.
+
+
+EPOCH 669/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 134.0 minutes.
+
+
+EPOCH 670/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 134.0 minutes.
+
+
+EPOCH 671/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 134.0 minutes.
+
+
+EPOCH 672/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 134.0 minutes.
+
+
+EPOCH 673/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 133.0 minutes.
+
+
+EPOCH 674/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 133.0 minutes.
+
+
+EPOCH 675/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 133.0 minutes.
+
+
+EPOCH 676/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 133.0 minutes.
+
+
+EPOCH 677/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 133.0 minutes.
+
+
+EPOCH 678/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 133.0 minutes.
+
+
+EPOCH 679/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 133.0 minutes.
+
+
+EPOCH 680/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 133.0 minutes.
+
+
+EPOCH 681/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 133.0 minutes.
+
+
+EPOCH 682/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 133.0 minutes.
+
+
+EPOCH 683/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 133.0 minutes.
+
+
+EPOCH 684/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 133.0 minutes.
+
+
+EPOCH 685/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 133.0 minutes.
+
+
+EPOCH 686/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 133.0 minutes.
+
+
+EPOCH 687/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 133.0 minutes.
+
+
+EPOCH 688/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 133.0 minutes.
+
+
+EPOCH 689/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 133.0 minutes.
+
+
+EPOCH 690/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 133.0 minutes.
+
+
+EPOCH 691/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 133.0 minutes.
+
+
+EPOCH 692/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 132.0 minutes.
+
+
+EPOCH 693/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 132.0 minutes.
+
+
+EPOCH 694/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 132.0 minutes.
+
+
+EPOCH 695/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 132.0 minutes.
+
+
+EPOCH 696/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 132.0 minutes.
+
+
+EPOCH 697/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 132.0 minutes.
+
+
+EPOCH 698/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 132.0 minutes.
+
+
+EPOCH 699/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 132.0 minutes.
+
+
+EPOCH 700/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 132.0 minutes.
+
+
+EPOCH 701/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 132.0 minutes.
+
+
+EPOCH 702/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 132.0 minutes.
+
+
+EPOCH 703/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 132.0 minutes.
+
+
+EPOCH 704/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 132.0 minutes.
+
+
+EPOCH 705/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 132.0 minutes.
+
+
+EPOCH 706/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 132.0 minutes.
+
+
+EPOCH 707/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 132.0 minutes.
+
+
+EPOCH 708/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 132.0 minutes.
+
+
+EPOCH 709/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 131.0 minutes.
+
+
+EPOCH 710/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 131.0 minutes.
+
+
+EPOCH 711/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 131.0 minutes.
+
+
+EPOCH 712/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 131.0 minutes.
+
+
+EPOCH 713/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 131.0 minutes.
+
+
+EPOCH 714/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 131.0 minutes.
+
+
+EPOCH 715/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 131.0 minutes.
+
+
+EPOCH 716/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 131.0 minutes.
+
+
+EPOCH 717/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 131.0 minutes.
+
+
+EPOCH 718/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 131.0 minutes.
+
+
+EPOCH 719/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 131.0 minutes.
+
+
+EPOCH 720/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 131.0 minutes.
+
+
+EPOCH 721/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 131.0 minutes.
+
+
+EPOCH 722/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 131.0 minutes.
+
+
+EPOCH 723/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 131.0 minutes.
+
+
+EPOCH 724/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 130.0 minutes.
+
+
+EPOCH 725/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 130.0 minutes.
+
+
+EPOCH 726/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 130.0 minutes.
+
+
+EPOCH 727/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 130.0 minutes.
+
+
+EPOCH 728/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 130.0 minutes.
+
+
+EPOCH 729/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 130.0 minutes.
+
+
+EPOCH 730/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 130.0 minutes.
+
+
+EPOCH 731/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 130.0 minutes.
+
+
+EPOCH 732/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 130.0 minutes.
+
+
+EPOCH 733/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 130.0 minutes.
+
+
+EPOCH 734/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 130.0 minutes.
+
+
+EPOCH 735/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 130.0 minutes.
+
+
+EPOCH 736/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 130.0 minutes.
+
+
+EPOCH 737/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 129.0 minutes.
+
+
+EPOCH 738/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 129.0 minutes.
+
+
+EPOCH 739/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 129.0 minutes.
+
+
+EPOCH 740/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 129.0 minutes.
+
+
+EPOCH 741/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 129.0 minutes.
+
+
+EPOCH 742/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 129.0 minutes.
+
+
+EPOCH 743/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 129.0 minutes.
+
+
+EPOCH 744/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 129.0 minutes.
+
+
+EPOCH 745/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 129.0 minutes.
+
+
+EPOCH 746/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 129.0 minutes.
+
+
+EPOCH 747/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 129.0 minutes.
+
+
+EPOCH 748/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 129.0 minutes.
+
+
+EPOCH 749/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 129.0 minutes.
+
+
+EPOCH 750/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 128.0 minutes.
+
+
+EPOCH 751/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 128.0 minutes.
+
+
+EPOCH 752/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 128.0 minutes.
+
+
+EPOCH 753/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 128.0 minutes.
+
+
+EPOCH 754/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 128.0 minutes.
+
+
+EPOCH 755/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 128.0 minutes.
+
+
+EPOCH 756/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 128.0 minutes.
+
+
+EPOCH 757/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 128.0 minutes.
+
+
+EPOCH 758/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 128.0 minutes.
+
+
+EPOCH 759/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 128.0 minutes.
+
+
+EPOCH 760/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 128.0 minutes.
+
+
+EPOCH 761/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 128.0 minutes.
+
+
+EPOCH 762/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 128.0 minutes.
+
+
+EPOCH 763/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 127.0 minutes.
+
+
+EPOCH 764/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 127.0 minutes.
+
+
+EPOCH 765/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 127.0 minutes.
+
+
+EPOCH 766/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 127.0 minutes.
+
+
+EPOCH 767/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 127.0 minutes.
+
+
+EPOCH 768/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 127.0 minutes.
+
+
+EPOCH 769/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 127.0 minutes.
+
+
+EPOCH 770/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 127.0 minutes.
+
+
+EPOCH 771/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 127.0 minutes.
+
+
+EPOCH 772/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 127.0 minutes.
+
+
+EPOCH 773/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 127.0 minutes.
+
+
+EPOCH 774/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 127.0 minutes.
+
+
+EPOCH 775/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 126.0 minutes.
+
+
+EPOCH 776/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 126.0 minutes.
+
+
+EPOCH 777/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 126.0 minutes.
+
+
+EPOCH 778/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 126.0 minutes.
+
+
+EPOCH 779/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 126.0 minutes.
+
+
+EPOCH 780/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 126.0 minutes.
+
+
+EPOCH 781/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 126.0 minutes.
+
+
+EPOCH 782/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 126.0 minutes.
+
+
+EPOCH 783/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 126.0 minutes.
+
+
+EPOCH 784/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 126.0 minutes.
+
+
+EPOCH 785/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 126.0 minutes.
+
+
+EPOCH 786/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 126.0 minutes.
+
+
+EPOCH 787/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 126.0 minutes.
+
+
+EPOCH 788/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 125.0 minutes.
+
+
+EPOCH 789/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 125.0 minutes.
+
+
+EPOCH 790/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 125.0 minutes.
+
+
+EPOCH 791/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 125.0 minutes.
+
+
+EPOCH 792/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 125.0 minutes.
+
+
+EPOCH 793/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 125.0 minutes.
+
+
+EPOCH 794/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 125.0 minutes.
+
+
+EPOCH 795/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 125.0 minutes.
+
+
+EPOCH 796/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 125.0 minutes.
+
+
+EPOCH 797/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 125.0 minutes.
+
+
+EPOCH 798/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 125.0 minutes.
+
+
+EPOCH 799/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 125.0 minutes.
+
+
+EPOCH 800/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 124.0 minutes.
+
+
+EPOCH 801/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 124.0 minutes.
+
+
+EPOCH 802/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 124.0 minutes.
+
+
+EPOCH 803/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 124.0 minutes.
+
+
+EPOCH 804/2000 ///
+complétée en 0min9.0sec. Estimation de temps restant : 124.0 minutes.
+
+
+EPOCH 805/2000 ///
+complétée en 0min13.0sec. Estimation de temps restant : 124.0 minutes.
+
+
+EPOCH 806/2000 ///
+complétée en 0min11.0sec. Estimation de temps restant : 124.0 minutes.
+
+
+EPOCH 807/2000 ///
+complétée en 0min11.0sec. Estimation de temps restant : 124.0 minutes.
+
+
+EPOCH 808/2000 ///
+complétée en 0min11.0sec. Estimation de temps restant : 124.0 minutes.
+
+
+EPOCH 809/2000 ///
+complétée en 0min11.0sec. Estimation de temps restant : 124.0 minutes.
+
+
+EPOCH 810/2000 ///
+complétée en 0min12.0sec. Estimation de temps restant : 124.0 minutes.
+
+
+EPOCH 811/2000 ///
+complétée en 0min11.0sec. Estimation de temps restant : 124.0 minutes.
+
+
+EPOCH 812/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 124.0 minutes.
+
+
+EPOCH 813/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 124.0 minutes.
+
+
+EPOCH 814/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 124.0 minutes.
+
+
+EPOCH 815/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 124.0 minutes.
+
+
+EPOCH 816/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 124.0 minutes.
+
+
+EPOCH 817/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 124.0 minutes.
+
+
+EPOCH 818/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 124.0 minutes.
+
+
+EPOCH 819/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 124.0 minutes.
+
+
+EPOCH 820/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 123.0 minutes.
+
+
+EPOCH 821/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 123.0 minutes.
+
+
+EPOCH 822/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 123.0 minutes.
+
+
+EPOCH 823/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 123.0 minutes.
+
+
+EPOCH 824/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 123.0 minutes.
+
+
+EPOCH 825/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 123.0 minutes.
+
+
+EPOCH 826/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 123.0 minutes.
+
+
+EPOCH 827/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 123.0 minutes.
+
+
+EPOCH 828/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 123.0 minutes.
+
+
+EPOCH 829/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 123.0 minutes.
+
+
+EPOCH 830/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 122.0 minutes.
+
+
+EPOCH 831/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 122.0 minutes.
+
+
+EPOCH 832/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 122.0 minutes.
+
+
+EPOCH 833/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 122.0 minutes.
+
+
+EPOCH 834/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 122.0 minutes.
+
+
+EPOCH 835/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 122.0 minutes.
+
+
+EPOCH 836/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 122.0 minutes.
+
+
+EPOCH 837/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 122.0 minutes.
+
+
+EPOCH 838/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 122.0 minutes.
+
+
+EPOCH 839/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 122.0 minutes.
+
+
+EPOCH 840/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 122.0 minutes.
+
+
+EPOCH 841/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 122.0 minutes.
+
+
+EPOCH 842/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 121.0 minutes.
+
+
+EPOCH 843/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 121.0 minutes.
+
+
+EPOCH 844/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 121.0 minutes.
+
+
+EPOCH 845/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 121.0 minutes.
+
+
+EPOCH 846/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 121.0 minutes.
+
+
+EPOCH 847/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 121.0 minutes.
+
+
+EPOCH 848/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 121.0 minutes.
+
+
+EPOCH 849/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 121.0 minutes.
+
+
+EPOCH 850/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 121.0 minutes.
+
+
+EPOCH 851/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 121.0 minutes.
+
+
+EPOCH 852/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 121.0 minutes.
+
+
+EPOCH 853/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 120.0 minutes.
+
+
+EPOCH 854/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 120.0 minutes.
+
+
+EPOCH 855/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 120.0 minutes.
+
+
+EPOCH 856/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 120.0 minutes.
+
+
+EPOCH 857/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 120.0 minutes.
+
+
+EPOCH 858/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 120.0 minutes.
+
+
+EPOCH 859/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 120.0 minutes.
+
+
+EPOCH 860/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 120.0 minutes.
+
+
+EPOCH 861/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 120.0 minutes.
+
+
+EPOCH 862/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 120.0 minutes.
+
+
+EPOCH 863/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 120.0 minutes.
+
+
+EPOCH 864/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 119.0 minutes.
+
+
+EPOCH 865/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 119.0 minutes.
+
+
+EPOCH 866/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 119.0 minutes.
+
+
+EPOCH 867/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 119.0 minutes.
+
+
+EPOCH 868/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 119.0 minutes.
+
+
+EPOCH 869/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 119.0 minutes.
+
+
+EPOCH 870/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 119.0 minutes.
+
+
+EPOCH 871/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 119.0 minutes.
+
+
+EPOCH 872/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 119.0 minutes.
+
+
+EPOCH 873/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 119.0 minutes.
+
+
+EPOCH 874/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 119.0 minutes.
+
+
+EPOCH 875/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 118.0 minutes.
+
+
+EPOCH 876/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 118.0 minutes.
+
+
+EPOCH 877/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 118.0 minutes.
+
+
+EPOCH 878/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 118.0 minutes.
+
+
+EPOCH 879/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 118.0 minutes.
+
+
+EPOCH 880/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 118.0 minutes.
+
+
+EPOCH 881/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 118.0 minutes.
+
+
+EPOCH 882/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 118.0 minutes.
+
+
+EPOCH 883/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 118.0 minutes.
+
+
+EPOCH 884/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 118.0 minutes.
+
+
+EPOCH 885/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 118.0 minutes.
+
+
+EPOCH 886/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 117.0 minutes.
+
+
+EPOCH 887/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 117.0 minutes.
+
+
+EPOCH 888/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 117.0 minutes.
+
+
+EPOCH 889/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 117.0 minutes.
+
+
+EPOCH 890/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 117.0 minutes.
+
+
+EPOCH 891/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 117.0 minutes.
+
+
+EPOCH 892/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 117.0 minutes.
+
+
+EPOCH 893/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 117.0 minutes.
+
+
+EPOCH 894/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 117.0 minutes.
+
+
+EPOCH 895/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 117.0 minutes.
+
+
+EPOCH 896/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 117.0 minutes.
+
+
+EPOCH 897/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 116.0 minutes.
+
+
+EPOCH 898/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 116.0 minutes.
+
+
+EPOCH 899/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 116.0 minutes.
+
+
+EPOCH 900/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 116.0 minutes.
+
+
+EPOCH 901/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 116.0 minutes.
+
+
+EPOCH 902/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 116.0 minutes.
+
+
+EPOCH 903/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 116.0 minutes.
+
+
+EPOCH 904/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 116.0 minutes.
+
+
+EPOCH 905/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 116.0 minutes.
+
+
+EPOCH 906/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 116.0 minutes.
+
+
+EPOCH 907/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 116.0 minutes.
+
+
+EPOCH 908/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 115.0 minutes.
+
+
+EPOCH 909/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 115.0 minutes.
+
+
+EPOCH 910/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 115.0 minutes.
+
+
+EPOCH 911/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 115.0 minutes.
+
+
+EPOCH 912/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 115.0 minutes.
+
+
+EPOCH 913/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 115.0 minutes.
+
+
+EPOCH 914/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 115.0 minutes.
+
+
+EPOCH 915/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 115.0 minutes.
+
+
+EPOCH 916/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 115.0 minutes.
+
+
+EPOCH 917/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 115.0 minutes.
+
+
+EPOCH 918/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 115.0 minutes.
+
+
+EPOCH 919/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 114.0 minutes.
+
+
+EPOCH 920/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 114.0 minutes.
+
+
+EPOCH 921/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 114.0 minutes.
+
+
+EPOCH 922/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 114.0 minutes.
+
+
+EPOCH 923/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 114.0 minutes.
+
+
+EPOCH 924/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 114.0 minutes.
+
+
+EPOCH 925/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 114.0 minutes.
+
+
+EPOCH 926/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 114.0 minutes.
+
+
+EPOCH 927/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 114.0 minutes.
+
+
+EPOCH 928/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 114.0 minutes.
+
+
+EPOCH 929/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 114.0 minutes.
+
+
+EPOCH 930/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 113.0 minutes.
+
+
+EPOCH 931/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 113.0 minutes.
+
+
+EPOCH 932/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 113.0 minutes.
+
+
+EPOCH 933/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 113.0 minutes.
+
+
+EPOCH 934/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 113.0 minutes.
+
+
+EPOCH 935/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 113.0 minutes.
+
+
+EPOCH 936/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 113.0 minutes.
+
+
+EPOCH 937/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 113.0 minutes.
+
+
+EPOCH 938/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 113.0 minutes.
+
+
+EPOCH 939/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 113.0 minutes.
+
+
+EPOCH 940/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 112.0 minutes.
+
+
+EPOCH 941/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 112.0 minutes.
+
+
+EPOCH 942/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 112.0 minutes.
+
+
+EPOCH 943/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 112.0 minutes.
+
+
+EPOCH 944/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 112.0 minutes.
+
+
+EPOCH 945/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 112.0 minutes.
+
+
+EPOCH 946/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 112.0 minutes.
+
+
+EPOCH 947/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 112.0 minutes.
+
+
+EPOCH 948/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 112.0 minutes.
+
+
+EPOCH 949/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 112.0 minutes.
+
+
+EPOCH 950/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 112.0 minutes.
+
+
+EPOCH 951/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 111.0 minutes.
+
+
+EPOCH 952/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 111.0 minutes.
+
+
+EPOCH 953/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 111.0 minutes.
+
+
+EPOCH 954/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 111.0 minutes.
+
+
+EPOCH 955/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 111.0 minutes.
+
+
+EPOCH 956/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 111.0 minutes.
+
+
+EPOCH 957/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 111.0 minutes.
+
+
+EPOCH 958/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 111.0 minutes.
+
+
+EPOCH 959/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 111.0 minutes.
+
+
+EPOCH 960/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 111.0 minutes.
+
+
+EPOCH 961/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 111.0 minutes.
+
+
+EPOCH 962/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 110.0 minutes.
+
+
+EPOCH 963/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 110.0 minutes.
+
+
+EPOCH 964/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 110.0 minutes.
+
+
+EPOCH 965/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 110.0 minutes.
+
+
+EPOCH 966/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 110.0 minutes.
+
+
+EPOCH 967/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 110.0 minutes.
+
+
+EPOCH 968/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 110.0 minutes.
+
+
+EPOCH 969/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 110.0 minutes.
+
+
+EPOCH 970/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 110.0 minutes.
+
+
+EPOCH 971/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 110.0 minutes.
+
+
+EPOCH 972/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 109.0 minutes.
+
+
+EPOCH 973/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 109.0 minutes.
+
+
+EPOCH 974/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 109.0 minutes.
+
+
+EPOCH 975/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 109.0 minutes.
+
+
+EPOCH 976/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 109.0 minutes.
+
+
+EPOCH 977/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 109.0 minutes.
+
+
+EPOCH 978/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 109.0 minutes.
+
+
+EPOCH 979/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 109.0 minutes.
+
+
+EPOCH 980/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 109.0 minutes.
+
+
+EPOCH 981/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 109.0 minutes.
+
+
+EPOCH 982/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 109.0 minutes.
+
+
+EPOCH 983/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 108.0 minutes.
+
+
+EPOCH 984/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 108.0 minutes.
+
+
+EPOCH 985/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 108.0 minutes.
+
+
+EPOCH 986/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 108.0 minutes.
+
+
+EPOCH 987/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 108.0 minutes.
+
+
+EPOCH 988/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 108.0 minutes.
+
+
+EPOCH 989/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 108.0 minutes.
+
+
+EPOCH 990/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 108.0 minutes.
+
+
+EPOCH 991/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 108.0 minutes.
+
+
+EPOCH 992/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 108.0 minutes.
+
+
+EPOCH 993/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 108.0 minutes.
+
+
+EPOCH 994/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 107.0 minutes.
+
+
+EPOCH 995/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 107.0 minutes.
+
+
+EPOCH 996/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 107.0 minutes.
+
+
+EPOCH 997/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 107.0 minutes.
+
+
+EPOCH 998/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 107.0 minutes.
+
+
+EPOCH 999/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 107.0 minutes.
+
+
+EPOCH 1000/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 107.0 minutes.
+
+
+EPOCH 1001/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 107.0 minutes.
+
+
+EPOCH 1002/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 107.0 minutes.
+
+
+EPOCH 1003/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 107.0 minutes.
+
+
+EPOCH 1004/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 106.0 minutes.
+
+
+EPOCH 1005/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 106.0 minutes.
+
+
+EPOCH 1006/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 106.0 minutes.
+
+
+EPOCH 1007/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 106.0 minutes.
+
+
+EPOCH 1008/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 106.0 minutes.
+
+
+EPOCH 1009/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 106.0 minutes.
+
+
+EPOCH 1010/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 106.0 minutes.
+
+
+EPOCH 1011/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 106.0 minutes.
+
+
+EPOCH 1012/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 106.0 minutes.
+
+
+EPOCH 1013/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 106.0 minutes.
+
+
+EPOCH 1014/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 106.0 minutes.
+
+
+EPOCH 1015/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 105.0 minutes.
+
+
+EPOCH 1016/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 105.0 minutes.
+
+
+EPOCH 1017/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 105.0 minutes.
+
+
+EPOCH 1018/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 105.0 minutes.
+
+
+EPOCH 1019/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 105.0 minutes.
+
+
+EPOCH 1020/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 105.0 minutes.
+
+
+EPOCH 1021/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 105.0 minutes.
+
+
+EPOCH 1022/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 105.0 minutes.
+
+
+EPOCH 1023/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 105.0 minutes.
+
+
+EPOCH 1024/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 105.0 minutes.
+
+
+EPOCH 1025/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 105.0 minutes.
+
+
+EPOCH 1026/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 104.0 minutes.
+
+
+EPOCH 1027/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 104.0 minutes.
+
+
+EPOCH 1028/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 104.0 minutes.
+
+
+EPOCH 1029/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 104.0 minutes.
+
+
+EPOCH 1030/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 104.0 minutes.
+
+
+EPOCH 1031/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 104.0 minutes.
+
+
+EPOCH 1032/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 104.0 minutes.
+
+
+EPOCH 1033/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 104.0 minutes.
+
+
+EPOCH 1034/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 104.0 minutes.
+
+
+EPOCH 1035/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 104.0 minutes.
+
+
+EPOCH 1036/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 104.0 minutes.
+
+
+EPOCH 1037/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 103.0 minutes.
+
+
+EPOCH 1038/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 103.0 minutes.
+
+
+EPOCH 1039/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 103.0 minutes.
+
+
+EPOCH 1040/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 103.0 minutes.
+
+
+EPOCH 1041/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 103.0 minutes.
+
+
+EPOCH 1042/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 103.0 minutes.
+
+
+EPOCH 1043/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 103.0 minutes.
+
+
+EPOCH 1044/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 103.0 minutes.
+
+
+EPOCH 1045/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 103.0 minutes.
+
+
+EPOCH 1046/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 103.0 minutes.
+
+
+EPOCH 1047/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 102.0 minutes.
+
+
+EPOCH 1048/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 102.0 minutes.
+
+
+EPOCH 1049/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 102.0 minutes.
+
+
+EPOCH 1050/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 102.0 minutes.
+
+
+EPOCH 1051/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 102.0 minutes.
+
+
+EPOCH 1052/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 102.0 minutes.
+
+
+EPOCH 1053/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 102.0 minutes.
+
+
+EPOCH 1054/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 102.0 minutes.
+
+
+EPOCH 1055/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 102.0 minutes.
+
+
+EPOCH 1056/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 102.0 minutes.
+
+
+EPOCH 1057/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 101.0 minutes.
+
+
+EPOCH 1058/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 101.0 minutes.
+
+
+EPOCH 1059/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 101.0 minutes.
+
+
+EPOCH 1060/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 101.0 minutes.
+
+
+EPOCH 1061/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 101.0 minutes.
+
+
+EPOCH 1062/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 101.0 minutes.
+
+
+EPOCH 1063/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 101.0 minutes.
+
+
+EPOCH 1064/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 101.0 minutes.
+
+
+EPOCH 1065/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 101.0 minutes.
+
+
+EPOCH 1066/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 101.0 minutes.
+
+
+EPOCH 1067/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 100.0 minutes.
+
+
+EPOCH 1068/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 100.0 minutes.
+
+
+EPOCH 1069/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 100.0 minutes.
+
+
+EPOCH 1070/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 100.0 minutes.
+
+
+EPOCH 1071/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 100.0 minutes.
+
+
+EPOCH 1072/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 100.0 minutes.
+
+
+EPOCH 1073/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 100.0 minutes.
+
+
+EPOCH 1074/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 100.0 minutes.
+
+
+EPOCH 1075/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 100.0 minutes.
+
+
+EPOCH 1076/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 100.0 minutes.
+
+
+EPOCH 1077/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 100.0 minutes.
+
+
+EPOCH 1078/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 99.0 minutes.
+
+
+EPOCH 1079/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 99.0 minutes.
+
+
+EPOCH 1080/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 99.0 minutes.
+
+
+EPOCH 1081/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 99.0 minutes.
+
+
+EPOCH 1082/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 99.0 minutes.
+
+
+EPOCH 1083/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 99.0 minutes.
+
+
+EPOCH 1084/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 99.0 minutes.
+
+
+EPOCH 1085/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 99.0 minutes.
+
+
+EPOCH 1086/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 99.0 minutes.
+
+
+EPOCH 1087/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 99.0 minutes.
+
+
+EPOCH 1088/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 98.0 minutes.
+
+
+EPOCH 1089/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 98.0 minutes.
+
+
+EPOCH 1090/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 98.0 minutes.
+
+
+EPOCH 1091/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 98.0 minutes.
+
+
+EPOCH 1092/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 98.0 minutes.
+
+
+EPOCH 1093/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 98.0 minutes.
+
+
+EPOCH 1094/2000 ///
+complétée en 0min9.0sec. Estimation de temps restant : 98.0 minutes.
+
+
+EPOCH 1095/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 98.0 minutes.
+
+
+EPOCH 1096/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 98.0 minutes.
+
+
+EPOCH 1097/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 98.0 minutes.
+
+
+EPOCH 1098/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 98.0 minutes.
+
+
+EPOCH 1099/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 97.0 minutes.
+
+
+EPOCH 1100/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 97.0 minutes.
+
+
+EPOCH 1101/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 97.0 minutes.
+
+
+EPOCH 1102/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 97.0 minutes.
+
+
+EPOCH 1103/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 97.0 minutes.
+
+
+EPOCH 1104/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 97.0 minutes.
+
+
+EPOCH 1105/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 97.0 minutes.
+
+
+EPOCH 1106/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 97.0 minutes.
+
+
+EPOCH 1107/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 97.0 minutes.
+
+
+EPOCH 1108/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 97.0 minutes.
+
+
+EPOCH 1109/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 96.0 minutes.
+
+
+EPOCH 1110/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 96.0 minutes.
+
+
+EPOCH 1111/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 96.0 minutes.
+
+
+EPOCH 1112/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 96.0 minutes.
+
+
+EPOCH 1113/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 96.0 minutes.
+
+
+EPOCH 1114/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 96.0 minutes.
+
+
+EPOCH 1115/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 96.0 minutes.
+
+
+EPOCH 1116/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 96.0 minutes.
+
+
+EPOCH 1117/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 96.0 minutes.
+
+
+EPOCH 1118/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 96.0 minutes.
+
+
+EPOCH 1119/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 95.0 minutes.
+
+
+EPOCH 1120/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 95.0 minutes.
+
+
+EPOCH 1121/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 95.0 minutes.
+
+
+EPOCH 1122/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 95.0 minutes.
+
+
+EPOCH 1123/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 95.0 minutes.
+
+
+EPOCH 1124/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 95.0 minutes.
+
+
+EPOCH 1125/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 95.0 minutes.
+
+
+EPOCH 1126/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 95.0 minutes.
+
+
+EPOCH 1127/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 95.0 minutes.
+
+
+EPOCH 1128/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 95.0 minutes.
+
+
+EPOCH 1129/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 94.0 minutes.
+
+
+EPOCH 1130/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 94.0 minutes.
+
+
+EPOCH 1131/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 94.0 minutes.
+
+
+EPOCH 1132/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 94.0 minutes.
+
+
+EPOCH 1133/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 94.0 minutes.
+
+
+EPOCH 1134/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 94.0 minutes.
+
+
+EPOCH 1135/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 94.0 minutes.
+
+
+EPOCH 1136/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 94.0 minutes.
+
+
+EPOCH 1137/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 94.0 minutes.
+
+
+EPOCH 1138/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 94.0 minutes.
+
+
+EPOCH 1139/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 93.0 minutes.
+
+
+EPOCH 1140/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 93.0 minutes.
+
+
+EPOCH 1141/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 93.0 minutes.
+
+
+EPOCH 1142/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 93.0 minutes.
+
+
+EPOCH 1143/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 93.0 minutes.
+
+
+EPOCH 1144/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 93.0 minutes.
+
+
+EPOCH 1145/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 93.0 minutes.
+
+
+EPOCH 1146/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 93.0 minutes.
+
+
+EPOCH 1147/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 93.0 minutes.
+
+
+EPOCH 1148/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 93.0 minutes.
+
+
+EPOCH 1149/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 93.0 minutes.
+
+
+EPOCH 1150/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 92.0 minutes.
+
+
+EPOCH 1151/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 92.0 minutes.
+
+
+EPOCH 1152/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 92.0 minutes.
+
+
+EPOCH 1153/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 92.0 minutes.
+
+
+EPOCH 1154/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 92.0 minutes.
+
+
+EPOCH 1155/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 92.0 minutes.
+
+
+EPOCH 1156/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 92.0 minutes.
+
+
+EPOCH 1157/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 92.0 minutes.
+
+
+EPOCH 1158/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 92.0 minutes.
+
+
+EPOCH 1159/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 92.0 minutes.
+
+
+EPOCH 1160/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 91.0 minutes.
+
+
+EPOCH 1161/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 91.0 minutes.
+
+
+EPOCH 1162/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 91.0 minutes.
+
+
+EPOCH 1163/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 91.0 minutes.
+
+
+EPOCH 1164/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 91.0 minutes.
+
+
+EPOCH 1165/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 91.0 minutes.
+
+
+EPOCH 1166/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 91.0 minutes.
+
+
+EPOCH 1167/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 91.0 minutes.
+
+
+EPOCH 1168/2000 ///
+complétée en 0min16.0sec. Estimation de temps restant : 91.0 minutes.
+
+
+EPOCH 1169/2000 ///
+complétée en 0min13.0sec. Estimation de temps restant : 91.0 minutes.
+
+
+EPOCH 1170/2000 ///
+complétée en 0min13.0sec. Estimation de temps restant : 91.0 minutes.
+
+
+EPOCH 1171/2000 ///
+complétée en 0min12.0sec. Estimation de temps restant : 91.0 minutes.
+
+
+EPOCH 1172/2000 ///
+complétée en 0min12.0sec. Estimation de temps restant : 91.0 minutes.
+
+
+EPOCH 1173/2000 ///
+complétée en 0min12.0sec. Estimation de temps restant : 91.0 minutes.
+
+
+EPOCH 1174/2000 ///
+complétée en 0min11.0sec. Estimation de temps restant : 91.0 minutes.
+
+
+EPOCH 1175/2000 ///
+complétée en 0min11.0sec. Estimation de temps restant : 90.0 minutes.
+
+
+EPOCH 1176/2000 ///
+complétée en 0min10.0sec. Estimation de temps restant : 90.0 minutes.
+
+
+EPOCH 1177/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 90.0 minutes.
+
+
+EPOCH 1178/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 90.0 minutes.
+
+
+EPOCH 1179/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 90.0 minutes.
+
+
+EPOCH 1180/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 90.0 minutes.
+
+
+EPOCH 1181/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 90.0 minutes.
+
+
+EPOCH 1182/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 90.0 minutes.
+
+
+EPOCH 1183/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 90.0 minutes.
+
+
+EPOCH 1184/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 90.0 minutes.
+
+
+EPOCH 1185/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 89.0 minutes.
+
+
+EPOCH 1186/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 89.0 minutes.
+
+
+EPOCH 1187/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 89.0 minutes.
+
+
+EPOCH 1188/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 89.0 minutes.
+
+
+EPOCH 1189/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 89.0 minutes.
+
+
+EPOCH 1190/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 89.0 minutes.
+
+
+EPOCH 1191/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 89.0 minutes.
+
+
+EPOCH 1192/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 89.0 minutes.
+
+
+EPOCH 1193/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 89.0 minutes.
+
+
+EPOCH 1194/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 89.0 minutes.
+
+
+EPOCH 1195/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 88.0 minutes.
+
+
+EPOCH 1196/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 88.0 minutes.
+
+
+EPOCH 1197/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 88.0 minutes.
+
+
+EPOCH 1198/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 88.0 minutes.
+
+
+EPOCH 1199/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 88.0 minutes.
+
+
+EPOCH 1200/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 88.0 minutes.
+
+
+EPOCH 1201/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 88.0 minutes.
+
+
+EPOCH 1202/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 88.0 minutes.
+
+
+EPOCH 1203/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 88.0 minutes.
+
+
+EPOCH 1204/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 88.0 minutes.
+
+
+EPOCH 1205/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 87.0 minutes.
+
+
+EPOCH 1206/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 87.0 minutes.
+
+
+EPOCH 1207/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 87.0 minutes.
+
+
+EPOCH 1208/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 87.0 minutes.
+
+
+EPOCH 1209/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 87.0 minutes.
+
+
+EPOCH 1210/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 87.0 minutes.
+
+
+EPOCH 1211/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 87.0 minutes.
+
+
+EPOCH 1212/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 87.0 minutes.
+
+
+EPOCH 1213/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 87.0 minutes.
+
+
+EPOCH 1214/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 87.0 minutes.
+
+
+EPOCH 1215/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 86.0 minutes.
+
+
+EPOCH 1216/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 86.0 minutes.
+
+
+EPOCH 1217/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 86.0 minutes.
+
+
+EPOCH 1218/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 86.0 minutes.
+
+
+EPOCH 1219/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 86.0 minutes.
+
+
+EPOCH 1220/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 86.0 minutes.
+
+
+EPOCH 1221/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 86.0 minutes.
+
+
+EPOCH 1222/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 86.0 minutes.
+
+
+EPOCH 1223/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 86.0 minutes.
+
+
+EPOCH 1224/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 86.0 minutes.
+
+
+EPOCH 1225/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 85.0 minutes.
+
+
+EPOCH 1226/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 85.0 minutes.
+
+
+EPOCH 1227/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 85.0 minutes.
+
+
+EPOCH 1228/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 85.0 minutes.
+
+
+EPOCH 1229/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 85.0 minutes.
+
+
+EPOCH 1230/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 85.0 minutes.
+
+
+EPOCH 1231/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 85.0 minutes.
+
+
+EPOCH 1232/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 85.0 minutes.
+
+
+EPOCH 1233/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 85.0 minutes.
+
+
+EPOCH 1234/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 85.0 minutes.
+
+
+EPOCH 1235/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 84.0 minutes.
+
+
+EPOCH 1236/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 84.0 minutes.
+
+
+EPOCH 1237/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 84.0 minutes.
+
+
+EPOCH 1238/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 84.0 minutes.
+
+
+EPOCH 1239/2000 ///
+complétée en 0min9.0sec. Estimation de temps restant : 84.0 minutes.
+
+
+EPOCH 1240/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 84.0 minutes.
+
+
+EPOCH 1241/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 84.0 minutes.
+
+
+EPOCH 1242/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 84.0 minutes.
+
+
+EPOCH 1243/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 84.0 minutes.
+
+
+EPOCH 1244/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 84.0 minutes.
+
+
+EPOCH 1245/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 83.0 minutes.
+
+
+EPOCH 1246/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 83.0 minutes.
+
+
+EPOCH 1247/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 83.0 minutes.
+
+
+EPOCH 1248/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 83.0 minutes.
+
+
+EPOCH 1249/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 83.0 minutes.
+
+
+EPOCH 1250/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 83.0 minutes.
+
+
+EPOCH 1251/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 83.0 minutes.
+
+
+EPOCH 1252/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 83.0 minutes.
+
+
+EPOCH 1253/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 83.0 minutes.
+
+
+EPOCH 1254/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 83.0 minutes.
+
+
+EPOCH 1255/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 82.0 minutes.
+
+
+EPOCH 1256/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 82.0 minutes.
+
+
+EPOCH 1257/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 82.0 minutes.
+
+
+EPOCH 1258/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 82.0 minutes.
+
+
+EPOCH 1259/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 82.0 minutes.
+
+
+EPOCH 1260/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 82.0 minutes.
+
+
+EPOCH 1261/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 82.0 minutes.
+
+
+EPOCH 1262/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 82.0 minutes.
+
+
+EPOCH 1263/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 82.0 minutes.
+
+
+EPOCH 1264/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 82.0 minutes.
+
+
+EPOCH 1265/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 81.0 minutes.
+
+
+EPOCH 1266/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 81.0 minutes.
+
+
+EPOCH 1267/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 81.0 minutes.
+
+
+EPOCH 1268/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 81.0 minutes.
+
+
+EPOCH 1269/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 81.0 minutes.
+
+
+EPOCH 1270/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 81.0 minutes.
+
+
+EPOCH 1271/2000 ///
+complétée en 0min9.0sec. Estimation de temps restant : 81.0 minutes.
+
+
+EPOCH 1272/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 81.0 minutes.
+
+
+EPOCH 1273/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 81.0 minutes.
+
+
+EPOCH 1274/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 81.0 minutes.
+
+
+EPOCH 1275/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 80.0 minutes.
+
+
+EPOCH 1276/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 80.0 minutes.
+
+
+EPOCH 1277/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 80.0 minutes.
+
+
+EPOCH 1278/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 80.0 minutes.
+
+
+EPOCH 1279/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 80.0 minutes.
+
+
+EPOCH 1280/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 80.0 minutes.
+
+
+EPOCH 1281/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 80.0 minutes.
+
+
+EPOCH 1282/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 80.0 minutes.
+
+
+EPOCH 1283/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 80.0 minutes.
+
+
+EPOCH 1284/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 80.0 minutes.
+
+
+EPOCH 1285/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 79.0 minutes.
+
+
+EPOCH 1286/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 79.0 minutes.
+
+
+EPOCH 1287/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 79.0 minutes.
+
+
+EPOCH 1288/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 79.0 minutes.
+
+
+EPOCH 1289/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 79.0 minutes.
+
+
+EPOCH 1290/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 79.0 minutes.
+
+
+EPOCH 1291/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 79.0 minutes.
+
+
+EPOCH 1292/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 79.0 minutes.
+
+
+EPOCH 1293/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 79.0 minutes.
+
+
+EPOCH 1294/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 79.0 minutes.
+
+
+EPOCH 1295/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 78.0 minutes.
+
+
+EPOCH 1296/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 78.0 minutes.
+
+
+EPOCH 1297/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 78.0 minutes.
+
+
+EPOCH 1298/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 78.0 minutes.
+
+
+EPOCH 1299/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 78.0 minutes.
+
+
+EPOCH 1300/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 78.0 minutes.
+
+
+EPOCH 1301/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 78.0 minutes.
+
+
+EPOCH 1302/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 78.0 minutes.
+
+
+EPOCH 1303/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 78.0 minutes.
+
+
+EPOCH 1304/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 77.0 minutes.
+
+
+EPOCH 1305/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 77.0 minutes.
+
+
+EPOCH 1306/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 77.0 minutes.
+
+
+EPOCH 1307/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 77.0 minutes.
+
+
+EPOCH 1308/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 77.0 minutes.
+
+
+EPOCH 1309/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 77.0 minutes.
+
+
+EPOCH 1310/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 77.0 minutes.
+
+
+EPOCH 1311/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 77.0 minutes.
+
+
+EPOCH 1312/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 77.0 minutes.
+
+
+EPOCH 1313/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 77.0 minutes.
+
+
+EPOCH 1314/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 76.0 minutes.
+
+
+EPOCH 1315/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 76.0 minutes.
+
+
+EPOCH 1316/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 76.0 minutes.
+
+
+EPOCH 1317/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 76.0 minutes.
+
+
+EPOCH 1318/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 76.0 minutes.
+
+
+EPOCH 1319/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 76.0 minutes.
+
+
+EPOCH 1320/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 76.0 minutes.
+
+
+EPOCH 1321/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 76.0 minutes.
+
+
+EPOCH 1322/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 76.0 minutes.
+
+
+EPOCH 1323/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 76.0 minutes.
+
+
+EPOCH 1324/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 75.0 minutes.
+
+
+EPOCH 1325/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 75.0 minutes.
+
+
+EPOCH 1326/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 75.0 minutes.
+
+
+EPOCH 1327/2000 ///
+complétée en 0min9.0sec. Estimation de temps restant : 75.0 minutes.
+
+
+EPOCH 1328/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 75.0 minutes.
+
+
+EPOCH 1329/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 75.0 minutes.
+
+
+EPOCH 1330/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 75.0 minutes.
+
+
+EPOCH 1331/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 75.0 minutes.
+
+
+EPOCH 1332/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 75.0 minutes.
+
+
+EPOCH 1333/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 74.0 minutes.
+
+
+EPOCH 1334/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 74.0 minutes.
+
+
+EPOCH 1335/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 74.0 minutes.
+
+
+EPOCH 1336/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 74.0 minutes.
+
+
+EPOCH 1337/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 74.0 minutes.
+
+
+EPOCH 1338/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 74.0 minutes.
+
+
+EPOCH 1339/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 74.0 minutes.
+
+
+EPOCH 1340/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 74.0 minutes.
+
+
+EPOCH 1341/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 74.0 minutes.
+
+
+EPOCH 1342/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 74.0 minutes.
+
+
+EPOCH 1343/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 73.0 minutes.
+
+
+EPOCH 1344/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 73.0 minutes.
+
+
+EPOCH 1345/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 73.0 minutes.
+
+
+EPOCH 1346/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 73.0 minutes.
+
+
+EPOCH 1347/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 73.0 minutes.
+
+
+EPOCH 1348/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 73.0 minutes.
+
+
+EPOCH 1349/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 73.0 minutes.
+
+
+EPOCH 1350/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 73.0 minutes.
+
+
+EPOCH 1351/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 73.0 minutes.
+
+
+EPOCH 1352/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 73.0 minutes.
+
+
+EPOCH 1353/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 72.0 minutes.
+
+
+EPOCH 1354/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 72.0 minutes.
+
+
+EPOCH 1355/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 72.0 minutes.
+
+
+EPOCH 1356/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 72.0 minutes.
+
+
+EPOCH 1357/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 72.0 minutes.
+
+
+EPOCH 1358/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 72.0 minutes.
+
+
+EPOCH 1359/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 72.0 minutes.
+
+
+EPOCH 1360/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 72.0 minutes.
+
+
+EPOCH 1361/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 72.0 minutes.
+
+
+EPOCH 1362/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 71.0 minutes.
+
+
+EPOCH 1363/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 71.0 minutes.
+
+
+EPOCH 1364/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 71.0 minutes.
+
+
+EPOCH 1365/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 71.0 minutes.
+
+
+EPOCH 1366/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 71.0 minutes.
+
+
+EPOCH 1367/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 71.0 minutes.
+
+
+EPOCH 1368/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 71.0 minutes.
+
+
+EPOCH 1369/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 71.0 minutes.
+
+
+EPOCH 1370/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 71.0 minutes.
+
+
+EPOCH 1371/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 71.0 minutes.
+
+
+EPOCH 1372/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 70.0 minutes.
+
+
+EPOCH 1373/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 70.0 minutes.
+
+
+EPOCH 1374/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 70.0 minutes.
+
+
+EPOCH 1375/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 70.0 minutes.
+
+
+EPOCH 1376/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 70.0 minutes.
+
+
+EPOCH 1377/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 70.0 minutes.
+
+
+EPOCH 1378/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 70.0 minutes.
+
+
+EPOCH 1379/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 70.0 minutes.
+
+
+EPOCH 1380/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 70.0 minutes.
+
+
+EPOCH 1381/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 69.0 minutes.
+
+
+EPOCH 1382/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 69.0 minutes.
+
+
+EPOCH 1383/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 69.0 minutes.
+
+
+EPOCH 1384/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 69.0 minutes.
+
+
+EPOCH 1385/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 69.0 minutes.
+
+
+EPOCH 1386/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 69.0 minutes.
+
+
+EPOCH 1387/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 69.0 minutes.
+
+
+EPOCH 1388/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 69.0 minutes.
+
+
+EPOCH 1389/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 69.0 minutes.
+
+
+EPOCH 1390/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 69.0 minutes.
+
+
+EPOCH 1391/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 68.0 minutes.
+
+
+EPOCH 1392/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 68.0 minutes.
+
+
+EPOCH 1393/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 68.0 minutes.
+
+
+EPOCH 1394/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 68.0 minutes.
+
+
+EPOCH 1395/2000 ///
+complétée en 0min9.0sec. Estimation de temps restant : 68.0 minutes.
+
+
+EPOCH 1396/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 68.0 minutes.
+
+
+EPOCH 1397/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 68.0 minutes.
+
+
+EPOCH 1398/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 68.0 minutes.
+
+
+EPOCH 1399/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 68.0 minutes.
+
+
+EPOCH 1400/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 67.0 minutes.
+
+
+EPOCH 1401/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 67.0 minutes.
+
+
+EPOCH 1402/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 67.0 minutes.
+
+
+EPOCH 1403/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 67.0 minutes.
+
+
+EPOCH 1404/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 67.0 minutes.
+
+
+EPOCH 1405/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 67.0 minutes.
+
+
+EPOCH 1406/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 67.0 minutes.
+
+
+EPOCH 1407/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 67.0 minutes.
+
+
+EPOCH 1408/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 67.0 minutes.
+
+
+EPOCH 1409/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 67.0 minutes.
+
+
+EPOCH 1410/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 66.0 minutes.
+
+
+EPOCH 1411/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 66.0 minutes.
+
+
+EPOCH 1412/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 66.0 minutes.
+
+
+EPOCH 1413/2000 ///
+complétée en 0min9.0sec. Estimation de temps restant : 66.0 minutes.
+
+
+EPOCH 1414/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 66.0 minutes.
+
+
+EPOCH 1415/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 66.0 minutes.
+
+
+EPOCH 1416/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 66.0 minutes.
+
+
+EPOCH 1417/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 66.0 minutes.
+
+
+EPOCH 1418/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 66.0 minutes.
+
+
+EPOCH 1419/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 65.0 minutes.
+
+
+EPOCH 1420/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 65.0 minutes.
+
+
+EPOCH 1421/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 65.0 minutes.
+
+
+EPOCH 1422/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 65.0 minutes.
+
+
+EPOCH 1423/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 65.0 minutes.
+
+
+EPOCH 1424/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 65.0 minutes.
+
+
+EPOCH 1425/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 65.0 minutes.
+
+
+EPOCH 1426/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 65.0 minutes.
+
+
+EPOCH 1427/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 65.0 minutes.
+
+
+EPOCH 1428/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 65.0 minutes.
+
+
+EPOCH 1429/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 64.0 minutes.
+
+
+EPOCH 1430/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 64.0 minutes.
+
+
+EPOCH 1431/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 64.0 minutes.
+
+
+EPOCH 1432/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 64.0 minutes.
+
+
+EPOCH 1433/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 64.0 minutes.
+
+
+EPOCH 1434/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 64.0 minutes.
+
+
+EPOCH 1435/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 64.0 minutes.
+
+
+EPOCH 1436/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 64.0 minutes.
+
+
+EPOCH 1437/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 64.0 minutes.
+
+
+EPOCH 1438/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 63.0 minutes.
+
+
+EPOCH 1439/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 63.0 minutes.
+
+
+EPOCH 1440/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 63.0 minutes.
+
+
+EPOCH 1441/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 63.0 minutes.
+
+
+EPOCH 1442/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 63.0 minutes.
+
+
+EPOCH 1443/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 63.0 minutes.
+
+
+EPOCH 1444/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 63.0 minutes.
+
+
+EPOCH 1445/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 63.0 minutes.
+
+
+EPOCH 1446/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 63.0 minutes.
+
+
+EPOCH 1447/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 62.0 minutes.
+
+
+EPOCH 1448/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 62.0 minutes.
+
+
+EPOCH 1449/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 62.0 minutes.
+
+
+EPOCH 1450/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 62.0 minutes.
+
+
+EPOCH 1451/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 62.0 minutes.
+
+
+EPOCH 1452/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 62.0 minutes.
+
+
+EPOCH 1453/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 62.0 minutes.
+
+
+EPOCH 1454/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 62.0 minutes.
+
+
+EPOCH 1455/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 62.0 minutes.
+
+
+EPOCH 1456/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 62.0 minutes.
+
+
+EPOCH 1457/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 61.0 minutes.
+
+
+EPOCH 1458/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 61.0 minutes.
+
+
+EPOCH 1459/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 61.0 minutes.
+
+
+EPOCH 1460/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 61.0 minutes.
+
+
+EPOCH 1461/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 61.0 minutes.
+
+
+EPOCH 1462/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 61.0 minutes.
+
+
+EPOCH 1463/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 61.0 minutes.
+
+
+EPOCH 1464/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 61.0 minutes.
+
+
+EPOCH 1465/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 61.0 minutes.
+
+
+EPOCH 1466/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 60.0 minutes.
+
+
+EPOCH 1467/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 60.0 minutes.
+
+
+EPOCH 1468/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 60.0 minutes.
+
+
+EPOCH 1469/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 60.0 minutes.
+
+
+EPOCH 1470/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 60.0 minutes.
+
+
+EPOCH 1471/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 60.0 minutes.
+
+
+EPOCH 1472/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 60.0 minutes.
+
+
+EPOCH 1473/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 60.0 minutes.
+
+
+EPOCH 1474/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 60.0 minutes.
+
+
+EPOCH 1475/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 59.0 minutes.
+
+
+EPOCH 1476/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 59.0 minutes.
+
+
+EPOCH 1477/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 59.0 minutes.
+
+
+EPOCH 1478/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 59.0 minutes.
+
+
+EPOCH 1479/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 59.0 minutes.
+
+
+EPOCH 1480/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 59.0 minutes.
+
+
+EPOCH 1481/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 59.0 minutes.
+
+
+EPOCH 1482/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 59.0 minutes.
+
+
+EPOCH 1483/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 59.0 minutes.
+
+
+EPOCH 1484/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 59.0 minutes.
+
+
+EPOCH 1485/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 58.0 minutes.
+
+
+EPOCH 1486/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 58.0 minutes.
+
+
+EPOCH 1487/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 58.0 minutes.
+
+
+EPOCH 1488/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 58.0 minutes.
+
+
+EPOCH 1489/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 58.0 minutes.
+
+
+EPOCH 1490/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 58.0 minutes.
+
+
+EPOCH 1491/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 58.0 minutes.
+
+
+EPOCH 1492/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 58.0 minutes.
+
+
+EPOCH 1493/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 58.0 minutes.
+
+
+EPOCH 1494/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 57.0 minutes.
+
+
+EPOCH 1495/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 57.0 minutes.
+
+
+EPOCH 1496/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 57.0 minutes.
+
+
+EPOCH 1497/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 57.0 minutes.
+
+
+EPOCH 1498/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 57.0 minutes.
+
+
+EPOCH 1499/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 57.0 minutes.
+
+
+EPOCH 1500/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 57.0 minutes.
+
+
+EPOCH 1501/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 57.0 minutes.
+
+
+EPOCH 1502/2000 ///
+complétée en 0min9.0sec. Estimation de temps restant : 57.0 minutes.
+
+
+EPOCH 1503/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 56.0 minutes.
+
+
+EPOCH 1504/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 56.0 minutes.
+
+
+EPOCH 1505/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 56.0 minutes.
+
+
+EPOCH 1506/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 56.0 minutes.
+
+
+EPOCH 1507/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 56.0 minutes.
+
+
+EPOCH 1508/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 56.0 minutes.
+
+
+EPOCH 1509/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 56.0 minutes.
+
+
+EPOCH 1510/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 56.0 minutes.
+
+
+EPOCH 1511/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 56.0 minutes.
+
+
+EPOCH 1512/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 55.0 minutes.
+
+
+EPOCH 1513/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 55.0 minutes.
+
+
+EPOCH 1514/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 55.0 minutes.
+
+
+EPOCH 1515/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 55.0 minutes.
+
+
+EPOCH 1516/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 55.0 minutes.
+
+
+EPOCH 1517/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 55.0 minutes.
+
+
+EPOCH 1518/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 55.0 minutes.
+
+
+EPOCH 1519/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 55.0 minutes.
+
+
+EPOCH 1520/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 55.0 minutes.
+
+
+EPOCH 1521/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 54.0 minutes.
+
+
+EPOCH 1522/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 54.0 minutes.
+
+
+EPOCH 1523/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 54.0 minutes.
+
+
+EPOCH 1524/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 54.0 minutes.
+
+
+EPOCH 1525/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 54.0 minutes.
+
+
+EPOCH 1526/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 54.0 minutes.
+
+
+EPOCH 1527/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 54.0 minutes.
+
+
+EPOCH 1528/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 54.0 minutes.
+
+
+EPOCH 1529/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 54.0 minutes.
+
+
+EPOCH 1530/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 53.0 minutes.
+
+
+EPOCH 1531/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 53.0 minutes.
+
+
+EPOCH 1532/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 53.0 minutes.
+
+
+EPOCH 1533/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 53.0 minutes.
+
+
+EPOCH 1534/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 53.0 minutes.
+
+
+EPOCH 1535/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 53.0 minutes.
+
+
+EPOCH 1536/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 53.0 minutes.
+
+
+EPOCH 1537/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 53.0 minutes.
+
+
+EPOCH 1538/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 53.0 minutes.
+
+
+EPOCH 1539/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 52.0 minutes.
+
+
+EPOCH 1540/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 52.0 minutes.
+
+
+EPOCH 1541/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 52.0 minutes.
+
+
+EPOCH 1542/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 52.0 minutes.
+
+
+EPOCH 1543/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 52.0 minutes.
+
+
+EPOCH 1544/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 52.0 minutes.
+
+
+EPOCH 1545/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 52.0 minutes.
+
+
+EPOCH 1546/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 52.0 minutes.
+
+
+EPOCH 1547/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 52.0 minutes.
+
+
+EPOCH 1548/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 52.0 minutes.
+
+
+EPOCH 1549/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 51.0 minutes.
+
+
+EPOCH 1550/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 51.0 minutes.
+
+
+EPOCH 1551/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 51.0 minutes.
+
+
+EPOCH 1552/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 51.0 minutes.
+
+
+EPOCH 1553/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 51.0 minutes.
+
+
+EPOCH 1554/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 51.0 minutes.
+
+
+EPOCH 1555/2000 ///
+complétée en 0min10.0sec. Estimation de temps restant : 51.0 minutes.
+
+
+EPOCH 1556/2000 ///
+complétée en 0min10.0sec. Estimation de temps restant : 51.0 minutes.
+
+
+EPOCH 1557/2000 ///
+complétée en 0min11.0sec. Estimation de temps restant : 51.0 minutes.
+
+
+EPOCH 1558/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 50.0 minutes.
+
+
+EPOCH 1559/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 50.0 minutes.
+
+
+EPOCH 1560/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 50.0 minutes.
+
+
+EPOCH 1561/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 50.0 minutes.
+
+
+EPOCH 1562/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 50.0 minutes.
+
+
+EPOCH 1563/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 50.0 minutes.
+
+
+EPOCH 1564/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 50.0 minutes.
+
+
+EPOCH 1565/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 50.0 minutes.
+
+
+EPOCH 1566/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 50.0 minutes.
+
+
+EPOCH 1567/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 49.0 minutes.
+
+
+EPOCH 1568/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 49.0 minutes.
+
+
+EPOCH 1569/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 49.0 minutes.
+
+
+EPOCH 1570/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 49.0 minutes.
+
+
+EPOCH 1571/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 49.0 minutes.
+
+
+EPOCH 1572/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 49.0 minutes.
+
+
+EPOCH 1573/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 49.0 minutes.
+
+
+EPOCH 1574/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 49.0 minutes.
+
+
+EPOCH 1575/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 49.0 minutes.
+
+
+EPOCH 1576/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 48.0 minutes.
+
+
+EPOCH 1577/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 48.0 minutes.
+
+
+EPOCH 1578/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 48.0 minutes.
+
+
+EPOCH 1579/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 48.0 minutes.
+
+
+EPOCH 1580/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 48.0 minutes.
+
+
+EPOCH 1581/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 48.0 minutes.
+
+
+EPOCH 1582/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 48.0 minutes.
+
+
+EPOCH 1583/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 48.0 minutes.
+
+
+EPOCH 1584/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 48.0 minutes.
+
+
+EPOCH 1585/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 47.0 minutes.
+
+
+EPOCH 1586/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 47.0 minutes.
+
+
+EPOCH 1587/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 47.0 minutes.
+
+
+EPOCH 1588/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 47.0 minutes.
+
+
+EPOCH 1589/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 47.0 minutes.
+
+
+EPOCH 1590/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 47.0 minutes.
+
+
+EPOCH 1591/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 47.0 minutes.
+
+
+EPOCH 1592/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 47.0 minutes.
+
+
+EPOCH 1593/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 47.0 minutes.
+
+
+EPOCH 1594/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 46.0 minutes.
+
+
+EPOCH 1595/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 46.0 minutes.
+
+
+EPOCH 1596/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 46.0 minutes.
+
+
+EPOCH 1597/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 46.0 minutes.
+
+
+EPOCH 1598/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 46.0 minutes.
+
+
+EPOCH 1599/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 46.0 minutes.
+
+
+EPOCH 1600/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 46.0 minutes.
+
+
+EPOCH 1601/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 46.0 minutes.
+
+
+EPOCH 1602/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 46.0 minutes.
+
+
+EPOCH 1603/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 45.0 minutes.
+
+
+EPOCH 1604/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 45.0 minutes.
+
+
+EPOCH 1605/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 45.0 minutes.
+
+
+EPOCH 1606/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 45.0 minutes.
+
+
+EPOCH 1607/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 45.0 minutes.
+
+
+EPOCH 1608/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 45.0 minutes.
+
+
+EPOCH 1609/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 45.0 minutes.
+
+
+EPOCH 1610/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 45.0 minutes.
+
+
+EPOCH 1611/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 44.0 minutes.
+
+
+EPOCH 1612/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 44.0 minutes.
+
+
+EPOCH 1613/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 44.0 minutes.
+
+
+EPOCH 1614/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 44.0 minutes.
+
+
+EPOCH 1615/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 44.0 minutes.
+
+
+EPOCH 1616/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 44.0 minutes.
+
+
+EPOCH 1617/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 44.0 minutes.
+
+
+EPOCH 1618/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 44.0 minutes.
+
+
+EPOCH 1619/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 44.0 minutes.
+
+
+EPOCH 1620/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 43.0 minutes.
+
+
+EPOCH 1621/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 43.0 minutes.
+
+
+EPOCH 1622/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 43.0 minutes.
+
+
+EPOCH 1623/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 43.0 minutes.
+
+
+EPOCH 1624/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 43.0 minutes.
+
+
+EPOCH 1625/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 43.0 minutes.
+
+
+EPOCH 1626/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 43.0 minutes.
+
+
+EPOCH 1627/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 43.0 minutes.
+
+
+EPOCH 1628/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 43.0 minutes.
+
+
+EPOCH 1629/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 42.0 minutes.
+
+
+EPOCH 1630/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 42.0 minutes.
+
+
+EPOCH 1631/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 42.0 minutes.
+
+
+EPOCH 1632/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 42.0 minutes.
+
+
+EPOCH 1633/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 42.0 minutes.
+
+
+EPOCH 1634/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 42.0 minutes.
+
+
+EPOCH 1635/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 42.0 minutes.
+
+
+EPOCH 1636/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 42.0 minutes.
+
+
+EPOCH 1637/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 42.0 minutes.
+
+
+EPOCH 1638/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 41.0 minutes.
+
+
+EPOCH 1639/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 41.0 minutes.
+
+
+EPOCH 1640/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 41.0 minutes.
+
+
+EPOCH 1641/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 41.0 minutes.
+
+
+EPOCH 1642/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 41.0 minutes.
+
+
+EPOCH 1643/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 41.0 minutes.
+
+
+EPOCH 1644/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 41.0 minutes.
+
+
+EPOCH 1645/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 41.0 minutes.
+
+
+EPOCH 1646/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 41.0 minutes.
+
+
+EPOCH 1647/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 40.0 minutes.
+
+
+EPOCH 1648/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 40.0 minutes.
+
+
+EPOCH 1649/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 40.0 minutes.
+
+
+EPOCH 1650/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 40.0 minutes.
+
+
+EPOCH 1651/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 40.0 minutes.
+
+
+EPOCH 1652/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 40.0 minutes.
+
+
+EPOCH 1653/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 40.0 minutes.
+
+
+EPOCH 1654/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 40.0 minutes.
+
+
+EPOCH 1655/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 40.0 minutes.
+
+
+EPOCH 1656/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 39.0 minutes.
+
+
+EPOCH 1657/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 39.0 minutes.
+
+
+EPOCH 1658/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 39.0 minutes.
+
+
+EPOCH 1659/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 39.0 minutes.
+
+
+EPOCH 1660/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 39.0 minutes.
+
+
+EPOCH 1661/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 39.0 minutes.
+
+
+EPOCH 1662/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 39.0 minutes.
+
+
+EPOCH 1663/2000 ///
+complétée en 0min9.0sec. Estimation de temps restant : 39.0 minutes.
+
+
+EPOCH 1664/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 39.0 minutes.
+
+
+EPOCH 1665/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 38.0 minutes.
+
+
+EPOCH 1666/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 38.0 minutes.
+
+
+EPOCH 1667/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 38.0 minutes.
+
+
+EPOCH 1668/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 38.0 minutes.
+
+
+EPOCH 1669/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 38.0 minutes.
+
+
+EPOCH 1670/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 38.0 minutes.
+
+
+EPOCH 1671/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 38.0 minutes.
+
+
+EPOCH 1672/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 38.0 minutes.
+
+
+EPOCH 1673/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 37.0 minutes.
+
+
+EPOCH 1674/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 37.0 minutes.
+
+
+EPOCH 1675/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 37.0 minutes.
+
+
+EPOCH 1676/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 37.0 minutes.
+
+
+EPOCH 1677/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 37.0 minutes.
+
+
+EPOCH 1678/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 37.0 minutes.
+
+
+EPOCH 1679/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 37.0 minutes.
+
+
+EPOCH 1680/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 37.0 minutes.
+
+
+EPOCH 1681/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 37.0 minutes.
+
+
+EPOCH 1682/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 36.0 minutes.
+
+
+EPOCH 1683/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 36.0 minutes.
+
+
+EPOCH 1684/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 36.0 minutes.
+
+
+EPOCH 1685/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 36.0 minutes.
+
+
+EPOCH 1686/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 36.0 minutes.
+
+
+EPOCH 1687/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 36.0 minutes.
+
+
+EPOCH 1688/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 36.0 minutes.
+
+
+EPOCH 1689/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 36.0 minutes.
+
+
+EPOCH 1690/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 36.0 minutes.
+
+
+EPOCH 1691/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 35.0 minutes.
+
+
+EPOCH 1692/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 35.0 minutes.
+
+
+EPOCH 1693/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 35.0 minutes.
+
+
+EPOCH 1694/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 35.0 minutes.
+
+
+EPOCH 1695/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 35.0 minutes.
+
+
+EPOCH 1696/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 35.0 minutes.
+
+
+EPOCH 1697/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 35.0 minutes.
+
+
+EPOCH 1698/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 35.0 minutes.
+
+
+EPOCH 1699/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 35.0 minutes.
+
+
+EPOCH 1700/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 34.0 minutes.
+
+
+EPOCH 1701/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 34.0 minutes.
+
+
+EPOCH 1702/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 34.0 minutes.
+
+
+EPOCH 1703/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 34.0 minutes.
+
+
+EPOCH 1704/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 34.0 minutes.
+
+
+EPOCH 1705/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 34.0 minutes.
+
+
+EPOCH 1706/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 34.0 minutes.
+
+
+EPOCH 1707/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 34.0 minutes.
+
+
+EPOCH 1708/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 34.0 minutes.
+
+
+EPOCH 1709/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 33.0 minutes.
+
+
+EPOCH 1710/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 33.0 minutes.
+
+
+EPOCH 1711/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 33.0 minutes.
+
+
+EPOCH 1712/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 33.0 minutes.
+
+
+EPOCH 1713/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 33.0 minutes.
+
+
+EPOCH 1714/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 33.0 minutes.
+
+
+EPOCH 1715/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 33.0 minutes.
+
+
+EPOCH 1716/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 33.0 minutes.
+
+
+EPOCH 1717/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 32.0 minutes.
+
+
+EPOCH 1718/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 32.0 minutes.
+
+
+EPOCH 1719/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 32.0 minutes.
+
+
+EPOCH 1720/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 32.0 minutes.
+
+
+EPOCH 1721/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 32.0 minutes.
+
+
+EPOCH 1722/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 32.0 minutes.
+
+
+EPOCH 1723/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 32.0 minutes.
+
+
+EPOCH 1724/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 32.0 minutes.
+
+
+EPOCH 1725/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 32.0 minutes.
+
+
+EPOCH 1726/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 31.0 minutes.
+
+
+EPOCH 1727/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 31.0 minutes.
+
+
+EPOCH 1728/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 31.0 minutes.
+
+
+EPOCH 1729/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 31.0 minutes.
+
+
+EPOCH 1730/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 31.0 minutes.
+
+
+EPOCH 1731/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 31.0 minutes.
+
+
+EPOCH 1732/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 31.0 minutes.
+
+
+EPOCH 1733/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 31.0 minutes.
+
+
+EPOCH 1734/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 31.0 minutes.
+
+
+EPOCH 1735/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 30.0 minutes.
+
+
+EPOCH 1736/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 30.0 minutes.
+
+
+EPOCH 1737/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 30.0 minutes.
+
+
+EPOCH 1738/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 30.0 minutes.
+
+
+EPOCH 1739/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 30.0 minutes.
+
+
+EPOCH 1740/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 30.0 minutes.
+
+
+EPOCH 1741/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 30.0 minutes.
+
+
+EPOCH 1742/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 30.0 minutes.
+
+
+EPOCH 1743/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 30.0 minutes.
+
+
+EPOCH 1744/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 29.0 minutes.
+
+
+EPOCH 1745/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 29.0 minutes.
+
+
+EPOCH 1746/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 29.0 minutes.
+
+
+EPOCH 1747/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 29.0 minutes.
+
+
+EPOCH 1748/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 29.0 minutes.
+
+
+EPOCH 1749/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 29.0 minutes.
+
+
+EPOCH 1750/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 29.0 minutes.
+
+
+EPOCH 1751/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 29.0 minutes.
+
+
+EPOCH 1752/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 28.0 minutes.
+
+
+EPOCH 1753/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 28.0 minutes.
+
+
+EPOCH 1754/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 28.0 minutes.
+
+
+EPOCH 1755/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 28.0 minutes.
+
+
+EPOCH 1756/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 28.0 minutes.
+
+
+EPOCH 1757/2000 ///
+complétée en 0min13.0sec. Estimation de temps restant : 28.0 minutes.
+
+
+EPOCH 1758/2000 ///
+complétée en 0min12.0sec. Estimation de temps restant : 28.0 minutes.
+
+
+EPOCH 1759/2000 ///
+complétée en 0min11.0sec. Estimation de temps restant : 28.0 minutes.
+
+
+EPOCH 1760/2000 ///
+complétée en 0min11.0sec. Estimation de temps restant : 28.0 minutes.
+
+
+EPOCH 1761/2000 ///
+complétée en 0min11.0sec. Estimation de temps restant : 28.0 minutes.
+
+
+EPOCH 1762/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 27.0 minutes.
+
+
+EPOCH 1763/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 27.0 minutes.
+
+
+EPOCH 1764/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 27.0 minutes.
+
+
+EPOCH 1765/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 27.0 minutes.
+
+
+EPOCH 1766/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 27.0 minutes.
+
+
+EPOCH 1767/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 27.0 minutes.
+
+
+EPOCH 1768/2000 ///
+complétée en 0min6.0sec. Estimation de temps restant : 27.0 minutes.
+
+
+EPOCH 1769/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 27.0 minutes.
+
+
+EPOCH 1770/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 26.0 minutes.
+
+
+EPOCH 1771/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 26.0 minutes.
+
+
+EPOCH 1772/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 26.0 minutes.
+
+
+EPOCH 1773/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 26.0 minutes.
+
+
+EPOCH 1774/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 26.0 minutes.
+
+
+EPOCH 1775/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 26.0 minutes.
+
+
+EPOCH 1776/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 26.0 minutes.
+
+
+EPOCH 1777/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 26.0 minutes.
+
+
+EPOCH 1778/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 26.0 minutes.
+
+
+EPOCH 1779/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 25.0 minutes.
+
+
+EPOCH 1780/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 25.0 minutes.
+
+
+EPOCH 1781/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 25.0 minutes.
+
+
+EPOCH 1782/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 25.0 minutes.
+
+
+EPOCH 1783/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 25.0 minutes.
+
+
+EPOCH 1784/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 25.0 minutes.
+
+
+EPOCH 1785/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 25.0 minutes.
+
+
+EPOCH 1786/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 25.0 minutes.
+
+
+EPOCH 1787/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 25.0 minutes.
+
+
+EPOCH 1788/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 24.0 minutes.
+
+
+EPOCH 1789/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 24.0 minutes.
+
+
+EPOCH 1790/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 24.0 minutes.
+
+
+EPOCH 1791/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 24.0 minutes.
+
+
+EPOCH 1792/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 24.0 minutes.
+
+
+EPOCH 1793/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 24.0 minutes.
+
+
+EPOCH 1794/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 24.0 minutes.
+
+
+EPOCH 1795/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 24.0 minutes.
+
+
+EPOCH 1796/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 23.0 minutes.
+
+
+EPOCH 1797/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 23.0 minutes.
+
+
+EPOCH 1798/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 23.0 minutes.
+
+
+EPOCH 1799/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 23.0 minutes.
+
+
+EPOCH 1800/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 23.0 minutes.
+
+
+EPOCH 1801/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 23.0 minutes.
+
+
+EPOCH 1802/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 23.0 minutes.
+
+
+EPOCH 1803/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 23.0 minutes.
+
+
+EPOCH 1804/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 23.0 minutes.
+
+
+EPOCH 1805/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 22.0 minutes.
+
+
+EPOCH 1806/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 22.0 minutes.
+
+
+EPOCH 1807/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 22.0 minutes.
+
+
+EPOCH 1808/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 22.0 minutes.
+
+
+EPOCH 1809/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 22.0 minutes.
+
+
+EPOCH 1810/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 22.0 minutes.
+
+
+EPOCH 1811/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 22.0 minutes.
+
+
+EPOCH 1812/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 22.0 minutes.
+
+
+EPOCH 1813/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 22.0 minutes.
+
+
+EPOCH 1814/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 21.0 minutes.
+
+
+EPOCH 1815/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 21.0 minutes.
+
+
+EPOCH 1816/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 21.0 minutes.
+
+
+EPOCH 1817/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 21.0 minutes.
+
+
+EPOCH 1818/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 21.0 minutes.
+
+
+EPOCH 1819/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 21.0 minutes.
+
+
+EPOCH 1820/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 21.0 minutes.
+
+
+EPOCH 1821/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 21.0 minutes.
+
+
+EPOCH 1822/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 21.0 minutes.
+
+
+EPOCH 1823/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 20.0 minutes.
+
+
+EPOCH 1824/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 20.0 minutes.
+
+
+EPOCH 1825/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 20.0 minutes.
+
+
+EPOCH 1826/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 20.0 minutes.
+
+
+EPOCH 1827/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 20.0 minutes.
+
+
+EPOCH 1828/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 20.0 minutes.
+
+
+EPOCH 1829/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 20.0 minutes.
+
+
+EPOCH 1830/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 20.0 minutes.
+
+
+EPOCH 1831/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 19.0 minutes.
+
+
+EPOCH 1832/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 19.0 minutes.
+
+
+EPOCH 1833/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 19.0 minutes.
+
+
+EPOCH 1834/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 19.0 minutes.
+
+
+EPOCH 1835/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 19.0 minutes.
+
+
+EPOCH 1836/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 19.0 minutes.
+
+
+EPOCH 1837/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 19.0 minutes.
+
+
+EPOCH 1838/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 19.0 minutes.
+
+
+EPOCH 1839/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 19.0 minutes.
+
+
+EPOCH 1840/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 18.0 minutes.
+
+
+EPOCH 1841/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 18.0 minutes.
+
+
+EPOCH 1842/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 18.0 minutes.
+
+
+EPOCH 1843/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 18.0 minutes.
+
+
+EPOCH 1844/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 18.0 minutes.
+
+
+EPOCH 1845/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 18.0 minutes.
+
+
+EPOCH 1846/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 18.0 minutes.
+
+
+EPOCH 1847/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 18.0 minutes.
+
+
+EPOCH 1848/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 18.0 minutes.
+
+
+EPOCH 1849/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 17.0 minutes.
+
+
+EPOCH 1850/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 17.0 minutes.
+
+
+EPOCH 1851/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 17.0 minutes.
+
+
+EPOCH 1852/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 17.0 minutes.
+
+
+EPOCH 1853/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 17.0 minutes.
+
+
+EPOCH 1854/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 17.0 minutes.
+
+
+EPOCH 1855/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 17.0 minutes.
+
+
+EPOCH 1856/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 17.0 minutes.
+
+
+EPOCH 1857/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 17.0 minutes.
+
+
+EPOCH 1858/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 16.0 minutes.
+
+
+EPOCH 1859/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 16.0 minutes.
+
+
+EPOCH 1860/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 16.0 minutes.
+
+
+EPOCH 1861/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 16.0 minutes.
+
+
+EPOCH 1862/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 16.0 minutes.
+
+
+EPOCH 1863/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 16.0 minutes.
+
+
+EPOCH 1864/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 16.0 minutes.
+
+
+EPOCH 1865/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 16.0 minutes.
+
+
+EPOCH 1866/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 15.0 minutes.
+
+
+EPOCH 1867/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 15.0 minutes.
+
+
+EPOCH 1868/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 15.0 minutes.
+
+
+EPOCH 1869/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 15.0 minutes.
+
+
+EPOCH 1870/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 15.0 minutes.
+
+
+EPOCH 1871/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 15.0 minutes.
+
+
+EPOCH 1872/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 15.0 minutes.
+
+
+EPOCH 1873/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 15.0 minutes.
+
+
+EPOCH 1874/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 15.0 minutes.
+
+
+EPOCH 1875/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 14.0 minutes.
+
+
+EPOCH 1876/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 14.0 minutes.
+
+
+EPOCH 1877/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 14.0 minutes.
+
+
+EPOCH 1878/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 14.0 minutes.
+
+
+EPOCH 1879/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 14.0 minutes.
+
+
+EPOCH 1880/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 14.0 minutes.
+
+
+EPOCH 1881/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 14.0 minutes.
+
+
+EPOCH 1882/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 14.0 minutes.
+
+
+EPOCH 1883/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 14.0 minutes.
+
+
+EPOCH 1884/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 13.0 minutes.
+
+
+EPOCH 1885/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 13.0 minutes.
+
+
+EPOCH 1886/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 13.0 minutes.
+
+
+EPOCH 1887/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 13.0 minutes.
+
+
+EPOCH 1888/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 13.0 minutes.
+
+
+EPOCH 1889/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 13.0 minutes.
+
+
+EPOCH 1890/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 13.0 minutes.
+
+
+EPOCH 1891/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 13.0 minutes.
+
+
+EPOCH 1892/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 13.0 minutes.
+
+
+EPOCH 1893/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 12.0 minutes.
+
+
+EPOCH 1894/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 12.0 minutes.
+
+
+EPOCH 1895/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 12.0 minutes.
+
+
+EPOCH 1896/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 12.0 minutes.
+
+
+EPOCH 1897/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 12.0 minutes.
+
+
+EPOCH 1898/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 12.0 minutes.
+
+
+EPOCH 1899/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 12.0 minutes.
+
+
+EPOCH 1900/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 12.0 minutes.
+
+
+EPOCH 1901/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 11.0 minutes.
+
+
+EPOCH 1902/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 11.0 minutes.
+
+
+EPOCH 1903/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 11.0 minutes.
+
+
+EPOCH 1904/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 11.0 minutes.
+
+
+EPOCH 1905/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 11.0 minutes.
+
+
+EPOCH 1906/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 11.0 minutes.
+
+
+EPOCH 1907/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 11.0 minutes.
+
+
+EPOCH 1908/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 11.0 minutes.
+
+
+EPOCH 1909/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 11.0 minutes.
+
+
+EPOCH 1910/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 10.0 minutes.
+
+
+EPOCH 1911/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 10.0 minutes.
+
+
+EPOCH 1912/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 10.0 minutes.
+
+
+EPOCH 1913/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 10.0 minutes.
+
+
+EPOCH 1914/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 10.0 minutes.
+
+
+EPOCH 1915/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 10.0 minutes.
+
+
+EPOCH 1916/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 10.0 minutes.
+
+
+EPOCH 1917/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 10.0 minutes.
+
+
+EPOCH 1918/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 10.0 minutes.
+
+
+EPOCH 1919/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 9.0 minutes.
+
+
+EPOCH 1920/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 9.0 minutes.
+
+
+EPOCH 1921/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 9.0 minutes.
+
+
+EPOCH 1922/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 9.0 minutes.
+
+
+EPOCH 1923/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 9.0 minutes.
+
+
+EPOCH 1924/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 9.0 minutes.
+
+
+EPOCH 1925/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 9.0 minutes.
+
+
+EPOCH 1926/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 9.0 minutes.
+
+
+EPOCH 1927/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 8.0 minutes.
+
+
+EPOCH 1928/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 8.0 minutes.
+
+
+EPOCH 1929/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 8.0 minutes.
+
+
+EPOCH 1930/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 8.0 minutes.
+
+
+EPOCH 1931/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 8.0 minutes.
+
+
+EPOCH 1932/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 8.0 minutes.
+
+
+EPOCH 1933/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 8.0 minutes.
+
+
+EPOCH 1934/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 8.0 minutes.
+
+
+EPOCH 1935/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 8.0 minutes.
+
+
+EPOCH 1936/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 7.0 minutes.
+
+
+EPOCH 1937/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 7.0 minutes.
+
+
+EPOCH 1938/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 7.0 minutes.
+
+
+EPOCH 1939/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 7.0 minutes.
+
+
+EPOCH 1940/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 7.0 minutes.
+
+
+EPOCH 1941/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 7.0 minutes.
+
+
+EPOCH 1942/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 7.0 minutes.
+
+
+EPOCH 1943/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 7.0 minutes.
+
+
+EPOCH 1944/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 7.0 minutes.
+
+
+EPOCH 1945/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 6.0 minutes.
+
+
+EPOCH 1946/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 6.0 minutes.
+
+
+EPOCH 1947/2000 ///
+complétée en 0min9.0sec. Estimation de temps restant : 6.0 minutes.
+
+
+EPOCH 1948/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 6.0 minutes.
+
+
+EPOCH 1949/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 6.0 minutes.
+
+
+EPOCH 1950/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 6.0 minutes.
+
+
+EPOCH 1951/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 6.0 minutes.
+
+
+EPOCH 1952/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 6.0 minutes.
+
+
+EPOCH 1953/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 5.0 minutes.
+
+
+EPOCH 1954/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 5.0 minutes.
+
+
+EPOCH 1955/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 5.0 minutes.
+
+
+EPOCH 1956/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 5.0 minutes.
+
+
+EPOCH 1957/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 5.0 minutes.
+
+
+EPOCH 1958/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 5.0 minutes.
+
+
+EPOCH 1959/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 5.0 minutes.
+
+
+EPOCH 1960/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 5.0 minutes.
+
+
+EPOCH 1961/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 5.0 minutes.
+
+
+EPOCH 1962/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 4.0 minutes.
+
+
+EPOCH 1963/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 4.0 minutes.
+
+
+EPOCH 1964/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 4.0 minutes.
+
+
+EPOCH 1965/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 4.0 minutes.
+
+
+EPOCH 1966/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 4.0 minutes.
+
+
+EPOCH 1967/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 4.0 minutes.
+
+
+EPOCH 1968/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 4.0 minutes.
+
+
+EPOCH 1969/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 4.0 minutes.
+
+
+EPOCH 1970/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 3.0 minutes.
+
+
+EPOCH 1971/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 3.0 minutes.
+
+
+EPOCH 1972/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 3.0 minutes.
+
+
+EPOCH 1973/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 3.0 minutes.
+
+
+EPOCH 1974/2000 ///
+complétée en 0min9.0sec. Estimation de temps restant : 3.0 minutes.
+
+
+EPOCH 1975/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 3.0 minutes.
+
+
+EPOCH 1976/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 3.0 minutes.
+
+
+EPOCH 1977/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 3.0 minutes.
+
+
+EPOCH 1978/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 3.0 minutes.
+
+
+EPOCH 1979/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 2.0 minutes.
+
+
+EPOCH 1980/2000 ///
+complétée en 0min16.0sec. Estimation de temps restant : 2.0 minutes.
+
+
+EPOCH 1981/2000 ///
+complétée en 0min13.0sec. Estimation de temps restant : 2.0 minutes.
+
+
+EPOCH 1982/2000 ///
+complétée en 0min13.0sec. Estimation de temps restant : 2.0 minutes.
+
+
+EPOCH 1983/2000 ///
+complétée en 0min12.0sec. Estimation de temps restant : 2.0 minutes.
+
+
+EPOCH 1984/2000 ///
+complétée en 0min12.0sec. Estimation de temps restant : 2.0 minutes.
+
+
+EPOCH 1985/2000 ///
+complétée en 0min12.0sec. Estimation de temps restant : 2.0 minutes.
+
+
+EPOCH 1986/2000 ///
+complétée en 0min11.0sec. Estimation de temps restant : 2.0 minutes.
+
+
+EPOCH 1987/2000 ///
+complétée en 0min9.0sec. Estimation de temps restant : 2.0 minutes.
+
+
+EPOCH 1988/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 1.0 minutes.
+
+
+EPOCH 1989/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 1.0 minutes.
+
+
+EPOCH 1990/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 1.0 minutes.
+
+
+EPOCH 1991/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 1.0 minutes.
+
+
+EPOCH 1992/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 1.0 minutes.
+
+
+EPOCH 1993/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 1.0 minutes.
+
+
+EPOCH 1994/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 1.0 minutes.
+
+
+EPOCH 1995/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 1.0 minutes.
+
+
+EPOCH 1996/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 0.0 minutes.
+
+
+EPOCH 1997/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 0.0 minutes.
+
+
+EPOCH 1998/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 0.0 minutes.
+
+
+EPOCH 1999/2000 ///
+complétée en 0min7.0sec. Estimation de temps restant : 0.0 minutes.
+
+
+EPOCH 2000/2000 ///
+complétée en 0min8.0sec. Estimation de temps restant : 0.0 minutes.
+
+
+
+entraînement complet
+
+
