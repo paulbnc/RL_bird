@@ -128,7 +128,7 @@ class Bird:
 class Game:
     def __init__(self,
                  batch_size,
-                 rewards,
+                 rewards:dict=None,
                  difficulty=1,
                  height=100,
                  width=1000,
@@ -139,6 +139,7 @@ class Game:
         self.speed = get_difficulty_params(difficulty)['speed']
         self.tunnels = get_difficulty_params(difficulty)['tunnels']
         self.VIEW_WIDTH = VIEW_WIDTH
+        self.difficulty = difficulty
 
         #idée : faire défiler l'écran selon le temps qui avance (nombre de ticks à définir selon self.speed)
         #encore une fois gérer le traitement par batchs
@@ -181,7 +182,7 @@ class Game:
         # laisser la partie "jouable" (processus de génération selon une chaîne de markov) ; disons ne pas éloigner 
         #la zone suivante + que d'un tier de la hauteur du jeu self.world_height.
 
-        hole_size = self.world_height // 3 #taille du trou
+        hole_size = (self.world_height // (self.difficulty+1)) #taille du trou
         max_shift = self.world_height // 3 #le 1/3 dont on parlait pour la chaîne de Markov
 
         world = torch.zeros(size=(self.batch_size, self.world_height, self.world_width))
@@ -192,8 +193,8 @@ class Game:
 
         #ci-dessous, position du premier trou (batchée)
         hole_center = torch.randint(
-            low=hole_size // 2,
-            high=self.world_height - hole_size // 2,
+            low=min(hole_size // 2, self.world_height - hole_size // 2),
+            high=max(hole_size // 2, self.world_height - hole_size // 2),
             size=(self.batch_size,)
         )
 

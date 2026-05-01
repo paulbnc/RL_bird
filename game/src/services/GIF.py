@@ -52,3 +52,11 @@ def color(world: torch.Tensor):
     sky_mask    = (1 - tunnel_mask - bird_mask)
 
     return tunnel_mask * tunnels + bird_mask * bird + sky_mask * sky
+
+
+def save_png(path: str, world: torch.Tensor):
+    colored = color(world[0].unsqueeze(0))
+    frame_np = (colored[0].permute(1, 2, 0).cpu().numpy() * 255).astype(np.uint8)
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    Image.fromarray(frame_np, mode="RGB").save(path)
+    print(f"PNG sauvegardé : {path}")

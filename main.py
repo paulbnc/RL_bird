@@ -4,6 +4,7 @@ from RL.functions.TRAIN import _train_dqn_no_replay
 import torch
 import os
 import matplotlib.pyplot as plt
+from game.src.services.testing import generate_world
 
 if __name__ == '__main__':
 
@@ -12,7 +13,7 @@ if __name__ == '__main__':
 
 
     parser.add_argument("-ty", "--type", type=str, default="eval",
-                        help="Choose between \"eval\" and \"train_no_replay\". Default eval")
+                        help="Choose between \"eval\" and \"train_no_replay\" or \"test_world\". Default eval")
 
     parser.add_argument("-e", "--epochs", type=int, default=100,
                         help="Number of epochs for training. Default 100")
@@ -38,10 +39,10 @@ if __name__ == '__main__':
     parser.add_argument("-H", "--height", type=int, default=100,
                         help="height of the world. Default 100")
 
-    parser.add_argument("-W", "--width", type=int, default=1000,
+    parser.add_argument("-W", "--width", type=int, default=800,
                         help="width of the world. Default 1000")
 
-    parser.add_argument("-VW", "--view_width", type=int, default=200,
+    parser.add_argument("-VW", "--view_width", type=int, default=100,
                         help="width of what the model sees. Default 200")
     
     parser.add_argument("-TR", "--threshold", type=float, default=0.5,
@@ -68,15 +69,18 @@ if __name__ == '__main__':
     parser.add_argument("-AR", "--alive_reward", type=float, default=2.,
                         help="récompense pour un individu d'être resté en vie : default 2.")
 
-    parser.add_argument("-TSR", "--tunnel_start_reward", type=float, default=15.,
-                        help="récompense pour un individu d'être entré dans un tuyau : default 15.")
+    parser.add_argument("-TSR", "--tunnel_start_reward", type=float, default=50.,
+                        help="récompense pour un individu d'être entré dans un tuyau : default 50.")
     
-    parser.add_argument("-TER", "--tunnel_end_reward", type=float, default=15.,
-                        help="récompense pour un individu d'être sorti d'un tuyau : default 15.")
+    parser.add_argument("-TER", "--tunnel_end_reward", type=float, default=50.,
+                        help="récompense pour un individu d'être sorti d'un tuyau : default 50.")
 
 
     args = parser.parse_args()
 
+    if args.type=="test_world":
+        generate_world(args.difficulty, args.height, args.width)
+        exit(0)
 
     rewards = {"dead":args.dead_reward,
                "alive":args.alive_reward,
