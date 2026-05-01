@@ -83,13 +83,17 @@ def _train_dqn_no_replay(
         n_frames = (game.world_width - game.VIEW_WIDTH) // game.tick
         w = torch.zeros(game.batch_size, n_frames, game.world_height, game.VIEW_WIDTH)
 
+        bird_mask, done_mask = game.flappy.update_collisions()
+
         for t in tqdm(range(n_frames)):
             optimizer.zero_grad()
 
             w[:, t] = game.step()
             game.t += 1
 
-            Q_actions = model(w[:, t])
+            previous_state = torch.stack([w[:, t], bird_mask.float()], dim=1)
+
+            Q_actions = model(previous_state)
 
             game.flappy.step(Q_actions.argmax(dim=1)==1)
 
@@ -97,13 +101,15 @@ def _train_dqn_no_replay(
 
             reward = game.flappy.reward(done_mask)
 
+            state = torch.stack([game.step(game.t-1), bird_mask.float()], dim=1)
+
             loss = no_replay_loss(
                 gamma,
                 model,
-                w[:,t],
-                game.step(game.t-1),
-                Q_actions.argmax(dim=1),
-                reward
+                previous_state=previous_state,
+                state=state,
+                actions=Q_actions.argmax(dim=1),
+                r=reward
             )
 
             LOSSES.append(loss.item())
@@ -114,7 +120,8 @@ def _train_dqn_no_replay(
             w[:, t][bird_mask] = 0.5
             if done_mask.any():
                 game.reset_dead(done_mask)
-
+                bird_mask, _ = game.flappy.update_collisions()
+                
         if e%freq==0:
             torch.save(model.state_dict(), os.path.join(model_path, f"epoch_{e}.pth"))
             GIF.gif(w[0], folder=plots_path, name=f"_epoch_{e}", e=e)

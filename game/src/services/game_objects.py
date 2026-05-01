@@ -133,6 +133,7 @@ class Game:
                  height=100,
                  width=1000,
                  VIEW_WIDTH=200):
+        
         self.batch_size = batch_size
         self.world_height = height
         self.world_width = width
