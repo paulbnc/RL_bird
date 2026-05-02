@@ -161,7 +161,11 @@ class Game:
         
     def reset_world(self):
         self.world[:,] = self.generate_world() #état initial
-
+        self.t = torch.zeros(self.batch_size, dtype=torch.long)
+        self.flappy.y = torch.full((self.batch_size,), float(self.world_height // 2))
+        self.flappy.vy = torch.zeros(self.batch_size)
+        self.flappy.alive = torch.ones(self.batch_size)
+        
     def generate_world(self):
         #idée : générer aléatoirement tout le terrain (sans flappy) avec le nombre de self.tunnels définis
         #si possible : batcher la générations de plusieurs worlds selon self.batch_size
@@ -236,9 +240,10 @@ class Game:
 
         col_idx = x.unsqueeze(1).unsqueeze(2) + \
                 torch.arange(self.VIEW_WIDTH).unsqueeze(0).unsqueeze(0)  #(batch, 1, VIEW_WIDTH)
-        col_idx = col_idx.expand(-1, self.world_height, -1)                
+        col_idx = col_idx.expand(-1, self.world_height, -1)
+        col_idx = col_idx.clamp(0, self.world_width - 1)              
         return self.world.gather(2, col_idx)
-    
+
 
     def reset_dead(self, done_mask):
         new_worlds = self.generate_world()

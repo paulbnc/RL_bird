@@ -70,11 +70,16 @@ def _train_dqn_no_replay(
     LOSSES = []
     best_loss = float('inf')
 
+    
+
     best_model = model.state_dict()
 
     temps = []
 
     for e in range(epochs):
+
+        mean_loss = 0
+
         _log(f"\nEPOCH {e+1}/{epochs} ///", log_file, verbose)
         s = time.time()
 
@@ -112,7 +117,8 @@ def _train_dqn_no_replay(
                 r=reward
             )
 
-            LOSSES.append(loss.item())
+            mean_loss += loss.item()
+
 
             loss.backward()
             optimizer.step()
@@ -121,19 +127,20 @@ def _train_dqn_no_replay(
             if done_mask.any():
                 game.reset_dead(done_mask)
                 bird_mask, _ = game.flappy.update_collisions()
-                
+
         if e%freq==0:
             torch.save(model.state_dict(), os.path.join(model_path, f"epoch_{e}.pth"))
             GIF.gif(w[0], folder=plots_path, name=f"_epoch_{e}", e=e)
 
-        if loss<best_loss:
-            best_loss=loss
+        if mean_loss<best_loss:
+            best_loss=mean_loss
             best_model = model.state_dict()
 
+        LOSSES.append(mean_loss/n_frames)
         temps.append(abs(s-time.time()))
         _log(f"complétée en {int(temps[e]/60)}min{round(60*(temps[e]/60 - int(temps[e]/60)),0)}sec. Estimation de temps restant : {round((_mean(temps)*(epochs-e-1))/60, 0)} minutes.\n", log_file, verbose)
 
     torch.save(best_model, os.path.join(model_path, "best.pth"))
     _log("\n\nentraînement complet\n\n", log_file, verbose)
 
-    return temps, LOSSES, best_loss.item()
+    return temps, LOSSES, best_loss
