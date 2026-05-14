@@ -67,6 +67,7 @@ Tout passe par main.py via des arguments en ligne de commande.
 
   Arguments
   ---------
+  ```
   -ty  / --type                   Mode d'exécution           (défaut : eval)
   -M   / --model                  Modèle à utiliser          (défaut : naive)
   -e   / --epochs                 Nombre d'epochs            (défaut : 100)
@@ -90,7 +91,7 @@ Tout passe par main.py via des arguments en ligne de commande.
   -TER / --tunnel_end_reward      Récompense sortie tunnel   (défaut : 50.)
   -SV  / --save                   Nombre de GIFs à sauver    (défaut : 1)
   -V   / --verbose                Affichage console 0/1      (défaut : 1)
-
+```
   Exemples
   --------
   # Évaluer le modèle aléatoire
