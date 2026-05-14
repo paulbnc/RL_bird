@@ -1,4 +1,4 @@
-================================================================================
+
   Flappy Bird — Deep Reinforcement Learning
   Auteurs : Paul Buannic & Arthur Devilliers
 ================================================================================
@@ -187,7 +187,7 @@ Tout passe par main.py via des arguments en ligne de commande.
   poids courants (détachée), ce qui correspond à la formulation classique avec
   réseau cible figé à theta_{i-1} :
 
-    L = mean[ ( r + gamma * max_a'[ Q(s', a' ; theta_prev) ] - Q(s, a ; theta) )^2 ]
+    L = mean[ ( r + $\gamma$ * max_a'[ Q(s', a' ; theta_prev) ] - Q(s, a ; theta) )^2 ]
 
   --
 
@@ -273,14 +273,14 @@ Tout passe par main.py via des arguments en ligne de commande.
 
 À chaque run d'entraînement, le dossier --path contiendra :
 
-  checkpoints/mon_run/
+```  checkpoints/mon_run/
   ├── best.pth          Meilleurs poids (loss minimale sur tout l'entraînement)
   ├── epoch_0.pth       Checkpoints intermédiaires (fréquence --freq)
   ├── epoch_10.pth
   ├── ...
   ├── loss.png          Courbe de la loss par epoch
   ├── time.png          Courbe des temps d'epoch
-  └── console.txt       Log complet : paramètres, progression, temps estimé
+  └── console.txt       Log complet : paramètres, progression, temps estimé```
 
 Les GIFs d'évaluation périodique sont dans le dossier --plots_path.
 Les checkpoints des expériences menées sont dans checkpoints/.
