@@ -66,8 +66,8 @@ if __name__ == '__main__':
     parser.add_argument("-g", "--gamma", type=float, default=0.98,
                         help="facteur d'actualisation / gamma : default 0.98 (futur=>proche de 1)")
     
-    parser.add_argument("-eps", "--epsilon", type=list, default=[1., 0.05, 0.99],
-                        help="probabilité que le modèle choisisse une action aléatoire : ~ mutation aléatoire. Renseigner une liste : [epsilon_start, epsilon_end, decay]. Defaut [1., 0.05, 0.99]")
+    parser.add_argument("-eps", "--epsilon", nargs=3, type=float, default=[1., 0.05, 0.99],
+                        help="probabilité que le modèle choisisse une action aléatoire : ~ mutation aléatoire. Renseigner 3 floats : epsilon_start epsilon_end decay. Defaut 1. 0.05 0.99")
 
     parser.add_argument("-DR", "--dead_reward", type=float, default=-100.,
                         help="pénalisation de la mort d'un individu : default -100.")
