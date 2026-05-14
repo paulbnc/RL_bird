@@ -1,4 +1,4 @@
-================================================================================
+
   Flappy Bird — Deep Reinforcement Learning
 ================================================================================
 Paul Buannic & Arthur Devilliers
@@ -283,5 +283,3 @@ Les GIFs d'évaluation périodique sont dans le dossier --plots_path.
 Les checkpoints des expériences menées sont dans checkpoints/.
 Les GIFs correspondants sont dans game/plots/.
 Se référer au rapport PDF pour l'analyse des résultats.
-
-================================================================================
