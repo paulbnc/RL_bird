@@ -33,14 +33,14 @@ def _eval(
     n_frames = (game.world_width - game.VIEW_WIDTH) // game.tick
     w = torch.zeros(game.batch_size, n_frames, game.world_height, game.VIEW_WIDTH)
 
-
+    bird_mask, done_mask = game.flappy.update_collisions()
     for t in range(n_frames):
 
         w[:, t] = game.step()
         game.t += 1
-
-        actions = model(w[:, t])>threshold
-        game.flappy.step(actions)
+        state = torch.stack([w[:, t], bird_mask.float()], dim=1)
+        actions = model(state).argmax(dim=1)
+        game.flappy.step(actions==1)
         bird_mask, done_mask = game.flappy.update_collisions()
 
         w[:, t][bird_mask] = 0.5
