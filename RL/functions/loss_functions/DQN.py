@@ -1,7 +1,7 @@
 import torch
 
 
-def no_replay_loss(
+def dqn_loss(
                         gamma: float,
                         model,
                         previous_state,   

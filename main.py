@@ -1,10 +1,13 @@
 import argparse
 from RL.functions.EVAL import _eval
-from RL.functions.TRAIN import _train_dqn_no_replay
+from RL.functions.TRAIN import _train_dqn_no_replay, _train_dqn_replay
 import torch
 import os
 import matplotlib.pyplot as plt
 from game.src.services.testing import generate_world
+
+
+
 
 if __name__ == '__main__':
 
@@ -13,7 +16,7 @@ if __name__ == '__main__':
 
 
     parser.add_argument("-ty", "--type", type=str, default="eval",
-                        help="Choose between \"eval\" and \"train_no_replay\" or \"test_world\". Default eval")
+                        help="Choose between [\"eval\", \"train_no_replay\", \"train_replay\" \"test_world\"]. Default eval")
 
     parser.add_argument("-e", "--epochs", type=int, default=100,
                         help="Number of epochs for training. Default 100")
@@ -21,8 +24,8 @@ if __name__ == '__main__':
     parser.add_argument("-lr", "--lr", type=float, default=0.0002,
                       help="The learning rate to use for training. Default 0.0002")
     
-    parser.add_argument("-B", "--batch_size", type=int, default=16,
-                        help="Size of mini-batches. Default 16")
+    parser.add_argument("-B", "--batch_size", type=int, default=8,
+                        help="Size of mini-batches. Default 8")
     
     parser.add_argument("-op", "--optimizer", type=str, default='Adam',
                         help="which optimizer to use. Write between : ['Adam', 'SGD']. Default Adam.")
@@ -36,14 +39,14 @@ if __name__ == '__main__':
     parser.add_argument("-dif", "--difficulty", type=int, default=2,
                         help="difficulty (hint from paul : 1, 2, or 3, difficulty increases fast). Default 2")
 
-    parser.add_argument("-H", "--height", type=int, default=100,
-                        help="height of the world. Default 100")
+    parser.add_argument("-H", "--height", type=int, default=200,
+                        help="height of the world. Default 200")
 
     parser.add_argument("-W", "--width", type=int, default=800,
-                        help="width of the world. Default 1000")
+                        help="width of the world. Default 500")
 
     parser.add_argument("-VW", "--view_width", type=int, default=100,
-                        help="width of what the model sees. Default 200")
+                        help="width of what the model sees. Default 100")
     
     parser.add_argument("-TR", "--threshold", type=float, default=0.5,
                         help="threshold for decisions, default 0.5")
@@ -52,7 +55,7 @@ if __name__ == '__main__':
                         help="number of gifs to save during eval. Max batch size, min 0. Default 1")
 
     parser.add_argument("-M", "--model", type=str, default='naive',
-                        help="which model to train. Choose between : ['naive', 'small_linear', 'conv_small']. Default naive.")
+                        help="which model to train. Choose between : ['naive', 'small_linear', 'conv_small', 'distances']. Default naive.")
 
     parser.add_argument("-PP", "--plots_path", type=str, default=os.path.join("game","plots","gifs_last"),
                         help="path for plots")
@@ -63,6 +66,9 @@ if __name__ == '__main__':
     parser.add_argument("-g", "--gamma", type=float, default=0.98,
                         help="facteur d'actualisation / gamma : default 0.98 (futur=>proche de 1)")
     
+    parser.add_argument("-eps", "--epsilon", type=list, default=[1., 0.05, 0.99],
+                        help="probabilité que le modèle choisisse une action aléatoire : ~ mutation aléatoire. Renseigner une liste : [epsilon_start, epsilon_end, decay]. Defaut [1., 0.05, 0.99]")
+
     parser.add_argument("-DR", "--dead_reward", type=float, default=-100.,
                         help="pénalisation de la mort d'un individu : default -100.")
 
@@ -78,6 +84,8 @@ if __name__ == '__main__':
     parser.add_argument("-LOAD", "--load_model", type=str, default=None,
                         help="model to load (path) for training/eval. Default None.")
 
+    parser.add_argument("-REPN", "--experience_replay_size", type=int, default=12000,
+                        help="size of experience replay, default 12000 (best = batchsize*n_frames*number of epochs to remember)")
 
     args = parser.parse_args()
 
@@ -168,7 +176,58 @@ if __name__ == '__main__':
                                 plots_path=args.plots_path,
                                 verbose=bool(args.verbose),
                                 batch_size=args.batch_size,
-                                rewards=rewards
+                                rewards=rewards,
+                                epsilon=args.epsilon
+                            )
+        
+        plt.figure()
+        plt.plot(LOSSES)
+        plt.xlabel("parties jouées")
+        plt.ylabel("loss")
+        plt.title("Training Loss")
+        plt.savefig(os.path.join(args.path, "loss.png"))
+        plt.close()
+
+        plt.figure()
+        plt.plot(temps)
+        plt.xlabel("itérations")
+        plt.ylabel("time")
+        plt.title("Training time")
+        plt.savefig(os.path.join(args.path, "time.png"))
+        plt.close()
+
+        print(f"best loss {best_loss}. \n\n****PLOTS DE LOSSES ET TIMES dans {args.path}\n\n")
+
+    elif args.type=="train_replay":
+
+        if args.optimizer=="Adam":
+            optimizer = torch.optim.Adam(params=model.parameters(), lr=args.lr)
+        elif args.optimizer=="SGD":
+            optimizer = torch.optim.SGD(params=model.parameters(), lr=args.lr)
+        else:
+            print(f"optimizer inconnu : {args.optimizer}")
+            raise NameError
+
+
+        temps, LOSSES, best_loss = _train_dqn_replay(
+                                N=args.experience_replay_size,
+                                model=model,
+                                epochs=args.epochs,
+                                lr=args.lr,
+                                optimizer=optimizer,
+                                threshold=args.threshold,
+                                difficulty=args.difficulty,
+                                height=args.height,
+                                width=args.width,
+                                VIEW_WIDTH=args.view_width,
+                                freq=args.freq,
+                                gamma=args.gamma,
+                                model_path=args.path,
+                                plots_path=args.plots_path,
+                                verbose=bool(args.verbose),
+                                batch_size=args.batch_size,
+                                rewards=rewards,
+                                epsilon=args.epsilon
                             )
         
         plt.figure()

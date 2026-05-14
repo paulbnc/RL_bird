@@ -1,0 +1,652 @@
+
+
+
+initializing training REPLAY with parameters :
+            N : 3000,
+            model : ConvNN_small(
+  (conv1): Conv2d(2, 8, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))
+  (conv2): Conv2d(8, 16, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))
+  (conv3): Conv2d(16, 32, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))
+  (relu): ReLU()
+  (flat): Flatten(start_dim=1, end_dim=-1)
+  (fc1): Linear(in_features=10400, out_features=128, bias=True)
+  (fc2): Linear(in_features=128, out_features=2, bias=True)
+),
+            epochs : 10,
+            criterion : loss_replay,
+            optimizer : Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: None
+    lr: 0.0002
+    maximize: False
+    weight_decay: 0
+),
+            batch_size : 8,
+            learning rate : 0.0002,
+            threshold : 0.5,
+            difficulty : 2,
+            height : 200,
+            width : 500,
+            view_width : 100,
+            freq : 1,
+            model_path : checkpoints\test_replay_1405,
+            plots_path : game\plots\gifs_replay_1405,
+            verbose : True,
+            gamma : 0.98,
+            epsilon : [1.0, 0.05, 0.99]
+            
+
+
+
+
+EPOCH 1/10 ///
+complétée en 0min3.0sec. Estimation de temps restant : 0.0 minutes.
+
+epsilon : 1.0000
+
+EPOCH 2/10 ///
+complétée en 0min3.0sec. Estimation de temps restant : 0.0 minutes.
+
+epsilon : 0.9900
+
+EPOCH 3/10 ///
+complétée en 0min3.0sec. Estimation de temps restant : 0.0 minutes.
+
+epsilon : 0.9801
+
+EPOCH 4/10 ///
+complétée en 0min3.0sec. Estimation de temps restant : 0.0 minutes.
+
+epsilon : 0.9703
+
+EPOCH 5/10 ///
+complétée en 0min3.0sec. Estimation de temps restant : 0.0 minutes.
+
+epsilon : 0.9606
+
+EPOCH 6/10 ///
+complétée en 0min3.0sec. Estimation de temps restant : 0.0 minutes.
+
+epsilon : 0.9510
+
+EPOCH 7/10 ///
+complétée en 0min3.0sec. Estimation de temps restant : 0.0 minutes.
+
+epsilon : 0.9415
+
+EPOCH 8/10 ///
+complétée en 0min3.0sec. Estimation de temps restant : 0.0 minutes.
+
+epsilon : 0.9321
+
+EPOCH 9/10 ///
+complétée en 0min4.0sec. Estimation de temps restant : 0.0 minutes.
+
+epsilon : 0.9227
+
+EPOCH 10/10 ///
+complétée en 0min4.0sec. Estimation de temps restant : 0.0 minutes.
+
+epsilon : 0.9135
+
+
+entraînement complet
+
+
+
+
+
+initializing training REPLAY with parameters :
+            N : 12000,
+            model : ConvNN_small(
+  (conv1): Conv2d(2, 8, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))
+  (conv2): Conv2d(8, 16, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))
+  (conv3): Conv2d(16, 32, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))
+  (relu): ReLU()
+  (flat): Flatten(start_dim=1, end_dim=-1)
+  (fc1): Linear(in_features=10400, out_features=128, bias=True)
+  (fc2): Linear(in_features=128, out_features=2, bias=True)
+),
+            epochs : 100,
+            criterion : loss_replay,
+            optimizer : Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: None
+    lr: 0.0002
+    maximize: False
+    weight_decay: 0
+),
+            batch_size : 8,
+            learning rate : 0.0002,
+            threshold : 0.5,
+            difficulty : 2,
+            height : 200,
+            width : 800,
+            view_width : 100,
+            freq : 10,
+            model_path : checkpoints\test_replay_1405,
+            plots_path : game\plots\gifs_replay_1405,
+            verbose : True,
+            gamma : 0.98,
+            epsilon : [1.0, 0.05, 0.99]
+            
+
+
+
+
+EPOCH 1/100 ///
+complétée en 0min5.0sec. Estimation de temps restant : 8.0 minutes.
+
+epsilon : 1.0000
+
+EPOCH 2/100 ///
+complétée en 0min4.0sec. Estimation de temps restant : 7.0 minutes.
+
+epsilon : 0.9900
+
+EPOCH 3/100 ///
+complétée en 0min4.0sec. Estimation de temps restant : 7.0 minutes.
+
+epsilon : 0.9801
+
+EPOCH 4/100 ///
+complétée en 0min4.0sec. Estimation de temps restant : 7.0 minutes.
+
+epsilon : 0.9703
+
+EPOCH 5/100 ///
+complétée en 0min5.0sec. Estimation de temps restant : 7.0 minutes.
+
+epsilon : 0.9606
+
+EPOCH 6/100 ///
+complétée en 0min5.0sec. Estimation de temps restant : 7.0 minutes.
+
+epsilon : 0.9510
+
+EPOCH 7/100 ///
+complétée en 0min5.0sec. Estimation de temps restant : 7.0 minutes.
+
+epsilon : 0.9415
+
+EPOCH 8/100 ///
+complétée en 0min6.0sec. Estimation de temps restant : 7.0 minutes.
+
+epsilon : 0.9321
+
+EPOCH 9/100 ///
+complétée en 0min6.0sec. Estimation de temps restant : 7.0 minutes.
+
+epsilon : 0.9227
+
+EPOCH 10/100 ///
+complétée en 0min6.0sec. Estimation de temps restant : 8.0 minutes.
+
+epsilon : 0.9135
+
+EPOCH 11/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 8.0 minutes.
+
+epsilon : 0.9044
+
+EPOCH 12/100 ///
+complétée en 0min6.0sec. Estimation de temps restant : 8.0 minutes.
+
+epsilon : 0.8953
+
+EPOCH 13/100 ///
+complétée en 0min6.0sec. Estimation de temps restant : 8.0 minutes.
+
+epsilon : 0.8864
+
+EPOCH 14/100 ///
+complétée en 0min6.0sec. Estimation de temps restant : 8.0 minutes.
+
+epsilon : 0.8775
+
+EPOCH 15/100 ///
+complétée en 0min6.0sec. Estimation de temps restant : 8.0 minutes.
+
+epsilon : 0.8687
+
+EPOCH 16/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 8.0 minutes.
+
+epsilon : 0.8601
+
+EPOCH 17/100 ///
+complétée en 0min6.0sec. Estimation de temps restant : 8.0 minutes.
+
+epsilon : 0.8515
+
+EPOCH 18/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 8.0 minutes.
+
+epsilon : 0.8429
+
+EPOCH 19/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 8.0 minutes.
+
+epsilon : 0.8345
+
+EPOCH 20/100 ///
+complétée en 0min6.0sec. Estimation de temps restant : 8.0 minutes.
+
+epsilon : 0.8262
+
+EPOCH 21/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 8.0 minutes.
+
+epsilon : 0.8179
+
+EPOCH 22/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 8.0 minutes.
+
+epsilon : 0.8097
+
+EPOCH 23/100 ///
+complétée en 0min6.0sec. Estimation de temps restant : 7.0 minutes.
+
+epsilon : 0.8016
+
+EPOCH 24/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 7.0 minutes.
+
+epsilon : 0.7936
+
+EPOCH 25/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 7.0 minutes.
+
+epsilon : 0.7857
+
+EPOCH 26/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 7.0 minutes.
+
+epsilon : 0.7778
+
+EPOCH 27/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 7.0 minutes.
+
+epsilon : 0.7700
+
+EPOCH 28/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 7.0 minutes.
+
+epsilon : 0.7623
+
+EPOCH 29/100 ///
+complétée en 0min6.0sec. Estimation de temps restant : 7.0 minutes.
+
+epsilon : 0.7547
+
+EPOCH 30/100 ///
+complétée en 0min6.0sec. Estimation de temps restant : 7.0 minutes.
+
+epsilon : 0.7472
+
+EPOCH 31/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 7.0 minutes.
+
+epsilon : 0.7397
+
+EPOCH 32/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 7.0 minutes.
+
+epsilon : 0.7323
+
+EPOCH 33/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 7.0 minutes.
+
+epsilon : 0.7250
+
+EPOCH 34/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 7.0 minutes.
+
+epsilon : 0.7177
+
+EPOCH 35/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 7.0 minutes.
+
+epsilon : 0.7106
+
+EPOCH 36/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 7.0 minutes.
+
+epsilon : 0.7034
+
+EPOCH 37/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 6.0 minutes.
+
+epsilon : 0.6964
+
+EPOCH 38/100 ///
+complétée en 0min6.0sec. Estimation de temps restant : 6.0 minutes.
+
+epsilon : 0.6894
+
+EPOCH 39/100 ///
+complétée en 0min6.0sec. Estimation de temps restant : 6.0 minutes.
+
+epsilon : 0.6826
+
+EPOCH 40/100 ///
+complétée en 0min6.0sec. Estimation de temps restant : 6.0 minutes.
+
+epsilon : 0.6757
+
+EPOCH 41/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 6.0 minutes.
+
+epsilon : 0.6690
+
+EPOCH 42/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 6.0 minutes.
+
+epsilon : 0.6623
+
+EPOCH 43/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 6.0 minutes.
+
+epsilon : 0.6557
+
+EPOCH 44/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 6.0 minutes.
+
+epsilon : 0.6491
+
+EPOCH 45/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 6.0 minutes.
+
+epsilon : 0.6426
+
+EPOCH 46/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 6.0 minutes.
+
+epsilon : 0.6362
+
+EPOCH 47/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 5.0 minutes.
+
+epsilon : 0.6298
+
+EPOCH 48/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 5.0 minutes.
+
+epsilon : 0.6235
+
+EPOCH 49/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 5.0 minutes.
+
+epsilon : 0.6173
+
+EPOCH 50/100 ///
+complétée en 0min6.0sec. Estimation de temps restant : 5.0 minutes.
+
+epsilon : 0.6111
+
+EPOCH 51/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 5.0 minutes.
+
+epsilon : 0.6050
+
+EPOCH 52/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 5.0 minutes.
+
+epsilon : 0.5990
+
+EPOCH 53/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 5.0 minutes.
+
+epsilon : 0.5930
+
+EPOCH 54/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 5.0 minutes.
+
+epsilon : 0.5870
+
+EPOCH 55/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 5.0 minutes.
+
+epsilon : 0.5812
+
+EPOCH 56/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 5.0 minutes.
+
+epsilon : 0.5754
+
+EPOCH 57/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 5.0 minutes.
+
+epsilon : 0.5696
+
+EPOCH 58/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 4.0 minutes.
+
+epsilon : 0.5639
+
+EPOCH 59/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 4.0 minutes.
+
+epsilon : 0.5583
+
+EPOCH 60/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 4.0 minutes.
+
+epsilon : 0.5527
+
+EPOCH 61/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 4.0 minutes.
+
+epsilon : 0.5472
+
+EPOCH 62/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 4.0 minutes.
+
+epsilon : 0.5417
+
+EPOCH 63/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 4.0 minutes.
+
+epsilon : 0.5363
+
+EPOCH 64/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 4.0 minutes.
+
+epsilon : 0.5309
+
+EPOCH 65/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 4.0 minutes.
+
+epsilon : 0.5256
+
+EPOCH 66/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 4.0 minutes.
+
+epsilon : 0.5203
+
+EPOCH 67/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 4.0 minutes.
+
+epsilon : 0.5151
+
+EPOCH 68/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 3.0 minutes.
+
+epsilon : 0.5100
+
+EPOCH 69/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 3.0 minutes.
+
+epsilon : 0.5049
+
+EPOCH 70/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 3.0 minutes.
+
+epsilon : 0.4998
+
+EPOCH 71/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 3.0 minutes.
+
+epsilon : 0.4948
+
+EPOCH 72/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 3.0 minutes.
+
+epsilon : 0.4899
+
+EPOCH 73/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 3.0 minutes.
+
+epsilon : 0.4850
+
+EPOCH 74/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 3.0 minutes.
+
+epsilon : 0.4801
+
+EPOCH 75/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 3.0 minutes.
+
+epsilon : 0.4753
+
+EPOCH 76/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 3.0 minutes.
+
+epsilon : 0.4706
+
+EPOCH 77/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 2.0 minutes.
+
+epsilon : 0.4659
+
+EPOCH 78/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 2.0 minutes.
+
+epsilon : 0.4612
+
+EPOCH 79/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 2.0 minutes.
+
+epsilon : 0.4566
+
+EPOCH 80/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 2.0 minutes.
+
+epsilon : 0.4520
+
+EPOCH 81/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 2.0 minutes.
+
+epsilon : 0.4475
+
+EPOCH 82/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 2.0 minutes.
+
+epsilon : 0.4430
+
+EPOCH 83/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 2.0 minutes.
+
+epsilon : 0.4386
+
+EPOCH 84/100 ///
+complétée en 0min8.0sec. Estimation de temps restant : 2.0 minutes.
+
+epsilon : 0.4342
+
+EPOCH 85/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 2.0 minutes.
+
+epsilon : 0.4299
+
+EPOCH 86/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 2.0 minutes.
+
+epsilon : 0.4256
+
+EPOCH 87/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 1.0 minutes.
+
+epsilon : 0.4213
+
+EPOCH 88/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 1.0 minutes.
+
+epsilon : 0.4171
+
+EPOCH 89/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 1.0 minutes.
+
+epsilon : 0.4129
+
+EPOCH 90/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 1.0 minutes.
+
+epsilon : 0.4088
+
+EPOCH 91/100 ///
+complétée en 0min9.0sec. Estimation de temps restant : 1.0 minutes.
+
+epsilon : 0.4047
+
+EPOCH 92/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 1.0 minutes.
+
+epsilon : 0.4007
+
+EPOCH 93/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 1.0 minutes.
+
+epsilon : 0.3967
+
+EPOCH 94/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 1.0 minutes.
+
+epsilon : 0.3927
+
+EPOCH 95/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 1.0 minutes.
+
+epsilon : 0.3888
+
+EPOCH 96/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 0.0 minutes.
+
+epsilon : 0.3849
+
+EPOCH 97/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 0.0 minutes.
+
+epsilon : 0.3810
+
+EPOCH 98/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 0.0 minutes.
+
+epsilon : 0.3772
+
+EPOCH 99/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 0.0 minutes.
+
+epsilon : 0.3735
+
+EPOCH 100/100 ///
+complétée en 0min7.0sec. Estimation de temps restant : 0.0 minutes.
+
+epsilon : 0.3697
+
+
+entraînement complet
+
+
