@@ -11,18 +11,18 @@ class model_position(nn.Module):
         
     
     def forward(self, state):
-        features = get_distance_to_next_gap(state)   # (Batch, 3)
+        features = get_distance(state)   # (Batch, 3)
         x = self.act(self.f3(self.act(self.f2(self.act(self.f1(features))))))
         return x
 
-def get_distance_to_next_gap(state):
+def get_distance(state):
     # Pour chaque oiseau du batch, on calcule 3 features de distance.
     # 1 -> bord droit oiseau - bord gauche tuyau
     # 2 -> centre oiseau - haut du trou
     # 3 -> centre oiseau - bas du trou
 
     B, _, H, W = state.shape
-    features = torch.zeros(B, 4, device=state.device)
+    features = torch.zeros(B, 3, device=state.device)
  
     for i in range(B):
         world = state[i, 0]    # (H, W)  1=tuyau

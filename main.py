@@ -110,6 +110,9 @@ if __name__ == '__main__':
             view_height=args.height,
             view_width=args.view_width
         )
+    elif args.model=='distances':
+        from RL.models.based_on_position.based_on_position import model_position, get_distance
+        model = model_position()
 
     else:
         print(f"\n\nmodele {args.model} introuvable\n")
