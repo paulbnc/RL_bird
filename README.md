@@ -276,7 +276,8 @@ Tout passe par main.py via des arguments en ligne de commande.
   ├── ...
   ├── loss.png          Courbe de la loss par epoch
   ├── time.png          Courbe des temps d'epoch
-  └── console.txt       Log complet : paramètres, progression, temps estimé```
+  └── console.txt       Log complet : paramètres, progression, temps estimé
+```
 
 Les GIFs d'évaluation périodique sont dans le dossier --plots_path.
 Les checkpoints des expériences menées sont dans checkpoints/.
