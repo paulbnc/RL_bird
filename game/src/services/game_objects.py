@@ -186,8 +186,9 @@ class Game:
         # laisser la partie "jouable" (processus de génération selon une chaîne de markov) ; disons ne pas éloigner 
         #la zone suivante + que d'un tier de la hauteur du jeu self.world_height.
 
-        hole_size = (self.world_height // (self.difficulty+1)) #taille du trou
-        max_shift = self.world_height // 3 #le 1/3 dont on parlait pour la chaîne de Markov
+        #hole_size = (self.world_height // (self.difficulty+1)) #taille du trou
+        hole_size = (self.world_height // 2) #taille du trou
+        max_shift = self.world_height // 4 #le 1/4 dont on parlait pour la chaîne de Markov
 
         world = torch.zeros(size=(self.batch_size, self.world_height, self.world_width))
         world[:, :, 0] = 1 #bordures

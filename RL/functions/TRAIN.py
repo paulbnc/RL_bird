@@ -78,7 +78,7 @@ def _train_dqn_no_replay(
 
     temps = []
 
-    epsilon_current = epsilon[0]
+    #epsilon_current = epsilon[0]
 
     for e in range(epochs):
 

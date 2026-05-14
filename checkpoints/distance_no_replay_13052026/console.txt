@@ -2326,3 +2326,51 @@ complétée en 0min4.0sec. Estimation de temps restant : 49.0 minutes.
 
 
 EPOCH 330/1000 ///
+
+
+
+initializing training with parameters :
+            model : model_position(
+  (f1): Linear(in_features=4, out_features=64, bias=True)
+  (f2): Linear(in_features=64, out_features=64, bias=True)
+  (f3): Linear(in_features=64, out_features=2, bias=True)
+  (act): ReLU()
+),
+            epochs : 500,
+            criterion : loss_no_replay,
+            optimizer : Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    decoupled_weight_decay: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: None
+    lr: 0.0005
+    maximize: False
+    weight_decay: 0
+),
+            batch_size : 128,
+            learning rate : 0.0005,
+            threshold : 0.5,
+            difficulty : 2,
+            height : 200,
+            width : 800,
+            view_width : 100,
+            freq : 50,
+            model_path : checkpoints/distance_no_replay_13052026,
+            plots_path : game/plots/gif_distance_1405,
+            verbose : True,
+            gamma : 0.98,
+            epsilon : [1.0, 0.05, 0.99]
+            
+
+
+
+
+EPOCH 1/500 ///
+complétée en 0min17.0sec. Estimation de temps restant : 138.0 minutes.
+
+epsilon : 1.0000
