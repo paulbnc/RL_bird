@@ -1,5 +1,5 @@
 
-  Flappy Bird — Deep Reinforcement Learning
+  Deep Reinforcement Learning on Flappy Bird
 ================================================================================
 Paul Buannic & Arthur Devilliers
 
