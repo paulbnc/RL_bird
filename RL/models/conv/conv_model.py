@@ -29,6 +29,7 @@ class ConvNN_small(nn.Module):
         self.fc2 = nn.Linear(128, 2)
 
     def forward(self, w):
+        w = w["screen"]
         if self.in_channels==1:
             w = w.unsqueeze(1)
         w = self.relu(self.conv1(w))
