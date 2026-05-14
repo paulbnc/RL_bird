@@ -8,7 +8,8 @@
   STRUCTURE DU PROJET
 --------------------------------------------------------------------------------
 
-projet_deep/
+'''
+RL_bird/
 ├── main.py
 ├── requirements.txt
 ├── game/
@@ -41,7 +42,7 @@ projet_deep/
 │           └── based_on_position.py
 ├── checkpoints/
 └── game/plots/
-
+'''
 
 --------------------------------------------------------------------------------
   UTILISATION
