@@ -94,22 +94,19 @@ Tout passe par main.py via des arguments en ligne de commande.
   Exemples
   --------
   # Évaluer le modèle aléatoire
-  python main.py --type eval --model naive --batch_size 4
+  ```python main.py --type eval --model naive --batch_size 4```
 
   # Entraîner le CNN sans replay
-  python main.py --type train_no_replay --model conv_small --epochs 200 \
-                 --difficulty 2 --path checkpoints/mon_run
+  ```python main.py --type train_no_replay --model conv_small --epochs 200 --difficulty 2 --path checkpoints/mon_run```
 
   # Reprendre depuis un checkpoint
-  python main.py --type train_no_replay --model conv_small \
-                 --load_model checkpoints/mon_run/epoch_50.pth
+  ```python main.py --type train_no_replay --model conv_small --load_model checkpoints/mon_run/epoch_50.pth```
 
   # Entraîner avec experience replay
-  python main.py --type train_replay --model conv_small --epochs 500 \
-                 --experience_replay_size 12000 --path checkpoints/replay_run
+  ```python main.py --type train_replay --model conv_small --epochs 500 --experience_replay_size 12000 --path checkpoints/replay_run```
 
   # Visualiser un monde généré
-  ````python main.py --type test_world --difficulty 3 --height 200 --width 800````
+  ```python main.py --type test_world --difficulty 3 --height 200 --width 800```
 
 
 --------------------------------------------------------------------------------
