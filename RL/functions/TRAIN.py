@@ -100,24 +100,36 @@ def _train_dqn_no_replay(
             w[:, t] = game.step()
             game.t += 1
 
-            previous_state = torch.stack([w[:, t], bird_mask.float()], dim=1)
+            #previous_state = torch.stack([w[:, t], bird_mask.float()], dim=1)
 
-            Q_actions = model(previous_state)
+            #Q_actions = model(previous_state)
+            prev_obs = {"screen" : torch.stack([w[:, t], bird_mask.float()], dim=1),
+                        "vy" : game.flappy.vy.clone()}
+            
+            Q_actions = model(prev_obs)
 
-            game.flappy.step(Q_actions.argmax(dim=1)==1)
+            epsilon = max(0.05, 1.0 - e / 200)
+            if torch.rand(1).item() < epsilon:
+                actions = torch.randint(0, 2, (batch_size,))
+            else:
+                actions = Q_actions.argmax(dim=1)
+
+            game.flappy.step(actions==1)
 
             bird_mask, done_mask = game.flappy.update_collisions()
 
             reward = game.flappy.reward(done_mask)
 
-            state = torch.stack([game.step(game.t-1), bird_mask.float()], dim=1)
+            #state = torch.stack([game.step(game.t-1), bird_mask.float()], dim=1)
+            obs = {"screen" : torch.stack([game.step(game.t), bird_mask.float()], dim=1),
+                    "vy" : game.flappy.vy.clone()}
 
             loss = dqn_loss(
                 gamma,
                 model,
-                previous_state=previous_state,
-                state=state,
-                actions=Q_actions.argmax(dim=1),
+                previous_state=prev_obs,
+                state=obs,
+                actions=actions,
                 r=reward
             )
 
