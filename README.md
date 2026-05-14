@@ -109,7 +109,7 @@ Tout passe par main.py via des arguments en ligne de commande.
                  --experience_replay_size 12000 --path checkpoints/replay_run
 
   # Visualiser un monde généré
-  python main.py --type test_world --difficulty 3 --height 200 --width 800
+  ````python main.py --type test_world --difficulty 3 --height 200 --width 800````
 
 
 --------------------------------------------------------------------------------
@@ -186,7 +186,7 @@ Tout passe par main.py via des arguments en ligne de commande.
   poids courants (détachée), ce qui correspond à la formulation classique avec
   réseau cible figé à theta_{i-1} :
 
-    L = mean[ ( r + $\gamma$ * max_a'[ Q(s', a' ; theta_prev) ] - Q(s, a ; theta) )^2 ]
+    L = mean[ ( r + gamma * max_a'[ Q(s', a' ; theta_prev) ] - Q(s, a ; theta) )^2 ]
 
   --
 
