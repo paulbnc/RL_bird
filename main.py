@@ -1,6 +1,6 @@
 import argparse
 from RL.functions.EVAL import _eval
-from RL.functions.TRAIN import _train_dqn_no_replay, _train_dqn_replay
+from RL.functions.TRAIN import _train_dqn_no_replay, _train_dqn_replay, _train_distances_no_replay
 import torch
 import os
 import matplotlib.pyplot as plt
@@ -16,7 +16,7 @@ if __name__ == '__main__':
 
 
     parser.add_argument("-ty", "--type", type=str, default="eval",
-                        help="Choose between [\"eval\", \"train_no_replay\", \"train_replay\" \"test_world\"]. Default eval")
+                        help="Choose between [\"eval\", \"train_no_replay\", \"train_replay\", \"distances\", \"test_world\"]. Default eval")
 
     parser.add_argument("-e", "--epochs", type=int, default=100,
                         help="Number of epochs for training. Default 100")
@@ -132,7 +132,7 @@ if __name__ == '__main__':
         model.load_state_dict(state_dict)
 
 
-    if args.model=='naive' and args.type=='train':
+    if args.model=='naive' and args.type!='eval':
         print("\n\nimpossible d'entraîner le réseau aléatoire.\n")
         raise Exception
 
@@ -149,6 +149,9 @@ if __name__ == '__main__':
                 save=args.save,
                 idx_save=1
             )
+        
+
+        
     elif args.type=="train_no_replay":
 
         if args.optimizer=="Adam":
@@ -210,6 +213,57 @@ if __name__ == '__main__':
 
 
         temps, LOSSES, best_loss = _train_dqn_replay(
+                                N=args.experience_replay_size,
+                                model=model,
+                                epochs=args.epochs,
+                                lr=args.lr,
+                                optimizer=optimizer,
+                                threshold=args.threshold,
+                                difficulty=args.difficulty,
+                                height=args.height,
+                                width=args.width,
+                                VIEW_WIDTH=args.view_width,
+                                freq=args.freq,
+                                gamma=args.gamma,
+                                model_path=args.path,
+                                plots_path=args.plots_path,
+                                verbose=bool(args.verbose),
+                                batch_size=args.batch_size,
+                                rewards=rewards,
+                                epsilon=args.epsilon
+                            )
+        
+        plt.figure()
+        plt.plot(LOSSES)
+        plt.xlabel("parties jouées")
+        plt.ylabel("loss")
+        plt.title("Training Loss")
+        plt.savefig(os.path.join(args.path, "loss.png"))
+        plt.close()
+
+        plt.figure()
+        plt.plot(temps)
+        plt.xlabel("itérations")
+        plt.ylabel("time")
+        plt.title("Training time")
+        plt.savefig(os.path.join(args.path, "time.png"))
+        plt.close()
+
+        print(f"best loss {best_loss}. \n\n****PLOTS DE LOSSES ET TIMES dans {args.path}\n\n")
+    
+    
+    elif args.type=="distances":
+
+        if args.optimizer=="Adam":
+            optimizer = torch.optim.Adam(params=model.parameters(), lr=args.lr)
+        elif args.optimizer=="SGD":
+            optimizer = torch.optim.SGD(params=model.parameters(), lr=args.lr)
+        else:
+            print(f"optimizer inconnu : {args.optimizer}")
+            raise NameError
+
+
+        temps, LOSSES, best_loss = _train_distances_no_replay(
                                 N=args.experience_replay_size,
                                 model=model,
                                 epochs=args.epochs,

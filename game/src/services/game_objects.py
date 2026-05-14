@@ -234,9 +234,9 @@ class Game:
 
     def step(self, t=None):
         if t is None:
-            x = self.t * self.tick                                    #(batch,) positions gauches
+            x = self.t * self.tick#(batch,) positions gauches
         else:
-            x = t * self.tick                                    #(batch,) positions gauches
+            x = t * self.tick#(batch,) positions gauches
 
         col_idx = x.unsqueeze(1).unsqueeze(2) + \
                 torch.arange(self.VIEW_WIDTH).unsqueeze(0).unsqueeze(0)  #(batch, 1, VIEW_WIDTH)
@@ -251,4 +251,4 @@ class Game:
         self.flappy.y[done_mask]     = self.world_height / 2
         self.flappy.vy[done_mask]    = 0.0
         self.flappy.alive[done_mask] = 1.0
-        self.t[done_mask]            = 0                
+        self.t[done_mask]            = 0
