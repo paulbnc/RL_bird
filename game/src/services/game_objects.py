@@ -127,6 +127,12 @@ class Bird:
     
         return rewards
 
+    
+    def _col_sum(self, col_idx):
+        idx = col_idx.view(-1, 1, 1).expand(-1, self.game.world_height - 2, 1)
+        return self.game.world[:, 1:-1, :].gather(2, idx).sum(dim=1).squeeze(1)
+
+
 
 
 class Game:
