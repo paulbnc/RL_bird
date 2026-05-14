@@ -1,8 +1,7 @@
 
   Flappy Bird — Deep Reinforcement Learning
-  Auteurs : Paul Buannic & Arthur Devilliers
 ================================================================================
-
+Paul Buannic & Arthur Devilliers
 
 --------------------------------------------------------------------------------
   STRUCTURE DU PROJET
