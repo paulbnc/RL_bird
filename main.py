@@ -39,8 +39,8 @@ if __name__ == '__main__':
     parser.add_argument("-dif", "--difficulty", type=int, default=2,
                         help="difficulty (hint from paul : 1, 2, or 3, difficulty increases fast). Default 2")
 
-    parser.add_argument("-H", "--height", type=int, default=200,
-                        help="height of the world. Default 200")
+    parser.add_argument("-H", "--height", type=int, default=100,
+                        help="height of the world. Default 100")
 
     parser.add_argument("-W", "--width", type=int, default=800,
                         help="width of the world. Default 800")

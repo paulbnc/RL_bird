@@ -39,21 +39,97 @@ def save_gif(colored_world: torch.Tensor,
     print(f"GIF sauvegardé : {gif_path}")
 
 
-def color(world: torch.Tensor,
-          flappy_png_path:str=os.path.join("game","static","png","flappy.png")):
-    # size(world) = (duration, height, view_width)
+import os
+import torch
+from PIL import Image
+import torchvision.transforms as T
 
+
+def color(
+    world: torch.Tensor,
+    flappy_png_path: str = os.path.join("game", "static", "flappy.png")
+):
+    # world.shape = (duration, height, width)
+
+    duration, H, W = world.shape
+
+    
     tunnels = torch.tensor([0. / 255., 153. / 255., 0. / 255.]).view(3, 1, 1)
     sky     = torch.tensor([102. / 255., 178. / 255., 255. / 255.]).view(3, 1, 1)
-    bird    = torch.tensor([173. / 255., 0. / 255., 0. / 255.]).view(3, 1, 1)
 
-    w = world.unsqueeze(1)  # (duration, 1, H, W)
+    
+    w = world.unsqueeze(1)
 
     tunnel_mask = (w == 1).float()
-    bird_mask   = (w == 0.5).float()
-    sky_mask    = (1 - tunnel_mask - bird_mask)
+    sky_mask    = 1 - tunnel_mask
 
-    return tunnel_mask * tunnels + bird_mask * bird + sky_mask * sky
+    rgb = tunnel_mask * tunnels + sky_mask * sky
+
+    img = Image.open(flappy_png_path).convert("RGBA")
+
+    bird_sprite = T.ToTensor()(img)
+
+    bird_rgb   = bird_sprite[:3]
+    bird_alpha = bird_sprite[3:4]
+
+    sprite_h, sprite_w = bird_rgb.shape[1:]
+
+
+
+    for t in range(duration):
+
+        positions = (world[t] == 0.5).nonzero(as_tuple=False)
+
+        if len(positions) == 0:
+            continue
+
+        y, x = positions[0]
+
+        y = int(y)
+        x = int(x)
+
+        top  = y - sprite_h // 2
+        left = x - sprite_w // 2
+
+        top_clip = max(top, 0)
+        left_clip = max(left, 0)
+
+        bottom_clip = min(top + sprite_h, H)
+        right_clip = min(left + sprite_w, W)
+
+        sprite_top = top_clip - top
+        sprite_left = left_clip - left
+
+        sprite_bottom = sprite_top + (bottom_clip - top_clip)
+        sprite_right = sprite_left + (right_clip - left_clip)
+
+        alpha = bird_alpha[
+            :,
+            sprite_top:sprite_bottom,
+            sprite_left:sprite_right
+        ]
+
+        bird_part = bird_rgb[
+            :,
+            sprite_top:sprite_bottom,
+            sprite_left:sprite_right
+        ]
+
+        background = rgb[
+            t,
+            :,
+            top_clip:bottom_clip,
+            left_clip:right_clip
+        ]
+
+        rgb[
+            t,
+            :,
+            top_clip:bottom_clip,
+            left_clip:right_clip
+        ] = bird_part * alpha + background * (1 - alpha)
+
+    return rgb
 
 
 def save_png(path: str, world: torch.Tensor):
