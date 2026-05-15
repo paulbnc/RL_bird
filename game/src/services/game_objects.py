@@ -3,12 +3,22 @@ import torch
 
 
 
+
+
+
 def get_difficulty_params(difficulty):
     if not(difficulty in (1,2,3)):
          raise IndexError
+    if difficulty==1:
+        hole_part = 0.4
+    if difficulty==2:
+        hole_part = 0.35
+    if difficulty==3:
+        hole_part = 0.28
     return {
         'speed':difficulty, #dans l'idée, 1 2 ou 3
-        'tunnels':3*difficulty
+        'tunnels':3*difficulty,
+        'hole_part':hole_part
     }
 
 
@@ -138,6 +148,7 @@ class Game:
         self.world_width = width
         self.speed = get_difficulty_params(difficulty)['speed']
         self.tunnels = get_difficulty_params(difficulty)['tunnels']
+        self.hole_part = get_difficulty_params(difficulty)['hole_part']
         self.VIEW_WIDTH = VIEW_WIDTH
         self.difficulty = difficulty
 
@@ -186,8 +197,8 @@ class Game:
         # laisser la partie "jouable" (processus de génération selon une chaîne de markov) ; disons ne pas éloigner 
         #la zone suivante + que d'un tier de la hauteur du jeu self.world_height.
 
-        #hole_size = (self.world_height // (self.difficulty+1)) #taille du trou
-        hole_size = (self.world_height // 2) #taille du trou
+        hole_size = int(self.world_height * self.hole_part) #taille du trou
+        #hole_size = (self.world_height // 2) #taille du trou
         max_shift = self.world_height // 4 #le 1/4 dont on parlait pour la chaîne de Markov
 
         world = torch.zeros(size=(self.batch_size, self.world_height, self.world_width))
