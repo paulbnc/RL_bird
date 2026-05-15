@@ -43,7 +43,7 @@ if __name__ == '__main__':
                         help="height of the world. Default 200")
 
     parser.add_argument("-W", "--width", type=int, default=800,
-                        help="width of the world. Default 500")
+                        help="width of the world. Default 800")
 
     parser.add_argument("-VW", "--view_width", type=int, default=100,
                         help="width of what the model sees. Default 100")

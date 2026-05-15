@@ -40,6 +40,7 @@ RL_bird/
 │       └── based_on_position/
 │           └── based_on_position.py
 ├── checkpoints/
+├── game/static/
 └── game/plots/
 ```
 
@@ -236,7 +237,7 @@ Tout passe par main.py via des arguments en ligne de commande.
   -------------------------
   Fonctions d'export visuel. color() applique une colorisation au tenseur
   binaire du monde : vert pour les tuyaux, bleu pour le ciel, rouge pour
-  l'oiseau. gif() sauvegarde une séquence de frames colorisées en fichier .gif.
+  l'oiseau (ou selon l'image renseignée dans game/static). gif() sauvegarde une séquence de frames colorisées en fichier .gif.
   save_png() sauvegarde une frame unique en .png. Les fichiers produits sont
   stockés dans game/plots/.
 
@@ -260,7 +261,7 @@ Tout passe par main.py via des arguments en ligne de commande.
 
   game/src/play.py
   -----------------
-  Non implémenté.
+  Non implémenté. Nous avions l'intention de faire une version jouable pour un humain, mais nous avons manqué de temps.
 
 
 --------------------------------------------------------------------------------

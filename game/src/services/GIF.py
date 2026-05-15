@@ -39,8 +39,10 @@ def save_gif(colored_world: torch.Tensor,
     print(f"GIF sauvegardé : {gif_path}")
 
 
-def color(world: torch.Tensor):
+def color(world: torch.Tensor,
+          flappy_png_path:str=os.path.join("game","static","png","flappy.png")):
     # size(world) = (duration, height, view_width)
+
     tunnels = torch.tensor([0. / 255., 153. / 255., 0. / 255.]).view(3, 1, 1)
     sky     = torch.tensor([102. / 255., 178. / 255., 255. / 255.]).view(3, 1, 1)
     bird    = torch.tensor([173. / 255., 0. / 255., 0. / 255.]).view(3, 1, 1)
