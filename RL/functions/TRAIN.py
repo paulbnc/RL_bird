@@ -28,7 +28,8 @@ def _train_distances_no_replay(
                     epsilon:list,
                     model_path,
                     plots_path=os.path.join("game","plots", "gifs_last"),
-                    verbose:bool=True
+                    verbose:bool=True,
+                    use_flappy_png=True
                 ):
 
     os.makedirs(model_path, exist_ok=True)
@@ -141,7 +142,7 @@ def _train_distances_no_replay(
 
         if e%freq==0:
             torch.save(model.state_dict(), os.path.join(model_path, f"epoch_{e}.pth"))
-            GIF.gif(w[0], folder=plots_path, name=f"_epoch_{e}", e=e)
+            GIF.gif(w[0], folder=plots_path, name=f"_epoch_{e}", e=e, use_flappy_png=use_flappy_png)
 
         if mean_loss<best_loss:
             best_loss=mean_loss
@@ -182,7 +183,8 @@ def _train_dqn_no_replay(
                     epsilon:list,
                     model_path,
                     plots_path=os.path.join("game","plots", "gifs_last"),
-                    verbose:bool=True
+                    verbose:bool=True,
+                    use_flappy_png=True
                 ):
 
     os.makedirs(model_path, exist_ok=True)
@@ -294,7 +296,7 @@ def _train_dqn_no_replay(
 
         if e%freq==0:
             torch.save(model.state_dict(), os.path.join(model_path, f"epoch_{e}.pth"))
-            GIF.gif(w[0], folder=plots_path, name=f"_epoch_{e}", e=e)
+            GIF.gif(w[0], folder=plots_path, name=f"_epoch_{e}", e=e, use_flappy_png=use_flappy_png)
 
         if mean_loss<best_loss:
             best_loss=mean_loss
@@ -344,7 +346,8 @@ def _train_dqn_replay(
                     epsilon:list,
                     model_path,
                     plots_path=os.path.join("game","plots", "gifs_last"),
-                    verbose:bool=True
+                    verbose:bool=True,
+                    use_flappy_png=True
                 ):
 
     os.makedirs(model_path, exist_ok=True)
@@ -478,7 +481,7 @@ def _train_dqn_replay(
 
         if e % freq == 0:
             torch.save(model.state_dict(), os.path.join(model_path, f"epoch_{e}.pth"))
-            GIF.gif(w[0], folder=plots_path, name=f"_epoch_{e}", e=e)
+            GIF.gif(w[0], folder=plots_path, name=f"_epoch_{e}", e=e, use_flappy_png=use_flappy_png)
 
         if mean_loss < best_loss:
             best_loss = mean_loss

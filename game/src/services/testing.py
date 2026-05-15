@@ -2,7 +2,7 @@ from game.src.services.game_objects import Game
 from game.src.services.GIF import save_png
 import os
 
-def generate_world(difficulty, height, width):
+def generate_world(difficulty, height, width, use_flappy_png):
 
     game = Game(
         batch_size=1,

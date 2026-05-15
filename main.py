@@ -89,8 +89,16 @@ if __name__ == '__main__':
 
     args = parser.parse_args()
 
+
+    if args.height<80 or args.height>230:
+        use_flappy_png = False
+    else:
+        use_flappy_png = True
+
+
+
     if args.type=="test_world":
-        generate_world(args.difficulty, args.height, args.width)
+        generate_world(args.difficulty, args.height, args.width, use_flappy_png)
         exit(0)
 
     rewards = {"dead":args.dead_reward,
@@ -147,7 +155,8 @@ if __name__ == '__main__':
                 width=args.width,
                 VIEW_WIDTH=args.view_width,
                 save=args.save,
-                idx_save=1
+                idx_save=1,
+                use_flappy_png=use_flappy_png
             )
         
 
@@ -180,7 +189,8 @@ if __name__ == '__main__':
                                 verbose=bool(args.verbose),
                                 batch_size=args.batch_size,
                                 rewards=rewards,
-                                epsilon=args.epsilon
+                                epsilon=args.epsilon,
+                                use_flappy_png=use_flappy_png
                             )
         
         plt.figure()
@@ -230,7 +240,8 @@ if __name__ == '__main__':
                                 verbose=bool(args.verbose),
                                 batch_size=args.batch_size,
                                 rewards=rewards,
-                                epsilon=args.epsilon
+                                epsilon=args.epsilon,
+                                use_flappy_png=use_flappy_png
                             )
         
         plt.figure()
@@ -281,7 +292,8 @@ if __name__ == '__main__':
                                 verbose=bool(args.verbose),
                                 batch_size=args.batch_size,
                                 rewards=rewards,
-                                epsilon=args.epsilon
+                                epsilon=args.epsilon,
+                                use_flappy_png=use_flappy_png
                             )
         
         plt.figure()

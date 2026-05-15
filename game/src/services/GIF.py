@@ -5,16 +5,16 @@ import numpy as np
 
 idx_gifs = 0
 
-def gif(world, folder=os.path.join("game", "plots", "gifs"), name="game", fps=12, e=None):
+def gif(world, folder=os.path.join("game", "plots", "gifs"), name="game", fps=12, e=None, use_flappy_png=True):
     global idx_gifs
 
     os.makedirs(folder, exist_ok=True)
 
     if e is None:
-        save_gif(color(world), folder, filename=name + f"_{idx_gifs}", fps=fps)
+        save_gif(color(world, use_flappy_png=use_flappy_png), folder, filename=name + f"_{idx_gifs}", fps=fps)
         idx_gifs+=1
     else:
-        save_gif(color(world), folder, filename=name + f"_{e}", fps=fps)
+        save_gif(color(world, use_flappy_png=use_flappy_png), folder, filename=name + f"_{e}", fps=fps)
 
 
 def save_gif(colored_world: torch.Tensor,
@@ -47,17 +47,27 @@ import torchvision.transforms as T
 
 def color(
     world: torch.Tensor,
+    use_flappy_png:bool,
     flappy_png_path: str = os.path.join("game", "static", "flappy.png")
 ):
     # world.shape = (duration, height, width)
 
+    if not(use_flappy_png):
+        tunnels = torch.tensor([0. / 255., 153. / 255., 0. / 255.]).view(3, 1, 1) 
+        sky = torch.tensor([102. / 255., 178. / 255., 255. / 255.]).view(3, 1, 1) 
+        bird = torch.tensor([173. / 255., 0. / 255., 0. / 255.]).view(3, 1, 1) 
+        w = world.unsqueeze(1) # (duration, 1, H, W) 
+        tunnel_mask = (w == 1).float() 
+        bird_mask = (w == 0.5).float() 
+        sky_mask = (1 - tunnel_mask - bird_mask) 
+        return tunnel_mask * tunnels + bird_mask * bird + sky_mask * sky
+
+
     duration, H, W = world.shape
 
-    
     tunnels = torch.tensor([0. / 255., 153. / 255., 0. / 255.]).view(3, 1, 1)
     sky     = torch.tensor([102. / 255., 178. / 255., 255. / 255.]).view(3, 1, 1)
 
-    
     w = world.unsqueeze(1)
 
     tunnel_mask = (w == 1).float()
@@ -132,8 +142,8 @@ def color(
     return rgb
 
 
-def save_png(path: str, world: torch.Tensor):
-    colored = color(world[0].unsqueeze(0))
+def save_png(path: str, world: torch.Tensor, use_flappy_png):
+    colored = color(world[0].unsqueeze(0), use_flappy_png=use_flappy_png)
     frame_np = (colored[0].permute(1, 2, 0).cpu().numpy() * 255).astype(np.uint8)
     os.makedirs(os.path.dirname(path), exist_ok=True)
     Image.fromarray(frame_np, mode="RGB").save(path)

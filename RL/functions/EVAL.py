@@ -13,6 +13,7 @@ def _eval(
         VIEW_WIDTH:int,
         save:int,
         idx_save:int,
+        use_flappy_png:bool,
         threshold:float=0.5):
     
     game = Game(
@@ -51,6 +52,6 @@ def _eval(
         if save>batch_size:
             save=batch_size
         for i in range(save):
-            GIF.gif(w[i], name=f"eval_{idx_save}_sample_{i}")
+            GIF.gif(w[i], name=f"eval_{idx_save}_sample_{i}", use_flappy_png=use_flappy_png)
 
     print(f"\nSTAT PERF : {batch_size} mondes en eval complétés en {abs(s-time.time()):.4f} sec.\n")
